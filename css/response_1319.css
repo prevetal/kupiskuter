@@ -51,50 +51,30 @@
     /*------------
         Header
     ------------*/
-    header
+    header .socials,
+    header .account
     {
-        padding-bottom: 20px;
+        width: auto;
+        margin-left: 32px;
     }
 
 
-    header .bottom
+    header .time,
+    header .time + .time,
+    header .compare_link
     {
-        margin-top: 20px;
-    }
-
-
-    header .location,
-    header .time
-    {
-        display: none;
-    }
-
-
-    header .logo img
-    {
-        width: 256px;
-    }
-
-
-    header .phone .number
-    {
-        font-size: 20px;
+        margin-left: 32px;
     }
 
 
     header .cats
     {
-        width: calc(100% - 310px);
+        width: calc(100% - 292px);
     }
 
     header .cats .item > a
     {
-        font-size: 14px;
-    }
-
-    header .cats .item > a .icon
-    {
-        top: calc(100% - 7px);
+        font-size: 13px;
     }
 
 
@@ -102,7 +82,6 @@
     {
         height: 20px;
     }
-
 
     header .cats .dropdown .sub_cats
     {
@@ -162,12 +141,6 @@
         right: -20px;
 
         width: calc(100% - 430px);
-    }
-
-
-    header .search
-    {
-        width: 280px;
     }
 
 
@@ -1108,5 +1081,46 @@
     {
         width: 470px;
         padding: 35px 55px;
+    }
+}
+
+
+
+@media print, (max-width: 1279px)
+{
+    header .menu .item + .item
+    {
+        margin-left: 24px;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    header .socials,
+    header .account
+    {
+        margin-left: 24px;
+    }
+
+
+    header .socials a + a
+    {
+        margin-left: 8px;
+    }
+
+
+    header .time
+    {
+        display: none;
+    }
+
+
+    header .compare_link
+    {
+        margin-left: auto;
     }
 }

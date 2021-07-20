@@ -119,6 +119,30 @@
     }
 
 
+
+    header .socials
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    header .socials a + a
+    {
+        margin-left: 16px;
+    }
+
+
+    header .account
+    {
+        display: block;
+
+        width: 100%;
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
     header .location
     {
         position: relative;
