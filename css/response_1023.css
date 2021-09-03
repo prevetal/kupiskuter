@@ -1238,6 +1238,99 @@
 
 
     /*------------
+        Tuning
+    ------------*/
+    .tuning .items
+    {
+        padding: 0;
+    }
+
+
+    .tuning .points
+    {
+        position: relative;
+
+        height: auto;
+        margin-top: 40px;
+
+        column-gap: 52px;
+        column-count: 2;
+    }
+
+    .tuning .points > *
+    {
+        transform: translateZ(0);
+
+        --webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .tuning .points > * + *
+    {
+        margin-top: 24px;
+    }
+
+    .tuning .points .item
+    {
+        position: relative;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+
+        display: flex;
+
+        text-align: left;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+
+    .tuning .points .item .number
+    {
+        color: #fff;
+
+        margin: 0 20px 0 0;
+
+        background: #f91628;
+    }
+
+    .tuning .points .item .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .tuning .points .item .name br
+    {
+        display: none;
+    }
+
+    .tuning .points .item .buy_btn
+    {
+        margin: 0 0 0 20px;
+
+        white-space: nowrap;
+    }
+
+
+    .tuning .bg
+    {
+        top: 0;
+        bottom: auto;
+        left: -440px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .links

@@ -108,6 +108,12 @@ $(() => {
 		})
 	})
 
+	$('body').on('click', '.modal .close_btn', function (e) {
+		e.preventDefault()
+
+		$.fancybox.close(true)
+	})
+
 	// Увеличение картинки
 	$('.fancy_img').fancybox({
 		mobile: {

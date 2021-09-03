@@ -1003,6 +1003,34 @@
 
 
     /*------------
+        Tuning
+    ------------*/
+    .tuning .points .item2
+    {
+        left: 0;
+    }
+
+    .tuning .points .item4
+    {
+        left: 7.03%;
+    }
+
+    .tuning .points .item5
+    {
+        right: 0;
+        left: auto;
+    }
+
+
+    .tuning .bg
+    {
+        top: -64px;
+        left: -120px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .info .cont,

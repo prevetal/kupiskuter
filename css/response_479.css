@@ -675,6 +675,31 @@
 
 
     /*------------
+        Tuning
+    ------------*/
+    .tuning .points .item .number
+    {
+        margin-right: 12px;
+    }
+
+    .tuning .points .item .name
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .tuning .bg
+    {
+        top: -172px;
+        left: -480px;
+
+        width: 1280px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .contacts .location
@@ -715,5 +740,24 @@
     #model_choose_modal
     {
         padding: 25px;
+    }
+
+
+
+    #cart_success_modal .modal_title
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+    #cart_success_modal .btns .btn
+    {
+        width: 100%;
+    }
+
+    #cart_success_modal .btns .btn + .btn
+    {
+        margin-top: 12px;
     }
 }

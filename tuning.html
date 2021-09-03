@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.png">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#ff0000">
+		<meta name="theme-color" content="#ff0000">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/bxslider.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1319.css" media="print, (max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="top">
+							<div class="cont row">
+								<nav class="menu">
+									<div class="item">
+										<a href="/">О компании</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Сервис</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Скидки и акции</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Доставка и оплата</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Аренда</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Контакты</a>
+									</div>
+								</nav>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="youtube_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="telegram_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="flickr_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_flickr"></use></svg>
+									</a>
+								</div>
+
+								<div class="account">
+									<button class="btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+										<span>Вход/Регистрация</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="">
+									<div class="desc">
+										<div><span>продажа б/у скутеров</span></div>
+									 	<div><span>без пробега по РФ</span></div>
+									</div>
+								</a>
+
+								<div class="contacts">
+									<div class="row">
+										<div class="phone">
+											<a href="tel:+74997033332">+7 (499) 703-33-32</a>
+										</div>
+
+										<button class="callback_btn modal_link" data-content="#callback_modal">ЗАКАЗАТЬ ЗВОНОК</button>
+									</div>
+
+									<div class="location">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										<span>Москва, ул. Краснобогатырская, д. 42, стр. 3</span>
+									</div>
+
+									<div class="email">
+										<a href="mailto:info@kupiscooter.ru">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+											<span>info@kupiscooter.ru</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="time">
+									<div class="name">Отдел мототехники:</div>
+									<div class="val"><b>Пн - Вс</b> с 10:00 до 21:00</div>
+								</div>
+
+								<div class="time">
+									<div class="name">Отдел запчастей:</div>
+									<div class="val"><b>Вт - Сб</b> с 10:00 до 20:00<br> <b>Вс - Пн</b> с 11:00 до 20:00</div>
+								</div>
+
+								<a href="/" class="compare_link">
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+									</div>
+									<div class="count">0</div>
+								</a>
+
+								<a href="/" class="cart_link">
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+									</div>
+									<div class="count">5</div>
+									<div class="sep"></div>
+									<div class="price">354656 Р.</div>
+								</a>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<div class="cats">
+									<div class="item">
+										<a href="/" class="sub_link">
+											<span>СКУТЕРЫ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+										</a>
+
+										<div class="dropdown">
+											<div class="cont">
+												<div class="phone">
+													<div class="icon">
+														<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+													</div>
+													<a href="tel:+74997033332">+7 (499) 703-33-32 доб. 1</a>
+												</div>
+
+												<div class="mob_brands">
+													<div class="link"><a href="/">
+														<div class="icon">
+															<img decoding="async" data-src="" alt="" class="lozad">
+														</div>
+														<span>Honda</span>
+													</a></div>
+
+													<div class="link"><a href="/">
+														<div class="icon">
+															<img decoding="async" data-src="" alt="" class="lozad">
+														</div>
+														<span>Yamaha</span>
+													</a></div>
+
+													<div class="link"><a href="/">
+														<div class="icon">
+															<img decoding="async" data-src="" alt="" class="lozad">
+														</div>
+														<span>Suzuki</span>
+													</a></div>
+
+													<div class="link"><a href="/">
+														<div class="icon">
+															<img decoding="async" data-src="" alt="" class="lozad">
+														</div>
+														<span>Kawasaki</span>
+													</a></div>
+
+													<div class="link"><a href="/">
+														<div class="icon">
+															<img decoding="async" data-src="" alt="" class="lozad">
+														</div>
+														<span>Vespa</span>
+													</a></div>
+
+													<div class="all_link">
+														<a href="/">Смотреть все скутеры</a>
+													</div>
+												</div>
+
+												<div class="sub_cats">
+													<div class="row">
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat1.svg" alt="" class="lozad">
+															</div>
+															<span>Скутеры для двоих</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat2.svg" alt="" class="lozad">
+															</div>
+															<span>3-х колесные скутеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat3.svg" alt="" class="lozad">
+															</div>
+															<span>Ретро скутеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat4.svg" alt="" class="lozad">
+															</div>
+															<span>Скутеры для бездорожья и дачи</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat5.svg" alt="" class="lozad">
+															</div>
+															<span>Скутеры для города</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat6.svg" alt="" class="lozad">
+															</div>
+															<span>Скутеры для доставки</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat7.svg" alt="" class="lozad">
+															</div>
+															<span>Электрические</span>
+														</a></div>
+
+														<div><a href="/">
+															<div class="icon">
+																<img decoding="async" data-src="images/tmp/ic_sub_cat8.svg" alt="" class="lozad">
+															</div>
+															<span>Максискутеры</span>
+														</a></div>
+													</div>
+												</div>
+
+												<div class="brands tabs_container">
+													<div class="tabs">
+														<button data-content="#cat1_brand_tab1" data-level="level1" class="active">Honda</button>
+
+														<button data-content="#cat1_brand_tab2" data-level="level1">Yamaha</button>
+
+														<button data-content="#cat1_brand_tab3" data-level="level1">Suzuki</button>
+
+														<button data-content="#cat1_brand_tab4" data-level="level1">Kawasaki</button>
+
+														<button data-content="#cat1_brand_tab5" data-level="level1">Vespa</button>
+
+														<button data-content="#cat1_brand_tab6" data-level="level1">Количество тактов</button>
+
+														<button data-content="#cat1_brand_tab7" data-level="level1">Объем двигателя</button>
+													</div>
+
+
+													<div class="tab_content level1 active" id="cat1_brand_tab1">
+														<div class="data">
+															<div class="links">
+																<div><a href="/">Dio</a></div>
+																<div><a href="/">Dunk</a></div>
+																<div><a href="/">Julio</a></div>
+																<div><a href="/">Giorno</a></div>
+																<div><a href="/">Joker</a></div>
+																<div><a href="/">Lead</a></div>
+																<div><a href="/">Tact</a></div>
+																<div><a href="/">Today</a></div>
+																<div><a href="/">Cub</a></div>
+																<div><a href="/">Zoomer</a></div>
+																<div><a href="/">Zook</a></div>
+																<div><a href="/">Bite</a></div>
+															</div>
+
+															<div class="all_link">
+																<a href="/">Смотреть все скутеры</a>
+															</div>
+														</div>
+
+														<div class="img">
+															<img decoding="async" data-src="images/tmp/cat1_brand_tab1_img.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+
+													<div class="tab_content level1" id="cat1_brand_tab2">
+
+													</div>
+
+
+													<div class="tab_content level1" id="cat1_brand_tab3">
+
+													</div>
+
+
+													<div class="tab_content level1" id="cat1_brand_tab4">
+
+													</div>
+
+
+													<div class="tab_content level1" id="cat1_brand_tab5">
+
+													</div>
+
+
+													<div class="tab_content level1" id="cat1_brand_tab6">
+
+													</div>
+
+
+													<div class="tab_content level1" id="cat1_brand_tab7">
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											<span>МАКСИСКУТЕРЫ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+										</a>
+
+										<div class="dropdown">
+											<div class="cont">
+												<div class="phone">
+													<div class="icon">
+														<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+													</div>
+													<a href="tel:+74997033332">+7 (499) 703-33-32 доб. 1</a>
+												</div>
+
+												<div class="sub_cats_list">
+													<div><a href="/"><span>Шлемы</span></a></div>
+													<div><a href="/"><span>Корзинки</span></a></div>
+													<div><a href="/"><span>Ручки с подогревом</span></a></div>
+													<div><a href="/"><span>Перчатки</span></a></div>
+													<div><a href="/"><span>Двухместные сиденья</span></a></div>
+
+													<div><a href="/">
+														<img data-src="images/ic_sub_cats_list.svg" alt="" class="lozad">
+														<span>Подарочные карты</span>
+													</a></div>
+
+													<div><a href="/"><span>Кофры</span></a></div>
+													<div><a href="/"><span>Ветровые стекла</span></a></div>
+													<div><a href="/"><span>Чехлы</span></a></div>
+													<div><a href="/"><span>Грипсы</span></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											<span>ЭЛЕКТРОТРАНСПОРТ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+										</a>
+
+										<div class="dropdown">
+											<div class="cont">
+												<div class="phone">
+													<div class="icon">
+														<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+													</div>
+													<a href="tel:+74997033332">+7 (499) 703-33-32 доб. 1</a>
+												</div>
+
+												<div class="sub_cats_list big">
+													<div><a href="/"><span>Для двигателя</span></a></div>
+													<div><a href="/"><span>Пластик скутера</span></a></div>
+													<div><a href="/"><span>Воздушные фильтры</span></a></div>
+													<div><a href="/"><span>Для вариатора</span></a></div>
+													<div><a href="/"><span>Покрышки и диски</span></a></div>
+													<div><a href="/"><span>Моторное масло</span></a></div>
+													<div><a href="/"><span>Электрика</span></a></div>
+													<div><a href="/"><span>Для подвески</span></a></div>
+													<div><a href="/"><span>Свечи зажигания</span></a></div>
+													<div><a href="/"><span>Тормозная система</span></a></div>
+													<div><a href="/"><span>Аккумуляторы</span></a></div>
+													<div><a href="/"><span>Тормозные колодки</span></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											<span>КОММЕРЧЕСКИЕ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+										</a>
+
+										<div class="dropdown">
+											<div class="cont">
+												<div class="phone">
+													<div class="icon">
+														<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+													</div>
+													<a href="tel:+74997033332">+7 (499) 703-33-32 доб. 1</a>
+												</div>
+
+												<div class="sub_cats_list">
+													<div><a href="/"><span>Техническое обслуживание</span></a></div>
+													<div><a href="/"><span>Покраска скутеров</span></a></div>
+													<div><a href="/"><span>Тюнинг скутеров</span></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">
+											<span>ЗАПЧАСТИ</span>
+										</a>
+									</div>
+
+									<div class="item">
+										<a href="/">
+											<span>АКСЕССУАРЫ</span>
+										</a>
+									</div>
+								</div>
+
+
+								<div class="search">
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<div class="phone">
+							<a href="tel:+74997033332" class="number">+7 (499) 703-33-32</a>
+
+							<button class="callback_btn modal_link" data-content="#callback_modal">ЗАКАЗАТЬ ЗВОНОК</button>
+						</div>
+
+						<a href="/" class="compare_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+							<div class="count">3</div>
+						</a>
+
+						<a href="/" class="cart_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+							<div class="count">2</div>
+						</a>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<div class="search">
+							<form action="">
+								<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep"></span>
+							О компании
+						</div>
+
+						<h1 class="page_title">Тюнинг</h1>
+					</div>
+				</section>
+
+
+				<section class="tuning block">
+					<div class="cont">
+						<div class="items">
+							<img src="images/tuning_img.png" alt="">
+
+							<div class="points">
+								<div class="item item1">
+									<div class="number">1</div>
+									<div class="name">Кофр</div>
+
+									<button class="buy_btn modal_link" data-content="#cart_success_modal">Добавить в корзину</button>
+								</div>
+
+								<div class="item item2">
+									<div class="number">2</div>
+									<div class="name">Крепление<br> кофра</div>
+
+									<button class="buy_btn modal_link" data-content="#cart_success_modal">Добавить в корзину</button>
+								</div>
+
+								<div class="item item3">
+									<div class="number">3</div>
+									<div class="name">Двухместное<br> сиденье</div>
+
+									<button class="buy_btn modal_link" data-content="#cart_success_modal">Добавить в корзину</button>
+								</div>
+
+								<div class="item item4">
+									<div class="number">4</div>
+									<div class="name">Кенгурятник</div>
+
+									<button class="buy_btn modal_link" data-content="#cart_success_modal">Добавить в корзину</button>
+								</div>
+
+								<div class="item item5">
+									<div class="number">5</div>
+									<div class="name">Корзина</div>
+
+									<button class="buy_btn modal_link" data-content="#cart_success_modal">Добавить в корзину</button>
+								</div>
+
+								<div class="item item6">
+									<div class="number">6</div>
+									<div class="name">Лобовое<br> стекло</div>
+
+									<button class="buy_btn modal_link" data-content="#cart_success_modal">Добавить в корзину</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img data-src="images/bg_tuning.png" alt="" class="bg lozad">
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="youtube_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="telegram_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="flickr_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_flickr"></use></svg>
+								</a>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">КАТАЛОГ</div>
+
+							<div class="items">
+								<div><a href="/">Скутеры</a></div>
+								<div><a href="/">Экипировка и аксессуары</a></div>
+								<div><a href="/">Запчасти</a></div>
+								<div><a href="/">Сервис</a></div>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">ПОКУПАТЕЛЮ</div>
+
+							<div class="items">
+								<div><a href="/">О компании</a></div>
+								<div><a href="/">Сервис</a></div>
+								<div><a href="/">Скидки и акции</a></div>
+								<div><a href="/">Доавка и оплата</a></div>
+								<div><a href="/">Аренда</a></div>
+								<div><a href="/">Контакты</a></div>
+							</div>
+						</div>
+
+
+						<div class="contacts">
+							<div class="title">КОНТАКТЫ</div>
+
+							<div class="phone">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<a href="tel:+74997033332">+7 (499) 703-33-32</a>
+							</div>
+
+							<div class="location">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+								<span>Москва, ул. Краснобогатырская, д. 42, стр. 3</span>
+							</div>
+
+							<div class="email">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+								<a href="mailto:info@kupiscooter.ru">info@kupiscooter.ru</a>
+							</div>
+
+							<div class="time">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+								<span>10:00–21:00 без выходных</span>
+							</div>
+						</div>
+
+
+						<img src="images/footer_img.svg" alt="" class="img lozad">
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; 2020 Kupiscooter.ru</div>
+
+						<div class="privacy_policy">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="creator">
+							Разработка сайта — <a href="/" target="_blank" rel="noopener">Точка.ру</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="buttonUp">
+				<button>
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+				</button>
+			</div>
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Заказать звонок</div>
+
+			<div class="modal_desc">Укажите номер своего телефона и мы свяжемся<br> с вами в ближайшее время.</div>
+
+			<div class="modal_data">
+				<form action="" class="form custom_submit">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="Телефон">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" placeholder="Комментарий"></textarea>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							Нажимая на кнопку «Отправить», я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>.
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="success_modal">
+			<div class="modal_title">Спасибо!</div>
+
+			<div class="text_block">Ваше сообщение успешно отправлено. Наш менеджер свяжется с Вами.</div>
+		</section>
+
+
+		<section class="modal" id="cart_success_modal">
+			<div class="modal_title">Товар добавлен в корзину</div>
+
+			<div class="product">
+				<div class="thumb">
+					<img data-src="images/tmp/cart_success_product_thumb.jpg" alt="" class="lozad">
+				</div>
+
+				<div>
+					<div class="name">Кофр</div>
+					<div class="amount">1 шт.</div>
+				</div>
+			</div>
+
+			<div class="btns">
+				<button class="btn close_btn">Продолжить выбор</button>
+
+				<a href="/" class="btn checkout_link">Оформить заказ</a>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/bxslider.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

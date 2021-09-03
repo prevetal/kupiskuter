@@ -10114,6 +10114,165 @@ aside .banner img
 
 
 /*------------
+    Tuning
+------------*/
+.tuning
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.tuning .items
+{
+    position: relative;
+
+    padding: 56px 0 20px;
+}
+
+.tuning .items img
+{
+    display: block;
+
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.tuning .points
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+
+.tuning .points .item
+{
+    position: absolute;
+
+    text-align: center;
+    pointer-events: auto;
+}
+
+
+.tuning .points .item .number
+{
+    color: #f91628;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    border: 1px solid #f91628;
+    border-radius: 50%;
+}
+
+
+.tuning .points .item .name
+{
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+
+.tuning .points .item .buy_btn
+{
+    color: #f91628;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+
+    display: inline-block;
+
+    margin-top: 17px;
+    padding: 7px 16px 8px;
+
+    transition: .2s linear;
+    vertical-align: top;
+
+    border: 1px solid #f91628;
+    border-radius: 16px;
+}
+
+.tuning .points .item .buy_btn:hover
+{
+    color: #fff;
+
+    background: #f91628;
+}
+
+
+.tuning .points .item1
+{
+    top: 0;
+    left: 16.48%;
+}
+
+.tuning .points .item2
+{
+    top: 39.73%;
+    left: 5.7%;
+}
+
+.tuning .points .item3
+{
+    top: 0;
+    left: 76.41%;
+}
+
+.tuning .points .item4
+{
+    bottom: 0;
+    left: 17.03%;
+}
+
+.tuning .points .item5
+{
+    bottom: 0;
+    left: 80.16%;
+}
+
+.tuning .points .item6
+{
+    top: 39.73%;
+    right: 0;
+}
+
+
+.tuning .bg
+{
+    position: absolute;
+    z-index: -1;
+    top: -124px;
+    right: 0;
+    bottom: 0;
+    left: 124px;
+
+    display: block;
+
+    width: 1546px;
+    margin: auto;
+
+    pointer-events: none;
+}
+
+
+
+/*------------
     Footer
 ------------*/
 footer
@@ -10661,4 +10820,127 @@ footer .creator a:hover
 #model_choose_modal .tree .product .select_btn:hover
 {
     color: #f00;
+}
+
+
+
+#cart_success_modal
+{
+    width: 558px;
+    padding: 67px 61px 72px;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+#cart_success_modal .modal_title
+{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+
+    margin-bottom: 17px;
+
+    text-align: center;
+}
+
+
+#cart_success_modal .product
+{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+#cart_success_modal .product .thumb
+{
+    display: flex;
+
+    width: 133px;
+    height: 119px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#cart_success_modal .product .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#cart_success_modal .product .thumb + *
+{
+    max-width: calc(100% - 156px);
+    margin-left: 23px;
+}
+
+
+#cart_success_modal .product .name
+{
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+#cart_success_modal .product .amount
+{
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+
+    margin-top: 2px;
+}
+
+
+#cart_success_modal .btns
+{
+    display: flex;
+
+    margin-top: 44px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#cart_success_modal .btns .btn
+{
+    color: #f91628;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+
+    display: block;
+
+    width: calc(50% - 7px);
+    padding: 14px 24px;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    border: 1px solid #f91628;
+    border-radius: 25px;
+}
+
+#cart_success_modal .btns .btn:hover,
+#cart_success_modal .btns .btn.checkout_link
+{
+    color: #fff;
+
+    background: #f91628;
 }

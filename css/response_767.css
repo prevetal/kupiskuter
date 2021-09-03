@@ -1025,6 +1025,31 @@
 
 
     /*------------
+        Tuning
+    ------------*/
+    .tuning .points
+    {
+        margin-top: 32px;
+
+        column-gap: 0;
+        column-count: 1;
+    }
+
+    .tuning .points > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .tuning .bg
+    {
+        top: -184px;
+        left: -592px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .socials
@@ -1066,5 +1091,36 @@
     .modal
     {
         padding: 35px 45px;
+    }
+
+
+
+    #cart_success_modal
+    {
+        padding: 40px;
+    }
+
+
+    #cart_success_modal .modal_title
+    {
+        font-size: 21px;
+        line-height: 25px;
+
+        margin-bottom: 16px;
+    }
+
+
+    #cart_success_modal .btns
+    {
+        margin-top: 32px;
+    }
+
+    #cart_success_modal .btns .btn
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        width: calc(50% - 6px);
+        padding: 10px 12px 11px;
     }
 }
