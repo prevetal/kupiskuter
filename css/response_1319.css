@@ -1,4 +1,5 @@
-@media print, (max-width: 1319px)
+@media print,
+(max-width: 1319px)
 {
     /*-------------------
         Global styles
@@ -1114,7 +1115,8 @@
 
 
 
-@media print, (max-width: 1279px)
+@media print,
+(max-width: 1279px)
 {
     header .menu .item + .item
     {

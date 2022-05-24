@@ -9,19 +9,23 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+
 .bxslider {
   margin: 0;
   padding: 0;
   /*fix flickering when used background-image instead of <img> (on Chrome)*/
   -webkit-perspective: 1000;
 }
+
 ul.bxslider {
   list-style: none;
 }
+
 .bx-viewport {
   /* fix other elements on the page moving (in Chrome) */
   -webkit-transform: translateZ(0);
 }
+
 /** THEME
 ===================================*/
 .bx-wrapper .bx-pager,
@@ -30,6 +34,7 @@ ul.bxslider {
   bottom: -30px;
   width: 100%;
 }
+
 /* PAGER */
 .bx-wrapper .bx-pager {
   text-align: center;
@@ -39,6 +44,7 @@ ul.bxslider {
   color: #666;
   padding-top: 20px;
 }
+
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
   text-indent: -9999px;
@@ -51,11 +57,13 @@ ul.bxslider {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
   background: #000;
 }
+
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -70,63 +78,57 @@ ul.bxslider {
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-controls-direction a
-{
-    position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 
-    display: block;
-    overflow: hidden;
+  display: block;
+  overflow: hidden;
 
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 
-    text-indent: -9999px;
-    pointer-events: auto;
-	  z-index: 99;
+  text-indent: -9999px;
+  pointer-events: auto;
+  z-index: 99;
 }
 
-.bx-wrapper .bx-controls-direction a.bx-prev
-{
-    top: 40px;
+.bx-wrapper .bx-controls-direction a.bx-prev {
+  top: 40px;
 }
 
-.bx-wrapper .bx-controls-direction a.bx-next
-{
-    bottom: 40px;
+.bx-wrapper .bx-controls-direction a.bx-next {
+  bottom: 40px;
 }
 
-.bx-wrapper .bx-controls-direction a:before
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.bx-wrapper .bx-controls-direction a:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-    display: block;
+  display: block;
 
-    width: 12px;
-    height: 7px;
-    margin: auto;
+  width: 12px;
+  height: 7px;
+  margin: auto;
 
-    content: '';
-    transition: border-color .2s linear;
+  content: '';
+  transition: border-color .2s linear;
 
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 7px solid #f00;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 7px solid #f00;
 }
 
-.bx-wrapper .bx-controls-direction a.bx-next:before
-{
-    transform: rotate(-180deg);
+.bx-wrapper .bx-controls-direction a.bx-next:before {
+  transform: rotate(-180deg);
 }
 
 .bx-wrapper .bx-controls-direction a:hover:before,
-.bx-wrapper .bx-controls-direction a:hover:after
-{
+.bx-wrapper .bx-controls-direction a:hover:after {
   border-bottom-color: #171717;
 }

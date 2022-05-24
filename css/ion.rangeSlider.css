@@ -93,6 +93,7 @@
 
     outline: none !important;
 }
+
 .irs-line-left,
 .irs-line-mid,
 .irs-line-right
@@ -102,18 +103,21 @@
 
     display: block;
 }
+
 .irs-line-left
 {
     left: 0;
 
     width: 11%;
 }
+
 .irs-line-mid
 {
     left: 9%;
 
     width: 82%;
 }
+
 .irs-line-right
 {
     right: 0;
@@ -130,6 +134,7 @@
 
     width: 0;
 }
+
 .irs-bar-edge
 {
     position: absolute;
@@ -173,6 +178,7 @@
 
     cursor: default;
 }
+
 .irs-max
 {
     position: absolute;
@@ -265,8 +271,9 @@
 
     cursor: default;
 
-    background: rgba(0,0,0,.0);
+    background: rgba(0, 0, 0, .0);
 }
+
 .lt-ie9 .irs-disable-mask
 {
     cursor: not-allowed;
