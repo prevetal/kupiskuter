@@ -84,28 +84,38 @@
         height: 20px;
     }
 
+
+    header .cats .dropdown .tabs_container.level1 > .tabs button
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        padding: 17px 43px 17px 0;
+    }
+
+
     header .cats .dropdown .sub_cats
     {
-        padding-bottom: 20px;
+        padding: 24px 0 24px 24px;
     }
 
     header .cats .dropdown .sub_cats .row
     {
-        margin-bottom: -20px;
-        margin-left: -20px;
+        margin-bottom: -24px;
+        margin-left: -24px;
     }
 
     header .cats .dropdown .sub_cats .row > *
     {
-        width: calc(25% - 20px);
-        margin-bottom: 20px;
-        margin-left: 20px;
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
     }
 
 
     header .cats .dropdown .brands .tabs
     {
-        padding: 20px 0;
+        padding: 24px;
     }
 
     header .cats .dropdown .brands .tabs button + button
@@ -116,14 +126,14 @@
     header .cats .dropdown .brands .data
     {
         width: 450px;
-        padding: 20px 25px 60px;
+        padding: 20px 24px 60px;
     }
 
     header .cats .dropdown .brands .links
     {
         width: 100%;
 
-        column-gap: 25px;
+        column-gap: 24px;
     }
 
     header .cats .dropdown .brands .links > * + *
@@ -134,7 +144,7 @@
     header .cats .dropdown .brands .all_link
     {
         bottom: 20px;
-        left: 25px;
+        left: 24px;
     }
 
     header .cats .dropdown .brands .img
@@ -1152,5 +1162,69 @@
     header .compare_link
     {
         margin-left: auto;
+    }
+
+
+    header .cats .dropdown .tabs_container.level1 > .tabs
+    {
+        width: 200px;
+    }
+
+    header .cats .dropdown .tabs_container.level1 > .tabs button
+    {
+        font-size: 14px;
+        line-height: 19px;
+
+        padding: 15px 43px 15px 0;
+    }
+
+
+    header .cats .dropdown .tabs_container.level1 > .tab_content.active
+    {
+        width: calc(100% - 200px);
+    }
+
+
+    header .cats .dropdown .sub_cats
+    {
+        padding: 20px 0 20px 20px;
+    }
+
+    header .cats .dropdown .sub_cats .row
+    {
+        margin-bottom: -12px;
+        margin-left: -20px;
+    }
+
+    header .cats .dropdown .sub_cats .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 12px;
+        margin-left: 20px;
+    }
+
+
+    header .cats .dropdown .brands .tabs
+    {
+        width: 180px;
+        padding: 20px;
+    }
+
+
+    header .cats .dropdown .brands .tab_content.active
+    {
+        width: calc(100% - 180px);
+    }
+
+
+    header .cats .dropdown .brands .data
+    {
+        width: 350px;
+        padding: 20px 20px 60px;
+    }
+
+    header .cats .dropdown .brands .img
+    {
+        width: calc(100% - 330px);
     }
 }

@@ -241,6 +241,31 @@
     }
 
 
+    header .cats .dropdown .tabs_container.level1 > .tabs
+    {
+        display: none;
+    }
+
+
+    header .cats .dropdown .tabs_container.level1 .mob_tab_btn
+    {
+        display: block;
+    }
+
+
+    header .cats .dropdown .tabs_container.level1 > .tab_content
+    {
+        display: none;
+
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    header .cats .dropdown .tabs_container.level1 > .tab_content.active
+    {
+        width: 100%;
+    }
+
+
     header .cats .dropdown .mob_brands
     {
         display: block;

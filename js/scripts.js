@@ -571,6 +571,21 @@ $(() => {
 			}
 		})
 	})
+
+
+	// Моб. меню
+	$('header .cats .dropdown .tabs_container.level1 .mob_tab_btn').click(function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			$('header .cats .dropdown .tabs_container.level1 .mob_tab_btn').removeClass('active')
+			$('header .cats .dropdown .tabs_container.level1 > .tab_content').slideUp(300)
+
+			$(this).addClass('active').next().slideDown(300)
+		} else {
+			$(this).removeClass('active').next().slideUp(300)
+		}
+	})
 })
 
 
