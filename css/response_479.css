@@ -445,6 +445,52 @@
 
 
 
+    .products .list .product .images + *
+    {
+        padding: 20px;
+    }
+
+
+    .products .list .product .price .val
+    {
+        font-size: 25px;
+        line-height: 31px;
+
+        margin-top: 4px;
+    }
+
+    .products .list .product .price .old
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .products .list .product .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-top: 16px;
+    }
+
+
+    .products .list .product .buy_btn
+    {
+        font-size: 17px;
+
+        width: calc(100% - 164px);
+        height: 48px;
+    }
+
+    .products .list .product .compare_btn
+    {
+        width: 164px;
+        height: 48px;
+    }
+
+
+
     /*--------------
         Articles
     --------------*/
@@ -695,6 +741,19 @@
         left: -480px;
 
         width: 1280px;
+    }
+
+
+
+    /*------------------
+        Premium info
+    ------------------*/
+    .premium_info .data
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 40px 20px;
     }
 
 

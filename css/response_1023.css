@@ -1178,6 +1178,41 @@
 
 
 
+    .products .list .product .images
+    {
+        width: 100%;
+    }
+
+    .products .list .product .images + *
+    {
+        width: 100%;
+        padding: 24px 24px 24px 127px;
+    }
+
+
+    .products .list .product .images .thumbs
+    {
+        width: 127px;
+    }
+
+    .products .list .product .images .thumbs .slide button
+    {
+        height: 84px;
+    }
+
+
+    .products .list .product .images .big
+    {
+        width: calc(100% - 127px);
+    }
+
+    .products .list .product .images .big .slide a
+    {
+        height: 354px;
+    }
+
+
+
     /*---------------
         Overviews
     ---------------*/
@@ -1352,6 +1387,17 @@
         top: 0;
         bottom: auto;
         left: -440px;
+    }
+
+
+
+    /*------------------
+        Premium info
+    ------------------*/
+    .premium_info .data .text_block
+    {
+        width: 100%;
+        margin-top: 24px;
     }
 
 

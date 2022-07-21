@@ -632,6 +632,47 @@
 
 
 
+    .products .list > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .products .list .product .images
+    {
+        width: 540px;
+    }
+
+    .products .list .product .images + *
+    {
+        width: calc(100% - 540px);
+        padding: 24px 32px;
+    }
+
+
+    .products .list .product .images .thumbs
+    {
+        width: 108px;
+    }
+
+    .products .list .product .images .thumbs .slide button
+    {
+        height: 70px;
+    }
+
+
+    .products .list .product .images .big
+    {
+        width: calc(100% - 108px);
+    }
+
+    .products .list .product .images .big .slide a
+    {
+        height: 312px;
+    }
+
+
+
     /*----------------
         Cats cloud
     ----------------*/
@@ -1037,6 +1078,23 @@
     {
         top: -64px;
         left: -120px;
+    }
+
+
+
+    /*------------------
+        Premium info
+    ------------------*/
+    .premium_info .data
+    {
+        margin-bottom: 40px;
+        padding: 36px;
+    }
+
+
+    .premium_info .data .text_block
+    {
+        width: calc(100% - 416px);
     }
 
 

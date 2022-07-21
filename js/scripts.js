@@ -586,6 +586,49 @@ $(() => {
 			$(this).removeClass('active').next().slideUp(300)
 		}
 	})
+
+
+	// Премиум
+	$('.products .list .product .big_slider').owlCarousel({
+		items: 1,
+		margin: 20,
+		loop: false,
+		smartSpeed: 500,
+		dots: false,
+		onTranslate: event => {
+			let parent = $(event.target).closest('.images')
+
+			parent.find('.thumbs .slide button').removeClass('active')
+			parent.find('.thumbs .slide:eq(' + event.item.index + ') button').addClass('active')
+		},
+		responsive: {
+			0: {
+				nav: true
+			},
+			768: {
+				nav: false
+			}
+		}
+	})
+
+	$('.products .list .product .thumbs_slider').bxSlider({
+		mode: 'vertical',
+		infiniteLoop: false,
+		speed: 500,
+		slideMargin: 17,
+		minSlides: 3,
+		maxSlides: 3,
+		moveSlides: 1,
+		pager: false
+	})
+
+	$('.products .list .product .thumbs .slide button').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.images')
+
+		parent.find('.big_slider').trigger('to.owl.carousel', $(this).data('slide-index'))
+	})
 })
 
 

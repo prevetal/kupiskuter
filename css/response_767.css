@@ -679,6 +679,41 @@
 
 
 
+    .products .list .product .images + *
+    {
+        padding: 24px;
+    }
+
+
+    .products .list .product .images .thumbs
+    {
+        display: none;
+    }
+
+
+    .products .list .product .images .big
+    {
+        width: 100%;
+    }
+
+    .products .list .product .images .big .slide a
+    {
+        height: auto;
+        padding-bottom: 75%;
+    }
+
+
+    .products .list .product .owl-carousel .owl-nav button,
+    .products .list .product .owl-carousel .owl-nav button
+    {
+        top: 0;
+        bottom: 0;
+
+        margin: auto;
+    }
+
+
+
     /*--------------
         Articles
     --------------*/
@@ -1046,6 +1081,16 @@
     {
         top: -184px;
         left: -592px;
+    }
+
+
+
+    /*------------------
+        Premium info
+    ------------------*/
+    .premium_info .data
+    {
+        padding: 40px 28px;
     }
 
 
