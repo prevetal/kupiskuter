@@ -5671,7 +5671,21 @@ aside .banner img
 
 .products .list .product .images .big
 {
+    position: relative;
+
     width: calc(100% - 127px);
+}
+
+.products .list .product .images .sticker
+{
+    position: absolute;
+    z-index: 3;
+    top: 18px;
+    left: 18px;
+
+    width: 108px;
+    margin: 0;
+    padding: 0;
 }
 
 .products .list .product .images .big .slide
