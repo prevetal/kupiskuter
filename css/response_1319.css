@@ -1205,7 +1205,7 @@
     }
 
 
-    header .socials a + a
+    header .socials > * + *
     {
         margin-left: 8px;
     }

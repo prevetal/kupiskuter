@@ -128,7 +128,7 @@
         margin-left: 0;
     }
 
-    header .socials a + a
+    header .socials > * + *
     {
         margin-left: 16px;
     }

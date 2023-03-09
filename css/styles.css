@@ -548,6 +548,43 @@ button
 
 
 
+/*----------------
+    Mini modal
+----------------*/
+.modal_cont
+{
+    position: relative;
+}
+
+
+.mini_modal
+{
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.mini_modal.active
+{
+    top: 100%;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -703,22 +740,29 @@ header .socials
     flex-wrap: wrap;
 }
 
-header .socials a
+header .socials > * + *
+{
+    margin-left: 15px;
+}
+
+
+header .socials > a,
+header .socials .btn
 {
     color: #828282;
 
     display: block;
 
+    width: 24px;
+    height: 24px;
+
     transition: color .2s linear;
     text-decoration: none;
 }
 
-header .socials a + a
-{
-    margin-left: 15px;
-}
 
-header .socials a .icon
+header .socials > a .icon,
+header .socials .btn .icon
 {
     display: block;
 
@@ -728,9 +772,99 @@ header .socials a .icon
     fill: currentColor;
 }
 
-header .socials a:hover
+
+header .socials > a:hover,
+header .socials .btn:hover
 {
     color: #fff;
+}
+
+
+header .socials .mini_modal
+{
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+
+    left: 50%;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    border-radius: 1px;
+    background: #f00;
+}
+
+header .socials .mini_modal:after
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 10px;
+
+    content: '';
+}
+
+header .socials .mini_modal:before
+{
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #f00;
+    border-left: 4px solid transparent;
+}
+
+
+header .socials .mini_modal a
+{
+    color: currentColor;
+
+    display: block;
+
+    padding: 5px 8px;
+
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+header .socials .mini_modal > *:first-child a
+{
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+header .socials .mini_modal > *:last-child a
+{
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+
+header .socials .mini_modal a:hover
+{
+    color: #000;
+
+    background: #fff;
 }
 
 
