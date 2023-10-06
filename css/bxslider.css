@@ -92,7 +92,7 @@ ul.bxslider {
 
   text-indent: -9999px;
   pointer-events: auto;
-  z-index: 99;
+  z-index: 9;
 }
 
 .bx-wrapper .bx-controls-direction a.bx-prev {

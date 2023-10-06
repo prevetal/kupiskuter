@@ -816,6 +816,17 @@
     }
 
 
+    .product_info .data .color .vals
+    {
+        margin-left: -20px;
+    }
+
+    .product_info .data .color .vals > *
+    {
+        margin-left: 20px;
+    }
+
+
 
     /*---------------------
         Popular compare
