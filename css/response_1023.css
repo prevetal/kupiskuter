@@ -67,17 +67,16 @@
     {
         display: flex;
         overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         height: 100%;
         min-height: -moz-available;
         min-height: -webkit-fill-available;
         min-height:         fill-available;
         padding: 20px 0;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     header .mob_scroll > *
@@ -88,13 +87,13 @@
 
     header .top
     {
+        order: 3;
+
         margin: 0;
         margin-top: 20px;
         padding-top: 20px;
 
         border-top: 1px solid #9b9b9b;
-
-        order: 3;
     }
 
     header .info
@@ -984,9 +983,9 @@
 
     .bottom_text .text_block
     {
-        width: 100%;
-
         order: 3;
+
+        width: 100%;
     }
 
     .bottom_text .item + .item
@@ -1033,7 +1032,6 @@
 
     .compare_info .product_features .item:before
     {
-        color: #000;
         font-size: 12px;
         font-weight: normal;
         line-height: 18px;
@@ -1054,6 +1052,7 @@
         text-transform: none;
 
         opacity: .4;
+        color: #000;
     }
 
 
@@ -1341,22 +1340,20 @@
         left: 0 !important;
 
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
 
         text-align: left;
-
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: nowrap;
     }
 
 
     .tuning .points .item .number
     {
-        color: #fff;
-
         margin: 0 20px 0 0;
 
+        color: #fff;
         background: #f91628;
     }
 

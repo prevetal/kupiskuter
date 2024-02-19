@@ -182,14 +182,12 @@ button
 ::selection
 {
     color: #fff;
-
     background: #f00;
 }
 
 ::-moz-selection
 {
     color: #fff;
-
     background: #f00;
 }
 
@@ -241,13 +239,14 @@ html.custom_scroll
 
 body
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    color: var(--text_color);
 }
 
 body.lock
@@ -265,11 +264,11 @@ body.lock
 
 button
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     cursor: pointer;
 
+    color: var(--text_color);
     border: none;
     background: none;
 }
@@ -332,11 +331,10 @@ button
 .row
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -344,9 +342,9 @@ button
 .content_flex.row,
 .content_flex > .cont.row
 {
-    justify-content: space-between;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .content_flex .content
@@ -436,15 +434,14 @@ button
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 52px;
     height: 50px;
     padding-top: 5px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .buttonUp button .icon
@@ -526,6 +523,10 @@ button
     left: 0;
 
     display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
@@ -534,11 +535,6 @@ button
     text-align: center;
 
     background: #fff;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .supports_error.show
@@ -665,9 +661,9 @@ header .top
 
 header .top .cont.row
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -685,9 +681,9 @@ header .bottom
 
 header .bottom .cont.row
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -695,13 +691,12 @@ header .bottom .cont.row
 header .menu
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-right: auto;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 header .menu .item + .item
@@ -711,7 +706,6 @@ header .menu .item + .item
 
 header .menu .item > a
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 500;
     line-height: 19px;
@@ -720,6 +714,8 @@ header .menu .item > a
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #fff;
 }
 
 header .menu .item:hover > a,
@@ -733,11 +729,10 @@ header .menu .item > a.active
 header .socials
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 header .socials > * + *
@@ -749,8 +744,6 @@ header .socials > * + *
 header .socials > a,
 header .socials .btn
 {
-    color: #828282;
-
     display: block;
 
     width: 24px;
@@ -758,6 +751,8 @@ header .socials .btn
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #828282;
 }
 
 
@@ -782,7 +777,6 @@ header .socials .btn:hover
 
 header .socials .mini_modal
 {
-    color: #fff;
     font-size: 12px;
     line-height: 15px;
 
@@ -796,6 +790,7 @@ header .socials .mini_modal
     transform: translateX(-50%);
     white-space: nowrap;
 
+    color: #fff;
     border-radius: 1px;
     background: #f00;
 }
@@ -837,14 +832,14 @@ header .socials .mini_modal:before
 
 header .socials .mini_modal a
 {
-    color: currentColor;
-
     display: block;
 
     padding: 5px 8px;
 
     transition: .2s linear;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 header .socials .mini_modal > *:first-child a
@@ -863,7 +858,6 @@ header .socials .mini_modal > *:last-child a
 header .socials .mini_modal a:hover
 {
     color: #000;
-
     background: #fff;
 }
 
@@ -871,43 +865,41 @@ header .socials .mini_modal a:hover
 
 header .account
 {
-    color: #fff;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 257px;
     max-width: 100%;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 header .account .btn
 {
-    color: currentColor;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     transition: color .2s linear;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 header .account .btn .icon
 {
-    color: #828282;
-
     display: block;
 
     width: 12px;
@@ -915,6 +907,8 @@ header .account .btn .icon
     margin-right: 8px;
 
     transition: color .2s linear;
+
+    color: #828282;
 }
 
 header .account .btn:hover,
@@ -927,14 +921,14 @@ header .account .btn:hover .icon
 
 header .logo
 {
-    color: #fff;
-
     display: inline-block;
 
     margin-right: auto;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #fff;
 }
 
 header .logo img
@@ -944,7 +938,6 @@ header .logo img
 
 header .logo .desc
 {
-    color: #fff;
     font-size: 11px;
     font-weight: bold;
     line-height: 14px;
@@ -952,6 +945,8 @@ header .logo .desc
     margin-top: 8px;
 
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 header .logo .desc span
@@ -995,35 +990,35 @@ header .contacts
 
 header .contacts .row
 {
-    align-items: center;
     align-content: center;
+    align-items: center;
 }
 
 
 
 header .phone
 {
-    color: #fff;
     font-size: 18px;
     font-weight: bold;
     line-height: 23px;
+
+    color: #fff;
 }
 
 header .phone a
 {
-    color: currentColor;
-
     display: inline-block;
 
     vertical-align: top;
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
 header .callback_btn
 {
-    color: #f00;
     font-size: 11px;
     font-weight: bold;
     line-height: 14px;
@@ -1038,6 +1033,7 @@ header .callback_btn
     white-space: nowrap;
     text-transform: uppercase;
 
+    color: #f00;
     border: 1px solid #f00;
     border-radius: 15px;
 }
@@ -1045,7 +1041,6 @@ header .callback_btn
 header .callback_btn:hover
 {
     color: #fff;
-
     background: #f00;
 }
 
@@ -1053,18 +1048,18 @@ header .callback_btn:hover
 
 header .location
 {
-    color: #fff;
     font-size: 13px;
     line-height: 16px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 8px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 header .location .icon
@@ -1082,26 +1077,26 @@ header .location .icon
 
 header .email
 {
-    color: #bdbdbd;
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
 
     margin-top: 8px;
+
+    color: #bdbdbd;
 }
 
 header .email a
 {
-    color: currentColor;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 header .email .icon
@@ -1124,12 +1119,13 @@ header .email a:hover
 
 header .time
 {
-    color: #d0d0d0;
     font-size: 12px;
     line-height: 19px;
 
     margin-top: 14px;
     margin-left: 31px;
+
+    color: #d0d0d0;
 }
 
 header .time + .time
@@ -1147,12 +1143,15 @@ header .time .val b
 
 header .compare_link
 {
-    color: #fff;
     font-size: 14px;
     font-weight: bold;
     line-height: 18px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 17px;
     margin-left: 35px;
@@ -1161,36 +1160,32 @@ header .compare_link
     white-space: nowrap;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 header .compare_link .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 46px;
     height: 46px;
 
     border-radius: 50%;
     background: #f00;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .compare_link .icon > *
 {
-    color: #fff;
-
     display: block;
 
     width: 27px;
     height: 21px;
+
+    color: #fff;
 }
 
 header .compare_link .count
@@ -1207,12 +1202,15 @@ header .compare_link:hover
 
 header .cart_link
 {
-    color: #fff;
     font-size: 14px;
     font-weight: bold;
     line-height: 18px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 17px;
     margin-left: 32px;
@@ -1221,36 +1219,32 @@ header .cart_link
     white-space: nowrap;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 header .cart_link .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 46px;
     height: 46px;
 
     border-radius: 50%;
     background: #f00;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .cart_link .icon > *
 {
-    color: #fff;
-
     display: block;
 
     width: 24px;
     height: 24px;
+
+    color: #fff;
 
     fill: none;
     stroke: currentColor;
@@ -1284,35 +1278,34 @@ header .cart_link:hover
 header .cats
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: calc(100% - 312px);
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 header .cats .item > a
 {
-    color: #fff;
     font-weight: 700;
     line-height: 20px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 40px;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 header .cats .item > a .icon
@@ -1411,18 +1404,21 @@ header .cats .item > a.touch_link + .dropdown.show
 header .cats .dropdown .phone
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin: 0;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .cats .dropdown .phone .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 45px;
     height: 45px;
@@ -1430,11 +1426,6 @@ header .cats .dropdown .phone .icon
     padding: 10px;
 
     background: #ebebeb;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .cats .dropdown .phone .icon > *
@@ -1449,7 +1440,6 @@ header .cats .dropdown .phone .icon > *
 
 header .cats .dropdown .phone a
 {
-    color: #171717;
     font-size: 18px;
     line-height: 21px;
 
@@ -1457,6 +1447,8 @@ header .cats .dropdown .phone a
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #171717;
 }
 
 
@@ -1474,7 +1466,6 @@ header .cats .dropdown .mob_brands .link + .link
 
 header .cats .dropdown .mob_brands .link a
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
@@ -1482,18 +1473,23 @@ header .cats .dropdown .mob_brands .link a
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    color: #171717;
 }
 
 header .cats .dropdown .mob_brands .link .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 45px;
     height: 45px;
@@ -1501,11 +1497,6 @@ header .cats .dropdown .mob_brands .link .icon
     padding: 6px;
 
     background: #f00;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .cats .dropdown .mob_brands .link .icon img
@@ -1530,7 +1521,6 @@ header .cats .dropdown .mob_brands .all_link
 
 header .cats .dropdown .mob_brands .all_link a
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 13px;
     line-height: 17px;
@@ -1539,6 +1529,8 @@ header .cats .dropdown .mob_brands .all_link a
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 
@@ -1547,13 +1539,12 @@ header .cats .dropdown .tabs_container.level1
     position: relative;
 
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding-top: 1px;
-
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 header .cats .dropdown .tabs_container.level1::before
@@ -1585,7 +1576,6 @@ header .cats .dropdown .tabs_container.level1 > .tabs
 
 header .cats .dropdown .tabs_container.level1 > .tabs button
 {
-    color: #000;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -1601,6 +1591,7 @@ header .cats .dropdown .tabs_container.level1 > .tabs button
     text-align: left;
     text-transform: uppercase;
 
+    color: #000;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -1656,7 +1647,6 @@ header .cats .dropdown .tabs_container.level1 > .tabs button.active:after
 
 header .cats .dropdown .tabs_container.level1 .mob_tab_btn
 {
-    color: #000;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -1672,6 +1662,7 @@ header .cats .dropdown .tabs_container.level1 .mob_tab_btn
     text-align: left;
     text-transform: uppercase;
 
+    color: #000;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -1774,18 +1765,18 @@ header .cats .dropdown .sub_cats_list > * + *
 
 header .cats .dropdown .sub_cats_list a
 {
-    color: #171717;
     font-size: 14px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    color: #171717;
 }
 
 header .cats .dropdown .sub_cats_list a img
@@ -1824,20 +1815,20 @@ header .cats .dropdown .sub_cats .row > *
 
 header .cats .dropdown .sub_cats a
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    color: #171717;
 }
 
 header .cats .dropdown .sub_cats a:hover,
@@ -1849,6 +1840,10 @@ header .cats .dropdown .sub_cats a.active
 header .cats .dropdown .sub_cats .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 45px;
     height: 45px;
@@ -1856,11 +1851,6 @@ header .cats .dropdown .sub_cats .icon
     padding: 6px;
 
     background: #f00;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .cats .dropdown .sub_cats .icon img
@@ -1882,13 +1872,12 @@ header .cats .dropdown .brands
     position: relative;
 
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     border-top: 1px solid #d8d8d8;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 header .cats .dropdown .brands:after
@@ -1920,7 +1909,6 @@ header .cats .dropdown .brands .tabs
 
 header .cats .dropdown .brands .tabs button
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 700;
@@ -1935,6 +1923,8 @@ header .cats .dropdown .brands .tabs button
 
     transition: color .2s linear;
     text-align: left;
+
+    color: #171717;
 }
 
 header .cats .dropdown .brands .tabs button.uppercase
@@ -2007,7 +1997,6 @@ header .cats .dropdown .brands .all_brands_link
 
 header .cats .dropdown .brands .all_brands_link a
 {
-    color: #f00;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 700;
@@ -2018,6 +2007,8 @@ header .cats .dropdown .brands .all_brands_link a
     vertical-align: top;
     text-decoration: none;
     text-transform: uppercase;
+
+    color: #f00;
 }
 
 
@@ -2059,7 +2050,6 @@ header .cats .dropdown .brands .links > * + *
 
 header .cats .dropdown .brands .links a
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 20px;
@@ -2069,6 +2059,8 @@ header .cats .dropdown .brands .links a
     transition: .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #171717;
 }
 
 header .cats .dropdown .brands .links a:hover,
@@ -2087,7 +2079,6 @@ header .cats .dropdown .brands .all_link
 
 header .cats .dropdown .brands .all_link a
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 20px;
@@ -2097,6 +2088,8 @@ header .cats .dropdown .brands .all_link a
     transition: .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 header .cats .dropdown .brands .all_link a:hover
@@ -2144,11 +2137,10 @@ header .search
 header .search form
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 header .search ::-webkit-input-placeholder
@@ -2168,7 +2160,6 @@ header .search :-ms-input-placeholder
 
 header .search .input
 {
-    color: #fff;
     font-family: var(--font_family);
     font-size: 14px;
 
@@ -2178,6 +2169,7 @@ header .search .input
     height: 40px;
     padding: 0 50px 0 15px;
 
+    color: #fff;
     border: none;
     border-radius: 2px;
     background: #606060;
@@ -2189,15 +2181,14 @@ header .search .submit_btn
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 44px;
     height: 40px;
     margin-left: -44px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .search .submit_btn .icon
@@ -2221,7 +2212,6 @@ header .search .submit_btn:hover .icon
 
 header .title
 {
-    color: #fff;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
@@ -2229,17 +2219,22 @@ header .title
     margin-top: 23px;
     margin-right: auto;
     margin-left: 70px;
+
+    color: #fff;
 }
 
 
 
 header .logout_link
 {
-    color: #f00;
     font-size: 14px;
     line-height: 21px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     margin-top: 23px;
 
@@ -2247,10 +2242,7 @@ header .logout_link
     white-space: nowrap;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    color: #f00;
 }
 
 header .logout_link .icon
@@ -2289,11 +2281,10 @@ header .logout_link:hover
 .mob_header .cont
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -2314,16 +2305,14 @@ header .logout_link:hover
 .mob_header .phone
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .mob_header .phone .number
 {
-    color: #fff;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -2333,12 +2322,13 @@ header .logout_link:hover
     vertical-align: top;
     white-space: nowrap;
     text-decoration: none;
+
+    color: #fff;
 }
 
 
 .mob_header .phone .callback_btn
 {
-    color: #f00;
     font-size: 9px;
     font-weight: 500;
 
@@ -2353,6 +2343,7 @@ header .logout_link:hover
     white-space: nowrap;
     text-transform: uppercase;
 
+    color: #f00;
     border: 1px solid #f00;
     border-radius: 15px;
 }
@@ -2360,7 +2351,6 @@ header .logout_link:hover
 .mob_header .phone .callback_btn:hover
 {
     color: #fff;
-
     background: #f00;
 }
 
@@ -2368,7 +2358,6 @@ header .logout_link:hover
 
 .mob_header .compare_link
 {
-    color: #f00;
     font-size: 14px;
     line-height: 21px;
 
@@ -2380,6 +2369,8 @@ header .logout_link:hover
 
     white-space: nowrap;
     text-decoration: none;
+
+    color: #f00;
 }
 
 .mob_header .compare_link .icon
@@ -2419,7 +2410,6 @@ header .logout_link:hover
 
 .mob_header .cart_link
 {
-    color: #f00;
     font-size: 14px;
     line-height: 21px;
 
@@ -2431,6 +2421,8 @@ header .logout_link:hover
 
     white-space: nowrap;
     text-decoration: none;
+
+    color: #f00;
 }
 
 .mob_header .cart_link .icon
@@ -2522,20 +2514,19 @@ header .logout_link:hover
 
 .mob_header .search
 {
+    order: 5;
+
     width: 100%;
     margin-top: 20px;
-
-    order: 5;
 }
 
 .mob_header .search form
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .mob_header .search ::-webkit-input-placeholder
@@ -2555,7 +2546,6 @@ header .logout_link:hover
 
 .mob_header .search .input
 {
-    color: #fff;
     font-family: var(--font_family);
     font-size: 14px;
 
@@ -2565,6 +2555,7 @@ header .logout_link:hover
     height: 40px;
     padding: 0 50px 0 15px;
 
+    color: #fff;
     border: none;
     border-radius: 2px;
     background: #606060;
@@ -2576,15 +2567,14 @@ header .logout_link:hover
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 44px;
     height: 40px;
     margin-left: -44px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .mob_header .search .submit_btn .icon
@@ -2626,7 +2616,6 @@ aside > * + *
 
 aside .mob_filter_btn
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 800;
 
@@ -2638,6 +2627,7 @@ aside .mob_filter_btn
     transition: .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     border-right: 1px solid #0000;
     border-radius: 2px;
     background: #f00;
@@ -2680,12 +2670,13 @@ aside .filter .item .field + .field
 
 aside .filter .item .name
 {
-    color: #171717;
     font-size: 13px;
     font-weight: 700;
     line-height: 21px;
 
     margin-bottom: 10px;
+
+    color: #171717;
 }
 
 
@@ -2717,10 +2708,10 @@ aside .filter .item .scroll::-webkit-scrollbar-thumb
 
 aside .filter .range .row
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 aside .filter .range .sep
@@ -2785,7 +2776,6 @@ aside .banner img
 
 .breadcrumbs
 {
-    color: #555;
     font-size: 11px;
     line-height: 19px;
 
@@ -2793,22 +2783,23 @@ aside .banner img
     z-index: 9;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-transform: uppercase;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #555;
 }
 
 .breadcrumbs a
 {
-    color: #9b9b9b;
-
     transition: color .2s linear;
     white-space: nowrap;
     text-decoration: none;
+
+    color: #9b9b9b;
 }
 
 .breadcrumbs a:hover
@@ -2894,7 +2885,6 @@ aside .banner img
 
 .breadcrumbs .current .dropdown a
 {
-    color: #171717;
     font-size: 13px;
     line-height: 17px;
 
@@ -2906,6 +2896,8 @@ aside .banner img
     white-space: normal;
     text-decoration: none;
     text-transform: none;
+
+    color: #171717;
 }
 
 .breadcrumbs .current .dropdown a:hover
@@ -2938,23 +2930,23 @@ aside .banner img
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 100%;
     margin-bottom: 40px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .block_head .title
 {
-    color: currentColor;
     font-size: var(--font_size_title);
     font-weight: 700;
     line-height: calc(var(--font_size_title) + 10px);
+
+    color: currentColor;
 }
 
 .block_head .title.small
@@ -3001,23 +2993,24 @@ aside .banner img
 
 .block_head .all_link
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
     position: relative;
     top: 2px;
+
+    color: #087aca;
 }
 
 .block_head .all_link a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .block_head .all_link a:hover
@@ -3071,13 +3064,13 @@ aside .banner img
 .form .columns
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: calc(var(--form_columns_offset) * -1);
 
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
     --form_columns_offset: 20px;
 }
 
@@ -3168,11 +3161,12 @@ aside .banner img
 
 .form .label
 {
-    color: #171717;
     font-size: 13px;
     font-weight: 700;
 
     margin-bottom: 10px;
+
+    color: #171717;
 }
 
 .form .label span
@@ -3188,7 +3182,6 @@ aside .banner img
 
 .form .input
 {
-    color: #555;
     font: 14px var(--font_family);
 
     display: block;
@@ -3199,6 +3192,7 @@ aside .banner img
 
     transition: border-color .2s linear;
 
+    color: #555;
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -3206,7 +3200,6 @@ aside .banner img
 
 .form textarea
 {
-    color: #555;
     font: 14px var(--font_family);
 
     display: block;
@@ -3218,6 +3211,7 @@ aside .banner img
     resize: none;
     transition: border-color .2s linear;
 
+    color: #555;
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -3241,46 +3235,45 @@ aside .banner img
 .form .input:disabled
 {
     color: #9b9b9b;
-
     background: #f5f5f5;
 }
 
 
 .form .error_text
 {
-    color: #f00;
     font-size: 12px;
     line-height: 14px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 20px;
     margin-top: 10px;
     padding-left: 29px;
 
+    color: #f00;
     background: url(../images/ic_notice.svg) 0 0/20px 20px no-repeat;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .form .agree
 {
-    color: #ebebeb;
     font-size: 13px;
     line-height: 20px;
 
     text-align: center;
+
+    color: #ebebeb;
 }
 
 .form .agree a
 {
-    color: currentColor;
-
     transition: color .2s linear;
+
+    color: currentColor;
 }
 
 .form .agree a:hover
@@ -3296,23 +3289,23 @@ aside .banner img
 
 .form input[type=checkbox] + label
 {
-    color: #555;
     font-size: 14px;
     line-height: 18px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 18px;
     padding-left: 27px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #555;
 }
 
 .form input[type=checkbox] + label:before
@@ -3367,23 +3360,23 @@ aside .banner img
 
 .form input[type=radio] + label
 {
-    color: #555;
     font-size: 14px;
     line-height: 18px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 18px;
     padding-left: 27px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #555;
 }
 
 .form input[type=radio] + label:before
@@ -3489,15 +3482,14 @@ aside .banner img
 .form .select2-container .select2-selection--multiple .select2-selection__rendered
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 36px;
     margin-left: -5px;
     padding: 5px 0;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .form .select2-container--default .select2-selection--multiple .select2-selection__choice
@@ -3549,13 +3541,16 @@ aside .banner img
 
 .select2-results__option
 {
-    color: #555;
     font-size: 14px;
     line-height: 18px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 38px;
     padding: 10px 13px 10px 41px;
@@ -3563,10 +3558,7 @@ aside .banner img
     cursor: pointer;
     transition: background .2s linear;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #555;
 }
 
 .select2-results__option:before
@@ -3613,7 +3605,6 @@ aside .banner img
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
 {
     color: #555;
-
     background: none;
 }
 
@@ -3632,13 +3623,16 @@ aside .banner img
 
 .form .nice-select .current
 {
-    color: var(--form_placeholder_color);
     font-size: 14px;
     line-height: 14px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 40px;
     padding: 0 40px 0 13px;
@@ -3646,14 +3640,10 @@ aside .banner img
     cursor: pointer;
     transition: .2s linear;
 
+    color: var(--form_placeholder_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .form .nice-select .current span,
@@ -3736,7 +3726,6 @@ aside .banner img
 
 .form .nice-select .list .list_item
 {
-    color: #555;
     font-size: 14px;
     line-height: 14px;
 
@@ -3744,6 +3733,8 @@ aside .banner img
 
     cursor: pointer;
     transition: background .2s linear;
+
+    color: #555;
 }
 
 .form .nice-select .list .list_item small
@@ -3768,19 +3759,17 @@ aside .banner img
 .form .submit
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     padding-top: 10px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .form .submit_btn
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 800;
 
@@ -3793,6 +3782,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-radius: var(--form_border_radius);
     background: #f00;
     box-shadow: 0 0 5px 0 rgba(255, 0, 0, .5);
@@ -3806,7 +3796,6 @@ aside .banner img
 
 .form .reset_btn
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
@@ -3815,6 +3804,8 @@ aside .banner img
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .form .reset_btn:hover
@@ -3984,7 +3975,6 @@ aside .banner img
 .text_block blockquote:before,
 .text_block q:before
 {
-    color: #f00;
     font-size: 63px;
     font-weight: 500;
     line-height: 65px;
@@ -3996,6 +3986,8 @@ aside .banner img
     display: block;
 
     content: '“';
+
+    color: #f00;
 }
 
 
@@ -4022,22 +4014,20 @@ aside .banner img
 .text_block .text_slider .info
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 50%;
     min-height: 400px;
     padding: 60px 107px 60px 127px;
 
     background: rgba(23, 23, 23, .78);
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .text_block .text_slider .title
 {
-    color: #fff;
     font-size: 25px;
     font-weight: 500;
     line-height: 32px;
@@ -4045,6 +4035,7 @@ aside .banner img
     width: 100%;
     padding-left: 28px;
 
+    color: #fff;
     border-left: 2px solid #f00;
 }
 
@@ -4137,7 +4128,6 @@ aside .banner img
 
 .text_block ol li:before
 {
-    color: #f00;
     font-weight: 700;
 
     position: absolute;
@@ -4146,23 +4136,24 @@ aside .banner img
 
     content: counters(li, '.') '.';
     counter-increment: li;
+
+    color: #f00;
 }
 
 
 .text_block .bg
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 60px 80px;
 
     background: #f5f5f5;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .text_block .bg .col_left
@@ -4192,10 +4183,10 @@ aside .banner img
 
 .text_block a
 {
-    color: #087aca;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .text_block a:hover
@@ -4247,23 +4238,22 @@ aside .banner img
 .main_slider .slide .cont
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     min-height: 500px;
     padding-top: 60px;
-
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .main_slider .slide .info
 {
-    color: #fff;
-
     width: 555px;
     max-width: 100%;
+
+    color: #fff;
 }
 
 .main_slider .slide .title
@@ -4346,23 +4336,25 @@ aside .banner img
 
 .action_form .title
 {
-    color: #fff;
     font-size: 30px;
     font-weight: 700;
     line-height: 40px;
 
     text-align: center;
+
+    color: #fff;
 }
 
 .action_form .desc
 {
-    color: #fff;
     font-size: 18px;
     line-height: 26px;
 
     margin-top: 12px;
 
     text-align: center;
+
+    color: #fff;
 }
 
 .action_form .form
@@ -4379,11 +4371,11 @@ aside .banner img
 -------------------*/
 .message_block .data
 {
-    color: #fff;
     font-weight: 700;
 
     padding: 45px 60px;
 
+    color: #fff;
     background: #f00 url(../images/bg_message_block.png) 100% 100% no-repeat;
 }
 
@@ -4394,11 +4386,11 @@ aside .banner img
 -------------*/
 .gallery .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -20px;
     margin-left: -20px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .gallery .row > *
@@ -4522,11 +4514,12 @@ aside .banner img
 
 .advantages .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -70px;
     margin-left: -20px;
 
-    align-items: stretch;
-    align-content: stretch;
     --advantages_count: 5;
 }
 
@@ -4551,13 +4544,14 @@ aside .banner img
 
 .advantages .item
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
 
+    order: 100;
+
     text-align: center;
 
-    order: 100;
+    color: #171717;
 }
 
 .advantages .item:nth-child(2)
@@ -4588,14 +4582,13 @@ aside .banner img
 .advantages .item .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 88px;
     margin-bottom: 20px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .advantages .item .icon img
@@ -4680,31 +4673,30 @@ aside .banner img
 --------------*/
 .partners .row
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .partners .title
 {
-    color: #171717;
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 160px;
     height: 150px;
     padding: 18px;
 
+    color: #171717;
     background: #f5f5f5;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -4724,11 +4716,10 @@ aside .banner img
 .partners .slider .item
 {
     display: flex;
-
-    justify-content: center;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .partners .slider .item img
@@ -4746,7 +4737,6 @@ aside .banner img
 ------------------*/
 .popular_cats .block_title
 {
-    color: #171717;
     font-size: 25px;
     font-weight: 700;
     line-height: 35px;
@@ -4754,6 +4744,8 @@ aside .banner img
     display: block;
 
     margin-bottom: 20px;
+
+    color: #171717;
 }
 
 
@@ -4766,7 +4758,6 @@ aside .banner img
 
 .popular_cats .carousel .item
 {
-    color: #555;
     font-size: 13px;
     line-height: 32px;
 
@@ -4778,13 +4769,13 @@ aside .banner img
     white-space: nowrap;
     text-decoration: none;
 
+    color: #555;
     background: #ebebeb;
 }
 
 .popular_cats .carousel .item:hover
 {
     color: #fff;
-
     background: #9b9b9b;
 }
 
@@ -4792,11 +4783,11 @@ aside .banner img
 
 .popular_cats .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -26px;
     margin-left: -26px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .popular_cats .row > *
@@ -4815,13 +4806,13 @@ aside .banner img
 
 .popular_cats .cat
 {
-    color: currentColor;
-
     position: relative;
 
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -4853,7 +4844,6 @@ aside .banner img
 
 .popular_cats .cat .name
 {
-    color: #171717;
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
@@ -4864,6 +4854,10 @@ aside .banner img
     left: 25px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
     width: 195px;
     max-width: calc(100% - 50px);
@@ -4872,12 +4866,8 @@ aside .banner img
 
     transition: .2s linear;
 
+    color: #171717;
     background: #fff;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
 }
 
 .popular_cats .cat .name .icon
@@ -4897,10 +4887,9 @@ aside .banner img
 
 .popular_cats .cat:hover .name
 {
-    color: #fff;
-
     width: calc(100% - 50px);
 
+    color: #fff;
     background: #f00;
 }
 
@@ -4938,6 +4927,10 @@ aside .banner img
     left: 7px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 100%;
     margin: auto;
@@ -4945,16 +4938,10 @@ aside .banner img
     text-align: center;
 
     background: #f1f5f8;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .cats_wall .block_title .title
 {
-    color: #171717;
     font-size: 40px;
     font-weight: 700;
     line-height: 46px;
@@ -4964,6 +4951,8 @@ aside .banner img
     width: 100%;
 
     text-transform: uppercase;
+
+    color: #171717;
 }
 
 .cats_wall .block_title .title > *
@@ -5002,11 +4991,11 @@ aside .banner img
 
 .cats_wall .cat
 {
-    color: #171717;
-
     transition: color .2s linear;
     text-align: center;
     text-decoration: none;
+
+    color: #171717;
 }
 
 
@@ -5042,6 +5031,10 @@ aside .banner img
     left: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 45px;
     height: 45px;
@@ -5051,11 +5044,6 @@ aside .banner img
     transition: .25s linear;
 
     background: #f00;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .cats_wall .cat .icon:after
@@ -5120,11 +5108,12 @@ aside .banner img
 --------------*/
 .products .head
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
 
     margin-bottom: 20px;
+
+    color: #171717;
 }
 
 .dark .products .head
@@ -5232,7 +5221,6 @@ aside .banner img
 
 .products .head .nice-select .list .list_item
 {
-    color: #171717;
     font-size: 13px;
     line-height: 17px;
 
@@ -5242,6 +5230,8 @@ aside .banner img
 
     cursor: pointer;
     transition: background .2s linear;
+
+    color: #171717;
 }
 
 .products .head .nice-select .list .list_item:empty
@@ -5259,11 +5249,10 @@ aside .banner img
 .products .head .sort
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .products .head .sort .name
@@ -5286,6 +5275,10 @@ aside .banner img
     left: 50%;
 
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 45px;
 
@@ -5293,16 +5286,10 @@ aside .banner img
 
     border: 2px solid #ebebeb;
     border-radius: 25px;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 .products .tabs button
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
 
@@ -5314,6 +5301,7 @@ aside .banner img
 
     transition: .2s linear;
 
+    color: #171717;
     border: 2px solid transparent;
     border-radius: 25px;
 }
@@ -5337,11 +5325,11 @@ aside .banner img
 
 .products .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -50px;
     margin-left: -20px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .products .row > *
@@ -5379,7 +5367,6 @@ aside .banner img
 
 .products .product .stickers .sticker
 {
-    color: #fff;
     font-size: 9px;
     font-weight: 700;
     line-height: 11px;
@@ -5392,6 +5379,8 @@ aside .banner img
 
     vertical-align: top;
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 .products .product .stickers .sticker + .sticker
@@ -5470,14 +5459,13 @@ aside .banner img
     left: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .thumb img
@@ -5491,22 +5479,23 @@ aside .banner img
 
 .products .product .name
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
     flex: 1 0 auto;
+
+    color: #087aca;
 }
 
 .products .product .name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .products .product .thumb:hover ~ .name a,
@@ -5518,13 +5507,14 @@ aside .banner img
 
 .products .product .price
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
 
     margin-top: 15px;
 
     white-space: nowrap;
+
+    color: #171717;
 }
 
 .products .product .price b
@@ -5534,32 +5524,31 @@ aside .banner img
 
 .products .product .price .old
 {
-    color: #f00;
     font-size: 14px;
     font-weight: 500;
 
     margin-left: 9px;
 
     text-decoration: line-through;
+
+    color: #f00;
 }
 
 
 .products .product .btns
 {
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 15px;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 
 .products .product .buy_btn
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 800;
 
@@ -5569,6 +5558,7 @@ aside .banner img
     transition: .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     border-right: 1px solid transparent;
     border-radius: 2px;
     background: #f00;
@@ -5587,9 +5577,9 @@ aside .banner img
 
 .products .product .buy_btn.active
 {
-    color: #829fb5;
     font-size: 12px;
 
+    color: #829fb5;
     border-color: #dae4eb;
     background: #f1f5f8;
     box-shadow: none;
@@ -5608,34 +5598,33 @@ aside .banner img
 
 .products .product .compare_btn
 {
-    color: #171717;
     font-size: 12px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: calc(100% - 100px);
 
     transition: color .2s linear;
     white-space: nowrap;
 
+    color: #171717;
     background: #f1f5f8;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .compare_btn .icon
 {
-    color: #f00;
-
     display: block;
 
     width: 24px;
     height: 19px;
     margin-right: 9px;
+
+    color: #f00;
 }
 
 .products .product .compare_btn span + span
@@ -5671,11 +5660,14 @@ aside .banner img
 
 .products .product .details
 {
-    color: #171717;
     font-size: 12px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: calc(100% - 41px);
     height: 40px;
@@ -5684,12 +5676,8 @@ aside .banner img
     transition: color .2s linear;
     text-decoration: none;
 
+    color: #171717;
     background: #f1f5f8;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .details span
@@ -5725,22 +5713,20 @@ aside .banner img
 
 .products .product .delete_btn
 {
-    color: #f00;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 41px;
     height: 40px;
 
     transition: color .2s linear;
 
+    color: #f00;
     border-left: 1px solid #dae4eb;
     background: #f1f5f8;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .delete_btn .icon
@@ -5768,14 +5754,13 @@ aside .banner img
 {
     display: flex;
     overflow: hidden;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     background: #1d1d1d;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
@@ -5784,15 +5769,14 @@ aside .banner img
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 599px;
     max-width: 100%;
     margin: 0;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .list .product .images + *
@@ -5831,8 +5815,6 @@ aside .banner img
 
 .products .list .product .images .big .slide a
 {
-    color: currentColor;
-
     position: relative;
 
     display: block;
@@ -5841,6 +5823,7 @@ aside .banner img
 
     text-decoration: none;
 
+    color: currentColor;
     background: #ddd;
 }
 
@@ -5962,11 +5945,12 @@ aside .banner img
 
 .products .list .product .articul
 {
-    color: #fff;
     font-size: 12px;
     line-height: 15px;
 
     margin-top: 10px;
+
+    color: #fff;
 }
 
 .products .list .product .articul span
@@ -5977,11 +5961,12 @@ aside .banner img
 
 .products .list .product .price
 {
-    color: #fff;
     font-size: 14px;
     line-height: 18px;
 
     margin-top: 25px;
+
+    color: #fff;
 }
 
 .products .list .product .price .val
@@ -6005,30 +5990,29 @@ aside .banner img
 
 .products .list .product .desc
 {
-    color: #fff;
     font-size: 15px;
     line-height: 23px;
 
     margin-top: 18px;
+
+    color: #fff;
 }
 
 
 .products .list .product .btns
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 26px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .products .list .product .buy_btn
 {
-    color: #000;
     font-size: 18px;
     font-weight: 900;
 
@@ -6037,6 +6021,7 @@ aside .banner img
 
     text-transform: uppercase;
 
+    color: #000;
     background: linear-gradient(90deg, #d5c7a2 -.33%, #faf4dd 19.98%, #c7ab83 46.03%, #f9efd5 76.24%, #ac9366 99.67%);
     box-shadow: 0 4px 8px rgba(218, 195, 150, .56);
 }
@@ -6044,21 +6029,20 @@ aside .banner img
 
 .products .list .product .compare_btn
 {
-    color: #fff;
     font-size: 14px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 180px;
     height: 52px;
 
+    color: #fff;
     background: #383838;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .list .product .compare_btn img
@@ -6082,6 +6066,10 @@ aside .banner img
     left: 50%;
 
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 45px;
 
@@ -6089,16 +6077,10 @@ aside .banner img
 
     border: 2px solid #ebebeb;
     border-radius: 25px;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 .popular_compare .tabs button
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
 
@@ -6110,6 +6092,7 @@ aside .banner img
 
     transition: .2s linear;
 
+    color: #171717;
     border: 2px solid transparent;
     border-radius: 25px;
 }
@@ -6133,11 +6116,12 @@ aside .banner img
 
 .popular_compare .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -50px;
     margin-left: -20px;
 
-    align-items: stretch;
-    align-content: stretch;
     --compares_count: 3;
 }
 
@@ -6152,11 +6136,10 @@ aside .banner img
 .popular_compare .compare
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -6197,24 +6180,25 @@ aside .banner img
 
 .popular_compare .compare .product .name
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
+    flex: 1 0 auto;
+
     padding-right: 10px;
 
-    flex: 1 0 auto;
+    color: #087aca;
 }
 
 .popular_compare .compare .product .name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .popular_compare .compare .product .thumb:hover ~ .name a,
@@ -6225,7 +6209,6 @@ aside .banner img
 
 .popular_compare .compare .product .price
 {
-    color: #171717;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -6233,16 +6216,21 @@ aside .banner img
     margin-top: 12px;
 
     white-space: nowrap;
+
+    color: #171717;
 }
 
 
 .popular_compare .compare .link
 {
-    color: #171717;
     font-size: 12px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 40px;
@@ -6252,23 +6240,19 @@ aside .banner img
     white-space: nowrap;
     text-decoration: none;
 
+    color: #171717;
     background: #f1f5f8;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .popular_compare .compare .link .icon
 {
-    color: #f00;
-
     display: block;
 
     width: 24px;
     height: 19px;
     margin-right: 9px;
+
+    color: #f00;
 }
 
 .popular_compare .compare .link:hover
@@ -6291,11 +6275,11 @@ aside .banner img
 
 .overviews .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -50px;
     margin-left: -27px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .overviews .row > *
@@ -6399,23 +6383,24 @@ aside .banner img
 
 .overviews .overview .name
 {
-    color: #087aca;
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
 
     margin-top: 15px;
+
+    color: #087aca;
 }
 
 .overviews .overview .name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .overviews .overview .thumb:hover ~ .name a,
@@ -6427,11 +6412,12 @@ aside .banner img
 
 .overviews .overview .desc
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
 
     margin-top: 12px;
+
+    color: #171717;
 }
 
 
@@ -6497,16 +6483,16 @@ aside .banner img
 
 .reviews .review
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
+
+    color: #171717;
 }
 
 .reviews .review .name
@@ -6532,24 +6518,24 @@ aside .banner img
 
 .reviews .review .date
 {
-    color: #9b9b9b;
     font-size: 12px;
     font-weight: 500;
     line-height: 19px;
 
     white-space: nowrap;
+
+    color: #9b9b9b;
 }
 
 .reviews .review .rating
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: 13px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .reviews .review .rating > *
@@ -6580,10 +6566,10 @@ aside .banner img
 
 .reviews .review .text a
 {
-    color: #087aca;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .reviews .review .text a:hover
@@ -6598,11 +6584,11 @@ aside .banner img
 --------------*/
 .articles .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -50px;
     margin-left: -27px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .articles .row > *
@@ -6615,9 +6601,10 @@ aside .banner img
 
 .articles .article
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
+
+    color: #171717;
 }
 
 
@@ -6639,14 +6626,13 @@ aside .banner img
     left: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .articles .article .thumb img
@@ -6660,21 +6646,22 @@ aside .banner img
 
 .articles .article .name
 {
-    color: #087aca;
     font-size: 16px;
     font-weight: 500;
     line-height: 23px;
+
+    color: #087aca;
 }
 
 .articles .article .name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .articles .article .thumb:hover ~ .name a,
@@ -6729,11 +6716,10 @@ aside .banner img
     position: relative;
 
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .bottom_text .item + .item
@@ -6888,11 +6874,10 @@ aside .banner img
 .category_text .item
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .category_text .item + .item
@@ -7002,7 +6987,6 @@ aside .banner img
 
 .category_info .head .name
 {
-    color: currentColor;
     font-size: var(--font_size_title);
     font-weight: 700;
     line-height: calc(var(--font_size_title) + 10px);
@@ -7017,6 +7001,7 @@ aside .banner img
     max-width: 100%;
     padding: 0 35px 25px 0;
 
+    color: currentColor;
     background: #fff;
 }
 
@@ -7067,7 +7052,6 @@ aside .banner img
 
 .category_info .models .title
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -7077,17 +7061,17 @@ aside .banner img
     left: -2px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 152px;
     height: 45px;
 
+    color: #171717;
     border-radius: 25px;
     background: #ebebeb;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -7104,13 +7088,16 @@ aside .banner img
 
 .category_info .models .item
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 45px;
     padding: 10px 20px;
@@ -7119,13 +7106,9 @@ aside .banner img
     text-align: center;
     text-decoration: none;
 
+    color: #171717;
     border: 2px solid transparent;
     border-radius: 25px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .category_info .models .item:hover,
@@ -7137,22 +7120,23 @@ aside .banner img
 
 .category_info .models .all_link
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 49px;
 
     text-align: center;
+
+    color: #087aca;
 }
 
 .category_info .models .all_link a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .category_info .models .all_link a:hover
@@ -7206,11 +7190,11 @@ aside .banner img
 
 .cats_cloud .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -5px;
     margin-left: -5px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .cats_cloud .row > *
@@ -7223,7 +7207,6 @@ aside .banner img
 
 .cats_cloud .cat
 {
-    color: #555;
     font-size: 13px;
     line-height: 32px;
 
@@ -7235,13 +7218,13 @@ aside .banner img
     white-space: nowrap;
     text-decoration: none;
 
+    color: #555;
     background: #ebebeb;
 }
 
 .cats_cloud .cat:hover
 {
     color: #fff;
-
     background: #9b9b9b;
 }
 
@@ -7276,7 +7259,6 @@ aside .banner img
 
 .cart_info .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -7291,6 +7273,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -7327,7 +7310,6 @@ aside .banner img
 
 .cart_info table th
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
@@ -7338,6 +7320,7 @@ aside .banner img
     vertical-align: middle;
     text-transform: uppercase;
 
+    color: #171717;
     border-bottom: 1px solid #f00;
 }
 
@@ -7387,22 +7370,23 @@ aside .banner img
 
 .cart_info table td.name
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
     width: 100%;
+
+    color: #087aca;
 }
 
 .cart_info table td.name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .cart_info table td.thumb:hover ~ .name a,
@@ -7414,7 +7398,6 @@ aside .banner img
 
 .cart_info table td.price
 {
-    color: #171717;
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
@@ -7425,16 +7408,19 @@ aside .banner img
     table-layout: fixed;
 
     white-space: nowrap;
+
+    color: #171717;
 }
 
 .cart_info table td.price .old
 {
-    color: #f00;
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
 
     text-decoration: line-through;
+
+    color: #f00;
 }
 
 
@@ -7451,13 +7437,12 @@ aside .banner img
     position: relative;
 
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     width: 130px;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: nowrap;
 }
 
 .cart_info table td.amount button
@@ -7511,7 +7496,6 @@ aside .banner img
 
 .cart_info table td.amount .input
 {
-    color: #555;
     font-family: var(--font_family);
     font-size: 14px;
 
@@ -7524,6 +7508,7 @@ aside .banner img
 
     text-align: center;
 
+    color: #555;
     border: 1px solid #c8c8c8;
     background: none;
 }
@@ -7543,18 +7528,17 @@ aside .banner img
 
 .cart_info table td.delete button
 {
-    color: #f00;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     margin: auto;
 
     transition: color .2s linear;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #f00;
 }
 
 .cart_info table td.delete button .icon
@@ -7578,15 +7562,14 @@ aside .banner img
     z-index: 5;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     padding: 30px;
 
     background: #f1f5f8;
-
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
@@ -7620,19 +7603,19 @@ aside .banner img
 
 .cart_info .cart_bottom .total_price
 {
-    color: #171717;
     font-size: 14px;
     line-height: 21px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 100%;
     height: 60px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #171717;
 }
 
 .cart_info .cart_bottom .total_price .val
@@ -7650,7 +7633,6 @@ aside .banner img
 
 .cart_info .cart_bottom .back_link
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 60px;
 
@@ -7661,6 +7643,8 @@ aside .banner img
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .cart_info .cart_bottom .back_link:hover
@@ -7671,7 +7655,6 @@ aside .banner img
 
 .cart_info .cart_bottom .checkout_btn
 {
-    color: #fff;
     font-size: 20px;
     font-weight: 800;
 
@@ -7683,6 +7666,7 @@ aside .banner img
     transition: .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     border-radius: 2px;
     background: #f00;
     box-shadow: 0 0 5px 0 rgba(255, 0, 0, .5);
@@ -7696,11 +7680,14 @@ aside .banner img
 
 .cart_info .cart_bottom .credit_btn
 {
-    color: #171717;
     font-size: 20px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 60px;
@@ -7710,31 +7697,26 @@ aside .banner img
     text-decoration: none;
     text-transform: uppercase;
 
+    color: #171717;
     border-radius: 2px;
     background: #fff;
     box-shadow: 0 0 5px 0 rgba(114, 156, 187, .5);
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .cart_info .cart_bottom .credit_btn .icon
 {
-    color: #f00;
-
     display: block;
 
     width: 20px;
     height: 21px;
     margin-right: 11px;
+
+    color: #f00;
 }
 
 .cart_info .cart_bottom .credit_btn:hover
 {
     color: #f00;
-
     background: #f1f5f8;
 }
 
@@ -7759,7 +7741,6 @@ aside .banner img
 
 .checkout_info .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -7776,6 +7757,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -7802,7 +7784,6 @@ aside .banner img
 
 .checkout_info .auth
 {
-    color: #171717;
     font-size: 16px;
     font-weight: 500;
     line-height: 23px;
@@ -7812,11 +7793,12 @@ aside .banner img
     margin: 0 auto;
 
     text-align: center;
+
+    color: #171717;
 }
 
 .checkout_info .auth .btn
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 800;
     line-height: 40px;
@@ -7831,6 +7813,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-radius: 2px;
     background: #f00;
     box-shadow: 0 0 5px 0 rgba(255, 0, 0, .5);
@@ -7853,14 +7836,13 @@ aside .banner img
 .checkout_info .form .cols
 {
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -85px;
     margin-left: -65px;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 .checkout_info .form .col
@@ -7873,19 +7855,19 @@ aside .banner img
 
 .checkout_info .form .col .name
 {
-    color: #171717;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     margin-bottom: 20px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    color: #171717;
 }
 
 .checkout_info .form .col .name .icon
@@ -7925,17 +7907,17 @@ aside .banner img
 
 .checkout_info .form .agree
 {
-    color: #555;
-
     text-align: left;
+
+    color: #555;
 }
 
 .checkout_info .form .agree a
 {
-    color: #087aca;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .checkout_info .form .agree a:hover
@@ -7947,21 +7929,21 @@ aside .banner img
 .checkout_info .form .bottom
 {
     display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-bottom: 20px;
     padding-top: 10px;
-
-    justify-content: space-between;
-    align-items: flex-end;
-    align-content: flex-end;
-    flex-wrap: wrap;
 }
 
 .checkout_info .form .total_price
 {
-    color: #171717;
     font-size: 14px;
     line-height: 21px;
+
+    color: #171717;
 }
 
 .checkout_info .form .total_price .val
@@ -8010,7 +7992,6 @@ aside .banner img
 
 .lk_personal .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -8025,6 +8006,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -8051,18 +8033,18 @@ aside .banner img
 
 .lk_personal .info
 {
-    color: #171717;
     line-height: 30px;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -20px;
     margin-left: -50px;
 
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: #171717;
 }
 
 .lk_personal .info > *
@@ -8104,7 +8086,6 @@ aside .banner img
 
 .lk_personal .form .cancel_btn
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
@@ -8115,6 +8096,8 @@ aside .banner img
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .lk_personal .form .cancel_btn:hover
@@ -8135,14 +8118,13 @@ aside .banner img
 .lk_personal .btns .row
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -15px;
     margin-left: -50px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .lk_personal .btns .row > *
@@ -8155,21 +8137,21 @@ aside .banner img
 
 .lk_personal .btns button
 {
-    color: #171717;
     font-size: 12px;
     font-weight: 500;
     line-height: 20px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-align: left;
     white-space: nowrap;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #171717;
 }
 
 .lk_personal .btns button .icon
@@ -8212,7 +8194,6 @@ aside .banner img
 ----------------*/
 .lk_history .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -8227,6 +8208,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -8261,23 +8243,23 @@ aside .banner img
 
 .lk_history .item .head
 {
-    color: #171717;
     font-size: 14px;
     line-height: 20px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 72px;
     padding: 20px 20px 20px 54px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #171717;
 }
 
 .lk_history .item .head > * + *
@@ -8329,8 +8311,6 @@ aside .banner img
 
 .lk_history .head .icon
 {
-    color: #f00;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -8342,6 +8322,7 @@ aside .banner img
 
     transition: .2s linear;
 
+    color: #f00;
     border: 1px solid #f00;
 }
 
@@ -8382,7 +8363,6 @@ aside .banner img
 .lk_history .item:hover .head .icon
 {
     color: #fff;
-
     background: #f00;
 }
 
@@ -8417,7 +8397,6 @@ aside .banner img
 
 .lk_history .cart_info table td.amount span
 {
-    color: #171717;
     font-size: 15px;
     line-height: 22px;
 
@@ -8426,6 +8405,8 @@ aside .banner img
     width: 93px;
 
     text-align: center;
+
+    color: #171717;
 }
 
 .lk_history .cart_info table td.price.total
@@ -8453,11 +8434,10 @@ aside .banner img
 .product_info .cont
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -8466,13 +8446,12 @@ aside .banner img
     position: relative;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: calc(50% - 35px);
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
@@ -8490,20 +8469,19 @@ aside .banner img
 
 .product_info .images .big .slide a
 {
-    color: currentColor;
-
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 500px;
 
     text-decoration: none;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 .product_info .images .big .slide a img
@@ -8544,6 +8522,10 @@ aside .banner img
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 70px;
@@ -8552,11 +8534,6 @@ aside .banner img
     transition: border-color .2s linear;
 
     border: 1px solid #c8c8c8;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .images .thumbs .slide img
@@ -8641,22 +8618,21 @@ aside .banner img
 
 .product_info .data .head
 {
-    color: #171717;
     font-size: 14px;
     line-height: 21px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: calc(100% - 90px);
     height: 50px;
     margin-bottom: 25px;
 
+    color: #171717;
     border-bottom: 1px solid #dae4eb;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -8711,22 +8687,23 @@ aside .banner img
 
 .product_info .data .brand
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 50px;
 
     position: relative;
+
+    color: #087aca;
 }
 
 .product_info .data .brand a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .product_info .data .brand a:hover
@@ -8741,17 +8718,16 @@ aside .banner img
     left: calc(100% + 20px);
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 70px;
     height: 50px;
     padding: 5px;
 
     background: #fff;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .data .brand .logo img
@@ -8765,11 +8741,12 @@ aside .banner img
 
 .product_info .data .price
 {
-    color: #171717;
     font-size: 13px;
     line-height: 20px;
 
     white-space: nowrap;
+
+    color: #171717;
 }
 
 .product_info .data .price b
@@ -8780,7 +8757,6 @@ aside .banner img
 
 .product_info .data .price .old
 {
-    color: #f00;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -8788,6 +8764,8 @@ aside .banner img
     margin-left: 9px;
 
     text-decoration: line-through;
+
+    color: #f00;
 }
 
 
@@ -8802,7 +8780,6 @@ aside .banner img
 
 .product_info .data .consult_btn
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 800;
 
@@ -8816,6 +8793,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-radius: 2px;
     background: #f00;
     box-shadow: 0 0 5px 0 rgba(255, 0, 0, .5);
@@ -8830,15 +8808,14 @@ aside .banner img
 .product_info .data .buy
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 20px;
     margin-bottom: -15px;
     margin-left: -30px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .data .buy > *
@@ -8850,7 +8827,6 @@ aside .banner img
 
 .product_info .data .buy_btn
 {
-    color: #fff;
     font-size: 20px;
     font-weight: 800;
 
@@ -8862,6 +8838,7 @@ aside .banner img
     transition: .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     border-radius: 2px;
     background: #f00;
     box-shadow: 0 0 5px 0 rgba(255, 0, 0, .5);
@@ -8879,9 +8856,9 @@ aside .banner img
 
 .product_info .data .buy_btn.active
 {
-    color: #db0404;
     font-size: 16px;
 
+    color: #db0404;
     border-color: #d8e3ec;
     background: #d8e3ec;
     box-shadow: none;
@@ -8900,11 +8877,14 @@ aside .banner img
 
 .product_info .data .credit_btn
 {
-    color: #171717;
     font-size: 20px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 150px;
     height: 60px;
@@ -8913,63 +8893,57 @@ aside .banner img
     text-decoration: none;
     text-transform: uppercase;
 
+    color: #171717;
     border-radius: 2px;
     background: #fff;
     box-shadow: 0 0 5px 0 rgba(114, 156, 187, .5);
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .data .credit_btn .icon
 {
-    color: #f00;
-
     display: block;
 
     width: 20px;
     height: 21px;
     margin-right: 11px;
+
+    color: #f00;
 }
 
 .product_info .data .credit_btn:hover
 {
     color: #f00;
-
     background: #f1f5f8;
 }
 
 
 .product_info .data .compare_btn
 {
-    color: #171717;
     font-size: 12px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     transition: color .2s linear;
     white-space: nowrap;
 
+    color: #171717;
     background: #f1f5f8;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .data .compare_btn .icon
 {
-    color: #f00;
-
     display: block;
 
     width: 24px;
     height: 19px;
     margin-right: 9px;
+
+    color: #f00;
 }
 
 .product_info .data .compare_btn span + span
@@ -9021,14 +8995,13 @@ aside .banner img
 .product_info .data .color .vals
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -20px;
     margin-left: -24px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .product_info .data .color .vals > *
@@ -9040,13 +9013,14 @@ aside .banner img
 
 .product_info .data .color a
 {
-    color: #171717;
     font-size: 12px;
 
     display: block;
 
     text-align: center;
     text-decoration: none;
+
+    color: #171717;
 }
 
 
@@ -9105,25 +9079,26 @@ aside .banner img
 
 .product_info .data .features .title
 {
-    color: #171717;
     font-size: 13px;
     font-weight: 700;
 
     margin-bottom: 5px;
+
+    color: #171717;
 }
 
 .product_info .data .features .item
 {
-    color: #171717;
     font-size: 14px;
     line-height: 21px;
 
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    color: #171717;
 }
 
 .product_info .data .features .item + .item
@@ -9174,7 +9149,6 @@ aside .banner img
 
 .product_info .data .features .all_btn
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 22px;
 
@@ -9185,6 +9159,8 @@ aside .banner img
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .product_info .data .features .all_btn:hover
@@ -9208,7 +9184,6 @@ aside .banner img
 
 .product_info .stickers .sticker
 {
-    color: #fff;
     font-size: 9px;
     font-weight: 700;
     line-height: 11px;
@@ -9221,6 +9196,8 @@ aside .banner img
 
     vertical-align: top;
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 .product_info .stickers .sticker + .sticker
@@ -9289,14 +9266,13 @@ aside .banner img
     left: 50%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transform: translateX(calc(-50% + 50px));
     pointer-events: none;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .rating > *
@@ -9338,6 +9314,10 @@ aside .banner img
     left: 50%;
 
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     max-width: 100%;
     height: 45px;
@@ -9346,16 +9326,10 @@ aside .banner img
 
     border: 2px solid #ebebeb;
     border-radius: 25px;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: nowrap;
 }
 
 .product_tabs .tabs button
 {
-    color: #171717;
     font-size: 14px;
     font-weight: 700;
 
@@ -9368,6 +9342,7 @@ aside .banner img
 
     transition: .2s linear;
 
+    color: #171717;
     border: 2px solid transparent;
     border-radius: 25px;
 }
@@ -9400,7 +9375,6 @@ aside .banner img
 
 .about_seria .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -9419,6 +9393,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -9458,12 +9433,13 @@ aside .banner img
 
 .about_seria .features .title
 {
-    color: #171717;
     font-size: 16px;
     font-weight: 700;
     line-height: 23px;
 
     margin-bottom: 10px;
+
+    color: #171717;
 }
 
 .about_seria .features .columns
@@ -9483,16 +9459,16 @@ aside .banner img
 
 .about_seria .features .item
 {
-    color: #171717;
     font-size: 14px;
     line-height: 21px;
 
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    color: #171717;
 }
 
 .about_seria .features .item + .item
@@ -9572,8 +9548,8 @@ aside .banner img
 
 .compare_info .cont.row
 {
-    align-items: flex-end;
     align-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -9588,32 +9564,32 @@ aside .banner img
 
 .compare_features .title
 {
-    color: #171717;
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
 
     margin-bottom: 15px;
+
+    color: #171717;
 }
 
 .compare_features .item
 {
-    color: #171717;
     font-size: 13px;
     font-weight: 500;
     line-height: 17px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 40px;
     padding: 5px 0;
 
+    color: #171717;
     border-top: 1px solid #d8d8d8;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -9629,22 +9605,21 @@ aside .banner img
 
 .compare_info .product_features .item
 {
-    color: #171717;
     font-size: 13px;
     font-weight: 500;
     line-height: 17px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 40px;
     padding: 5px 0 5px 20px;
 
+    color: #171717;
     border-top: 1px solid #d8d8d8;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -9655,11 +9630,10 @@ aside .banner img
 .manager_page .page_head .cont
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -9671,13 +9645,12 @@ aside .banner img
 .manager_page .search .form
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -20px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .manager_page .search .form .columns
@@ -9720,7 +9693,6 @@ aside .banner img
 
 .manager_page .cats .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -9735,6 +9707,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -9761,9 +9734,9 @@ aside .banner img
 
 .manager_page .cats .row
 {
-    justify-content: space-between;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 
@@ -9806,7 +9779,6 @@ aside .banner img
 
 .manager_page .cats .tabs .link button
 {
-    color: #171717;
     font-size: 16px;
     font-weight: 700;
 
@@ -9819,6 +9791,8 @@ aside .banner img
     transition: color .2s linear;
     text-align: left;
     text-transform: uppercase;
+
+    color: #171717;
 }
 
 .manager_page .cats .tabs .link button.arrow
@@ -9891,7 +9865,6 @@ aside .banner img
 
 .manager_page .cats .tabs .sub button
 {
-    color: #555;
     font-family: var(--font_family2);
     font-size: 13px;
     line-height: 19px;
@@ -9902,6 +9875,8 @@ aside .banner img
 
     transition: color .2s linear;
     text-align: left;
+
+    color: #555;
 }
 
 .manager_page .cats .tabs .sub button:hover,
@@ -9932,7 +9907,6 @@ aside .banner img
 
 .manager_page .cats .tree .level > * > .link
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 700;
@@ -9946,6 +9920,8 @@ aside .banner img
 
     transition: color .2s linear;
     text-align: left;
+
+    color: #171717;
 }
 
 .manager_page .cats .tree .level > * > .link:before,
@@ -10030,19 +10006,19 @@ aside .banner img
 
 .manager_page .cats .tree .product
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -5px;
     margin-left: -20px;
 
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: #171717;
 }
 
 .manager_page .cats .tree .product > *
@@ -10059,7 +10035,6 @@ aside .banner img
 
 .manager_page .cats .tree .product .edit_btn
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
 
@@ -10067,6 +10042,8 @@ aside .banner img
 
     transition: color .2s linear;
     text-align: left;
+
+    color: #087aca;
 }
 
 .manager_page .cats .tree .product .edit_btn:hover
@@ -10090,7 +10067,6 @@ aside .banner img
 
 .manager_page .product_edit .block_title
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 32px;
@@ -10105,6 +10081,7 @@ aside .banner img
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border-left: 3px solid #f00;
     background: #171717;
 }
@@ -10142,23 +10119,22 @@ aside .banner img
 
 .manager_page .product_edit .upload_file label
 {
-    color: #171717;
     font-size: 12px;
     font-weight: 500;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 40px;
 
     cursor: pointer;
     transition: border-color .2s linear;
 
+    color: #171717;
     border: 1px dashed #c8c8c8;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .manager_page .product_edit .upload_file label .icon
@@ -10181,14 +10157,13 @@ aside .banner img
 .manager_page .product_edit .images .field
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -20px;
     margin-left: -40px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .manager_page .product_edit .images .image
@@ -10205,36 +10180,34 @@ aside .banner img
 
 .manager_page .product_edit .images .delete_btn
 {
-    color: #fff;
-
     position: absolute;
     z-index: 3;
     top: 2px;
     right: 2px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 34px;
     height: 34px;
 
     transition: color .2s linear;
 
+    color: #fff;
     background: rgba(23, 23, 23, .7);
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .manager_page .product_edit .images .delete_btn .icon
 {
-    color: currentColor;
-
     display: block;
 
     width: 20px;
     height: 20px;
+
+    color: currentColor;
 }
 
 .manager_page .product_edit .images .delete_btn:hover
@@ -10264,7 +10237,6 @@ aside .banner img
 
 .manager_page .product_edit .images input[type=file] + label
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
 
@@ -10274,6 +10246,8 @@ aside .banner img
     margin-left: 40px;
 
     cursor: pointer;
+
+    color: #087aca;
 }
 
 .manager_page .product_edit .images input[type=file] + label:hover
@@ -10333,7 +10307,6 @@ aside .banner img
 
 .manager_page .product_edit .add_video_btn
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 40px;
@@ -10341,6 +10314,8 @@ aside .banner img
     display: inline-block;
 
     vertical-align: top;
+
+    color: #087aca;
 }
 
 .manager_page .product_edit .add_video_btn:hover
@@ -10395,8 +10370,8 @@ aside .banner img
 
 .manager_page .product_edit .documents .document
 {
-    align-items: flex-end;
     align-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -10446,13 +10421,14 @@ aside .banner img
 
 .manager_page .product_edit .add_document_btn
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
 
     display: inline-block;
 
     vertical-align: top;
+
+    color: #087aca;
 }
 
 .manager_page .product_edit .add_document_btn:hover
@@ -10464,27 +10440,29 @@ aside .banner img
 .manager_page .product_edit .keys .checks .field
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 40px;
     margin-top: 31px;
     margin-bottom: -10px;
     margin-left: -40px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .manager_page .product_edit .keys .checks .field > *
 {
-    color: #555;
     font-size: 14px;
     line-height: 18px;
 
     position: relative;
 
     display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     max-width: calc(100% - 40px);
     height: 18px;
@@ -10494,10 +10472,7 @@ aside .banner img
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #555;
 }
 
 .manager_page .product_edit .keys .checks .field > *:before
@@ -10590,7 +10565,6 @@ aside .banner img
 
 .manager_page .product_edit .model_choose_btn
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 40px;
@@ -10598,6 +10572,8 @@ aside .banner img
     display: inline-block;
 
     vertical-align: top;
+
+    color: #087aca;
 }
 
 .manager_page .product_edit .model_choose_btn:hover
@@ -10608,13 +10584,14 @@ aside .banner img
 
 .manager_page .product_edit .add_models_btn
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
 
     display: inline-block;
 
     vertical-align: top;
+
+    color: #087aca;
 }
 
 .manager_page .product_edit .add_models_btn:hover
@@ -10636,19 +10613,16 @@ aside .banner img
 .accordion .item .head
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     cursor: pointer;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .accordion .item .head .icon
 {
-    color: #f00;
-
     position: relative;
 
     width: 32px;
@@ -10656,6 +10630,7 @@ aside .banner img
 
     transition: .2s linear;
 
+    color: #f00;
     border: 1px solid #f00;
 }
 
@@ -10689,15 +10664,16 @@ aside .banner img
 
 .accordion .item .head .title
 {
-    color: #171717;
     font-size: 20px;
     line-height: 27px;
+
+    align-self: center;
 
     width: calc(100% - 47px);
 
     transition: color .2s linear;
 
-    align-self: center;
+    color: #171717;
 }
 
 
@@ -10712,7 +10688,6 @@ aside .banner img
 .accordion .item .head:hover .icon
 {
     color: #fff;
-
     background: #f00;
 }
 
@@ -10724,8 +10699,9 @@ aside .banner img
 
 .accordion .item.active .head .title
 {
-    color: #f00;
     font-weight: 500;
+
+    color: #f00;
 }
 
 .accordion .item.active .head .icon:after
@@ -10743,13 +10719,12 @@ aside .banner img
     line-height: 32px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 50px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .pagination.center
@@ -10767,11 +10742,10 @@ aside .banner img
     position: relative;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .pagination .data > * + *
@@ -10782,7 +10756,6 @@ aside .banner img
 .pagination a,
 .pagination .sep
 {
-    color: #171717;
     font-size: 13px;
     line-height: 30px;
 
@@ -10796,6 +10769,7 @@ aside .banner img
     vertical-align: top;
     text-decoration: none;
 
+    color: #171717;
     border: 1px solid transparent;
 }
 
@@ -10875,7 +10849,6 @@ aside .banner img
 
 .pagination .load_more
 {
-    color: #087aca;
     font-size: 15px;
     line-height: 32px;
 
@@ -10887,6 +10860,8 @@ aside .banner img
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #087aca;
 }
 
 .pagination .load_more:hover
@@ -10946,7 +10921,6 @@ aside .banner img
 
 .tuning .points .item .number
 {
-    color: #f91628;
     font-size: 14px;
     font-weight: bold;
     line-height: 28px;
@@ -10958,6 +10932,7 @@ aside .banner img
 
     text-align: center;
 
+    color: #f91628;
     border: 1px solid #f91628;
     border-radius: 50%;
 }
@@ -10965,16 +10940,16 @@ aside .banner img
 
 .tuning .points .item .name
 {
-    color: #000;
     font-size: 17px;
     font-weight: bold;
     line-height: 21px;
+
+    color: #000;
 }
 
 
 .tuning .points .item .buy_btn
 {
-    color: #f91628;
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
@@ -10987,6 +10962,7 @@ aside .banner img
     transition: .2s linear;
     vertical-align: top;
 
+    color: #f91628;
     border: 1px solid #f91628;
     border-radius: 16px;
 }
@@ -10994,7 +10970,6 @@ aside .banner img
 .tuning .points .item .buy_btn:hover
 {
     color: #fff;
-
     background: #f91628;
 }
 
@@ -11061,16 +11036,15 @@ aside .banner img
 .premium_info .data
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-bottom: 41px;
     padding: 36px 40px 32px 52px;
 
     background: #1d1d1d;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -11090,11 +11064,12 @@ aside .banner img
 
 .premium_info .data .text_block
 {
-    color: #fff;
     font-size: 15px;
 
     width: calc(100% - 440px);
     margin-left: auto;
+
+    color: #fff;
 }
 
 
@@ -11109,19 +11084,17 @@ aside .banner img
     font-weight: 400;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 43px;
     padding-left: 49px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .premium_info .data .text_block ol li:before
 {
-    color: #000;
     font-weight: 800;
     line-height: 35px;
 
@@ -11133,6 +11106,7 @@ aside .banner img
     content: counters(li, '');
     text-align: center;
 
+    color: #000;
     border-radius: 50%;
     background: linear-gradient(133.75deg, #d5c7a2 6.29%, #faf4dd 26.17%, #c7ab83 51.67%, #f9efd5 81.25%, #ac9366 104.19%);
 }
@@ -11175,19 +11149,19 @@ footer .info .cont > .img
 
 footer .bottom
 {
-    color: #9b9b9b;
     font-size: 12px;
     line-height: 19px;
 
     padding: 20px 0;
 
+    color: #9b9b9b;
     border-top: 1px solid #373737;
 }
 
 footer .bottom .cont.row
 {
-    align-items: center;
     align-content: center;
+    align-items: center;
 }
 
 
@@ -11202,7 +11176,6 @@ footer .col_left
 
 footer .title
 {
-    color: #fff;
     font-size: 13px;
     font-weight: 800;
     line-height: 20px;
@@ -11210,6 +11183,8 @@ footer .title
     margin-bottom: 20px;
 
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 
@@ -11227,24 +11202,22 @@ footer .logo img
 footer .socials
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 32px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 footer .socials a
 {
-    color: #d0d0d0;
-
     display: block;
 
     transition: color .2s linear;
     text-decoration: none;
 
+    color: #d0d0d0;
     border-radius: 50%;
 }
 
@@ -11282,7 +11255,6 @@ footer .links .items > * + *
 
 footer .links .items a
 {
-    color: #fff;
     font-size: 14px;
     line-height: 21px;
 
@@ -11291,6 +11263,8 @@ footer .links .items a
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #fff;
 }
 
 footer .links .items a:hover
@@ -11302,9 +11276,10 @@ footer .links .items a:hover
 
 footer .contacts
 {
-    color: #fff;
     font-size: 14px;
     line-height: 21px;
+
+    color: #fff;
 }
 
 footer .contacts > * + *
@@ -11314,13 +11289,13 @@ footer .contacts > * + *
 
 footer .contacts a
 {
-    color: currentColor;
-
     display: inline-block;
 
     vertical-align: top;
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -11408,13 +11383,13 @@ footer .privacy_policy
 
 footer .privacy_policy a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 footer .privacy_policy a:hover
@@ -11433,13 +11408,13 @@ footer .creator
 
 footer .creator a
 {
-    color: #f00;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #f00;
 }
 
 footer .creator a:hover
@@ -11467,23 +11442,25 @@ footer .creator a:hover
 
 .modal_title
 {
-    color: #fff;
     font-size: 22px;
     font-weight: 700;
     line-height: 25px;
 
     text-align: center;
+
+    color: #fff;
 }
 
 .modal_desc
 {
-    color: #fff;
     font-size: 14px;
     line-height: 21px;
 
     margin-top: 5px;
 
     text-align: center;
+
+    color: #fff;
 }
 
 
@@ -11506,11 +11483,11 @@ footer .creator a:hover
 
 .modal .text_block
 {
-    color: #fff;
-
     margin-top: 25px;
 
     text-align: center;
+
+    color: #fff;
 }
 
 
@@ -11526,9 +11503,9 @@ footer .creator a:hover
 
 #model_choose_modal .modal_title
 {
-    color: #171717;
-
     margin-bottom: 20px;
+
+    color: #171717;
 }
 
 
@@ -11547,7 +11524,6 @@ footer .creator a:hover
 
 #model_choose_modal .tree .level > * > .link
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 700;
@@ -11561,6 +11537,8 @@ footer .creator a:hover
 
     transition: color .2s linear;
     text-align: left;
+
+    color: #171717;
 }
 
 #model_choose_modal .tree .level > * > .link:before,
@@ -11645,19 +11623,19 @@ footer .creator a:hover
 
 #model_choose_modal .tree .product
 {
-    color: #171717;
     font-family: var(--font_family2);
     font-size: 14px;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: -5px;
     margin-left: -20px;
 
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: #171717;
 }
 
 #model_choose_modal .tree .product > *
@@ -11674,7 +11652,6 @@ footer .creator a:hover
 
 #model_choose_modal .tree .product .select_btn
 {
-    color: #087aca;
     font-family: var(--font_family2);
     font-size: 14px;
 
@@ -11682,6 +11659,8 @@ footer .creator a:hover
 
     transition: color .2s linear;
     text-align: left;
+
+    color: #087aca;
 }
 
 #model_choose_modal .tree .product .select_btn:hover
@@ -11704,7 +11683,6 @@ footer .creator a:hover
 
 #cart_success_modal .modal_title
 {
-    color: #000;
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
@@ -11712,31 +11690,31 @@ footer .creator a:hover
     margin-bottom: 17px;
 
     text-align: center;
+
+    color: #000;
 }
 
 
 #cart_success_modal .product
 {
     display: flex;
-
-    justify-content: center;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 #cart_success_modal .product .thumb
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 133px;
     height: 119px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 #cart_success_modal .product .thumb img
@@ -11756,37 +11734,37 @@ footer .creator a:hover
 
 #cart_success_modal .product .name
 {
-    color: #000;
     font-size: 17px;
     font-weight: bold;
     line-height: 21px;
+
+    color: #000;
 }
 
 #cart_success_modal .product .amount
 {
-    color: #000;
     font-size: 13px;
     line-height: 16px;
 
     margin-top: 2px;
+
+    color: #000;
 }
 
 
 #cart_success_modal .btns
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-top: 44px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 #cart_success_modal .btns .btn
 {
-    color: #f91628;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -11800,6 +11778,7 @@ footer .creator a:hover
     text-align: center;
     text-decoration: none;
 
+    color: #f91628;
     border: 1px solid #f91628;
     border-radius: 25px;
 }
@@ -11808,6 +11787,5 @@ footer .creator a:hover
 #cart_success_modal .btns .btn.checkout_link
 {
     color: #fff;
-
     background: #f91628;
 }

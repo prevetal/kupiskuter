@@ -191,7 +191,6 @@
 
 .irs-grid
 {
-    color: #333;
     font: 600 11px/15px Century Gothic;
 
     position: absolute;
@@ -204,6 +203,8 @@
     height: 15px;
 
     pointer-events: none;
+
+    color: #333;
 }
 
 .irs-with-grid .irs-grid

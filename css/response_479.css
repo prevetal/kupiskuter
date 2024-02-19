@@ -690,9 +690,9 @@
 
     .manager_page .form .columns > *.width1of6
     {
-        width: calc(100% - var(--form_columns_offset));
-
         order: 3;
+
+        width: calc(100% - var(--form_columns_offset));
     }
 
 

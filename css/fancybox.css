@@ -106,7 +106,6 @@ body.compensate-for-scrollbar
 
 .fancybox-infobar
 {
-    color: #ccc;
     font-size: 13px;
     line-height: 44px;
 
@@ -122,6 +121,8 @@ body.compensate-for-scrollbar
         -ms-user-select: none;
             user-select: none;
     pointer-events: none;
+
+    color: #ccc;
 
     -webkit-font-smoothing: subpixel-antialiased;
     mix-blend-mode: difference;
@@ -377,12 +378,13 @@ body.compensate-for-scrollbar
 
 .fancybox-error p
 {
-    color: #444;
     font-size: 16px;
     line-height: 20px;
 
     margin: 0;
     padding: 0;
+
+    color: #444;
 }
 
 /* Buttons */
@@ -434,10 +436,9 @@ body.compensate-for-scrollbar
 .fancybox-button[disabled],
 .fancybox-button[disabled]:hover
 {
-    color: #888;
-
     cursor: default;
 
+    color: #888;
     outline: none;
 }
 
@@ -500,8 +501,6 @@ body.compensate-for-scrollbar
 
 .fancybox-close-small
 {
-    color: #ccc;
-
     position: absolute;
     z-index: 401;
     top: -44px;
@@ -512,6 +511,7 @@ body.compensate-for-scrollbar
     cursor: pointer;
 
     opacity: .8;
+    color: #ccc;
     border: 0;
     border-radius: 0;
     background: transparent;
@@ -519,15 +519,12 @@ body.compensate-for-scrollbar
 
 .fancybox-close-small:hover
 {
-    color: #fff;
-
     opacity: 1;
+    color: #fff;
 }
 
 .fancybox-slide--html .fancybox-close-small
 {
-    color: #9b9b9b;
-
     top: 5px;
     right: 5px;
 
@@ -538,6 +535,7 @@ body.compensate-for-scrollbar
     transition: color .2s linear;
 
     opacity: 1;
+    color: #9b9b9b;
 }
 
 .fancybox-slide--html .fancybox-close-small:hover
@@ -595,7 +593,6 @@ body.compensate-for-scrollbar
 
 .fancybox-caption
 {
-    color: #eee;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -610,6 +607,7 @@ body.compensate-for-scrollbar
     text-align: center;
     pointer-events: none;
 
+    color: #eee;
     background: linear-gradient(to top,
     rgba(0, 0, 0, .85) 0%,
     rgba(0, 0, 0, .3) 50%,
@@ -646,16 +644,16 @@ body.compensate-for-scrollbar
 .fancybox-caption a:link,
 .fancybox-caption a:visited
 {
-    color: #ccc;
-
     text-decoration: none;
+
+    color: #ccc;
 }
 
 .fancybox-caption a:hover
 {
-    color: #fff;
-
     text-decoration: underline;
+
+    color: #fff;
 }
 
 /* Loading indicator */
@@ -844,8 +842,6 @@ body.compensate-for-scrollbar
 
     .fancybox-slide--image .fancybox-close-small
     {
-        color: #f2f4f6;
-
         top: 0;
         right: 0;
 
@@ -854,6 +850,7 @@ body.compensate-for-scrollbar
         padding: 6px;
 
         opacity: 1;
+        color: #f2f4f6;
         background: #4e4e4e;
     }
 
@@ -888,11 +885,12 @@ body.compensate-for-scrollbar
 
 .fancybox-share h1
 {
-    color: #222;
     font-size: 35px;
     font-weight: 700;
 
     margin: 0 0 20px 0;
+
+    color: #222;
 }
 
 .fancybox-share p
@@ -985,13 +983,13 @@ body.compensate-for-scrollbar
 
 .fancybox-share__input
 {
-    color: #5d5b5b;
     font-size: 14px;
 
     width: 100%;
     margin: 10px 0 0 0;
     padding: 10px 15px;
 
+    color: #5d5b5b;
     border: 0;
     border-bottom: 1px solid #d7d7d7;
     border-radius: 0;

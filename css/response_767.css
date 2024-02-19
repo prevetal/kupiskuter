@@ -17,11 +17,11 @@
     ------------*/
     .mob_header .phone
     {
+        justify-content: space-between;
+        order: 3;
+
         width: 100%;
         margin-top: 15px;
-
-        order: 3;
-        justify-content: space-between;
     }
 
     .mob_header .phone .number
@@ -305,16 +305,15 @@
         position: relative;
 
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         min-height: 130px;
         padding: 15px 0 15px 120px;
 
         border-top: 1px solid #d8d8d8;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     .cart_info table td
@@ -359,7 +358,6 @@
     .cart_info table td.price:before,
     .cart_info table td.amount:before
     {
-        color: #000;
         font-size: 11px;
         font-weight: normal;
         line-height: 15px;
@@ -380,6 +378,7 @@
         text-transform: none;
 
         opacity: .4;
+        color: #000;
     }
 
     .cart_info table td.delete
@@ -410,9 +409,9 @@
 
     .cart_info .cart_bottom .total_price
     {
-        height: auto;
-
         justify-content: center;
+
+        height: auto;
     }
 
     .cart_info .cart_bottom .back_link

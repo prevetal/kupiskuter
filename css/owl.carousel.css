@@ -96,8 +96,9 @@
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel button.owl-dot
 {
-    color: inherit;
     font: inherit;
+
+    color: inherit;
 }
 
 .owl-carousel.owl-loading,
@@ -477,15 +478,14 @@
     left: 50%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: auto;
     height: 10px;
     margin-left: -640px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .owl-dot
