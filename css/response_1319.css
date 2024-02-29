@@ -844,6 +844,30 @@
     }
 
 
+    .product_info .data .bg_block
+    {
+        margin: 30px -25px;
+        padding: 30px 25px;
+    }
+
+
+    .product_info .data .alternative
+    {
+        padding: 0 24px;
+    }
+
+
+    .product_info .data .alternative .owl-nav button.owl-prev
+    {
+        left: -16px;
+    }
+
+    .product_info .data .alternative .owl-nav button.owl-next
+    {
+        right: -16px;
+    }
+
+
 
     /*------------------
         Product tabs

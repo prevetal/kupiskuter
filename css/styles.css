@@ -8977,9 +8977,14 @@ aside .banner img
 }
 
 
-.product_info .data .color
+.product_info .data .bg_block
 {
-    margin-top: 30px;
+    margin: 40px -50px;
+    padding: 40px 50px;
+
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    background: #efefef;
 }
 
 
@@ -9067,6 +9072,95 @@ aside .banner img
 .product_info .data .color a:hover .color:after
 {
     opacity: 1;
+}
+
+
+.product_info .data .alternative
+{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.product_info .data .alternative .owl-nav button.owl-prev
+{
+    left: -41px;
+}
+
+.product_info .data .alternative .owl-nav button.owl-next
+{
+    right: -41px;
+}
+
+
+.product_info .data .alternative .product
+{
+    display: block;
+
+    padding: 2px;
+
+    transition: border-color .2s linear;
+    text-decoration: none;
+
+    color: currentColor;
+    border: 1px solid transparent;
+    background: #fff;
+}
+
+
+.product_info .data .alternative .product .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 75%;
+
+    background: #ddd;
+}
+
+
+.product_info .data .alternative .product .thumb img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.product_info .data .alternative .product .info
+{
+    font-size: 13px;
+
+    padding: 16px 13px;
+}
+
+
+.product_info .data .alternative .product .info > * + *
+{
+    margin-top: 8px;
+}
+
+
+.product_info .data .alternative .product .label
+{
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+
+.product_info .data .alternative .product:hover
+{
+    border-color: #171717;
 }
 
 

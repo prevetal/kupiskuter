@@ -665,6 +665,30 @@ $(() => {
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 	})
+
+
+	// Страница товара - Альтернативные товары
+	$('.product_info .data .alternative').owlCarousel({
+		nav: true,
+		dots: false,
+		loop: true,
+		smartSpeed: 500,
+		margin: 6,
+		responsive: {
+			0: {
+				items: 2
+			},
+			768: {
+				items: 4
+			},
+			1024: {
+				items: 3
+			},
+			1280: {
+				items: 4
+			}
+		}
+	})
 })
 
 
