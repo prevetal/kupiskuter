@@ -75,8 +75,13 @@
 
     .mob_header .mob_menu_btn
     {
+        position: absolute;
+        z-index: 9;
+        top: 2px;
+        left: 10px;
+
         width: 46px;
-        margin-left: 12px;
+        margin: 0;
     }
 
 
@@ -425,22 +430,10 @@
         padding-bottom: 60%;
     }
 
-    .products .product .compare_btn .icon
-    {
-        margin-right: 9px;
-    }
 
-
-    .products .product .compare_btn span + span,
-    .products .product .compare_btn.active span
+    .products .product .buy_btn
     {
-        display: none !important;
-    }
-
-    .products .product .compare_btn span,
-    .products .product .compare_btn.active span + span
-    {
-        display: inline !important;
+        width: 130px;
     }
 
 
@@ -543,13 +536,6 @@
     {
         font-size: 18px;
         line-height: 26px;
-    }
-
-
-    .product_info .data .buy_btn,
-    .product_info .data .credit_btn
-    {
-        width: calc(50% - 20px);
     }
 
 

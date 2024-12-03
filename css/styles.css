@@ -230,12 +230,6 @@ html.custom_scroll ::-webkit-scrollbar-thumb
     background-color: #f00;
 }
 
-html.custom_scroll
-{
-    scrollbar-color: #f00 #ccc;
-    scrollbar-width: thin;
-}
-
 
 body
 {
@@ -1130,7 +1124,7 @@ header .time
 
 header .time + .time
 {
-    margin-left: 42px;
+    margin-left: 24px;
 }
 
 header .time .name,
@@ -1154,7 +1148,7 @@ header .compare_link
     justify-content: flex-start;
 
     margin-top: 17px;
-    margin-left: 35px;
+    margin-left: 32px;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -1200,6 +1194,65 @@ header .compare_link:hover
 
 
 
+header .favorite_link
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 17px;
+    margin-left: 24px;
+
+    transition: color .2s linear;
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: #fff;
+}
+
+header .favorite_link .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+    background: #f00;
+}
+
+header .favorite_link .icon > *
+{
+    display: block;
+
+    width: 27px;
+    height: 21px;
+
+    color: #fff;
+}
+
+header .favorite_link .count
+{
+    margin-left: 4px;
+}
+
+header .favorite_link:hover
+{
+    color: #f00;
+}
+
+
+
 header .cart_link
 {
     font-size: 14px;
@@ -1213,7 +1266,7 @@ header .cart_link
     justify-content: flex-start;
 
     margin-top: 17px;
-    margin-left: 32px;
+    margin-left: 24px;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -2365,7 +2418,7 @@ header .logout_link:hover
 
     display: block;
 
-    margin-left: 25px;
+    margin-left: 24px;
 
     white-space: nowrap;
     text-decoration: none;
@@ -2408,6 +2461,58 @@ header .logout_link:hover
 
 
 
+.mob_header .favorite_link
+{
+    font-size: 14px;
+    line-height: 21px;
+
+    position: relative;
+
+    display: block;
+
+    margin-left: 20px;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: #f00;
+}
+
+.mob_header .favorite_link .icon
+{
+    display: block;
+
+    width: 26px;
+    height: 23px;
+}
+
+.mob_header .favorite_link .count
+{
+    font-weight: 700;
+    line-height: 16px;
+
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    text-align: center;
+
+    border-radius: 50%;
+    background: #fff;
+}
+
+.mob_header .favorite_link:hover
+{
+    color: #fff;
+}
+
+
+
 .mob_header .cart_link
 {
     font-size: 14px;
@@ -2417,7 +2522,7 @@ header .logout_link:hover
 
     display: block;
 
-    margin-left: 28px;
+    margin-left: 20px;
 
     white-space: nowrap;
     text-decoration: none;
@@ -5538,8 +5643,8 @@ aside .banner img
 .products .product .btns
 {
     display: flex;
-    align-content: stretch;
-    align-items: stretch;
+    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -5559,7 +5664,6 @@ aside .banner img
     text-transform: uppercase;
 
     color: #fff;
-    border-right: 1px solid transparent;
     border-radius: 2px;
     background: #f00;
     box-shadow: 0 0 5px 0 rgba(255, 0, 0, .5);
@@ -5580,7 +5684,6 @@ aside .banner img
     font-size: 12px;
 
     color: #829fb5;
-    border-color: #dae4eb;
     background: #f1f5f8;
     box-shadow: none;
 }
@@ -5596,7 +5699,55 @@ aside .banner img
 }
 
 
-.products .product .compare_btn
+.products .row .product .compare_btn,
+.products .row .product .favorite_btn,
+.products .slider .product .compare_btn,
+.products .slider .product .favorite_btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+    margin-left: 14px;
+
+    color: #fff;
+    border-radius: 50%;
+    background: #ff0200;
+}
+
+
+.products .row .product .compare_btn,
+.products .slider .product .compare_btn
+{
+    margin-left: auto;
+}
+
+
+.products .row .product .compare_btn .icon,
+.products .slider .product .compare_btn .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 19px;
+}
+
+
+.products .row .product .favorite_btn .icon,
+.products .slider .product .favorite_btn .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+}
+
+
+.products .list .product .compare_btn
 {
     font-size: 12px;
     font-weight: 500;
@@ -5616,7 +5767,7 @@ aside .banner img
     background: #f1f5f8;
 }
 
-.products .product .compare_btn .icon
+.products .list .product .compare_btn .icon
 {
     display: block;
 
@@ -5627,32 +5778,32 @@ aside .banner img
     color: #f00;
 }
 
-.products .product .compare_btn span + span
+.products .list .product .compare_btn span + span
 {
     display: none;
 }
 
-.products .product .compare_btn:hover
+.products .list .product .compare_btn:hover
 {
     color: #f00;
 }
 
-.products .product .compare_btn.active
+.products .list .product .compare_btn.active
 {
     color: #829fb5;
 }
 
-.products .product .compare_btn.active .icon
+.products .list .product .compare_btn.active .icon
 {
     color: #829fb5;
 }
 
-.products .product .compare_btn.active span
+.products .list .product .compare_btn.active span
 {
     display: none;
 }
 
-.products .product .compare_btn.active span + span
+.products .list .product .compare_btn.active span + span
 {
     display: inline;
 }
@@ -8814,14 +8965,6 @@ aside .banner img
     justify-content: flex-start;
 
     margin-top: 20px;
-    margin-bottom: -15px;
-    margin-left: -30px;
-}
-
-.product_info .data .buy > *
-{
-    margin-bottom: 15px;
-    margin-left: 30px;
 }
 
 
@@ -8888,6 +9031,7 @@ aside .banner img
 
     width: 150px;
     height: 60px;
+    margin-left: 30px;
 
     transition: .2s linear;
     text-decoration: none;
@@ -8917,63 +9061,57 @@ aside .banner img
 }
 
 
-.product_info .data .compare_btn
+.product_info .data .compare_btn,
+.product_info .data .favorite_btn
 {
-    font-size: 12px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 
-    transition: color .2s linear;
-    white-space: nowrap;
+    width: 48px;
+    height: 48px;
+    margin-left: 13px;
 
-    color: #171717;
-    background: #f1f5f8;
+    transition: .2s linear;
+
+    color: #757575;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    background: #fff;
 }
 
-.product_info .data .compare_btn .icon
+
+.product_info .data .compare_btn
+{
+    margin-left: auto;
+}
+
+
+.product_info .data .compare_btn .icon,
+.product_info .data .favorite_btn .icon
 {
     display: block;
 
     width: 24px;
     height: 19px;
-    margin-right: 9px;
-
-    color: #f00;
 }
 
-.product_info .data .compare_btn span + span
+
+.product_info .data .compare_btn:hover,
+.product_info .data .favorite_btn:hover
 {
-    display: none;
+    border-color: #dedede;
+    background: #eaeaea;
 }
 
-.product_info .data .compare_btn:hover
-{
-    color: #f00;
-}
 
-.product_info .data .compare_btn.active
+.product_info .data .compare_btn.active,
+.product_info .data .favorite_btn.active
 {
-    color: #829fb5;
-}
-
-.product_info .data .compare_btn.active .icon
-{
-    color: #829fb5;
-}
-
-.product_info .data .compare_btn.active span
-{
-    display: none;
-}
-
-.product_info .data .compare_btn.active span + span
-{
-    display: inline;
+    color: #fff;
+    background: #ff0200;
 }
 
 
@@ -9162,6 +9300,49 @@ aside .banner img
 .product_info .data .alternative .product:hover
 {
     border-color: #171717;
+}
+
+
+.product_info .data .alternative .btns
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 4px;
+
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 29px 29px;
+    background: #fff;
+}
+
+
+.product_info .data .alternative .compare_btn,
+.product_info .data .alternative .favorite_btn
+{
+    margin: 0;
+
+    border-color: transparent;
+    background: none;
+}
+
+
+.product_info .data .alternative .compare_btn:hover,
+.product_info .data .alternative .favorite_btn:hover
+{
+    color: #ff0200;
+    border-color: #dedede;
+    background: #eaeaea;
+}
+
+
+.product_info .data .alternative .compare_btn.active,
+.product_info .data .alternative .favorite_btn.active
+{
+    color: #fff;
+    background: #ff0200;
 }
 
 
@@ -10954,6 +11135,7 @@ aside .banner img
 
     transition: color .2s linear;
     vertical-align: top;
+    white-space: nowrap;
     text-decoration: none;
 
     color: #087aca;

@@ -655,25 +655,10 @@
     }
 
 
-    .products .product .buy_btn
+    .products .row .product .favorite_btn,
+    .products .slider .product .favorite_btn
     {
-        width: 130px;
-    }
-
-
-    .products .product .compare_btn
-    {
-        width: calc(100% - 130px);
-    }
-
-    .products .product .compare_btn .icon
-    {
-        margin: 0;
-    }
-
-    .products .product .compare_btn span
-    {
-        display: none !important;
+        margin-left: 10px;
     }
 
 
@@ -812,6 +797,27 @@
     .product_info .rating
     {
         transform: translateX(-50%);
+    }
+
+
+    .product_info .data .buy_btn,
+    .product_info .data .credit_btn
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .product_info .data .compare_btn
+    {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+    .product_info .data .favorite_btn
+    {
+        margin-top: 16px;
+        margin-left: 24px;
     }
 
 

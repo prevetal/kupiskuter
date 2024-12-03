@@ -64,7 +64,20 @@
     header .time + .time,
     header .compare_link
     {
-        margin-left: 32px;
+        margin-left: 24px;
+    }
+
+
+    header .compare_link,
+    header .cart_link
+    {
+        margin-left: 20px;
+    }
+
+
+    header .cart_link .sep
+    {
+        margin: 0 2px 0 8px;
     }
 
 
@@ -824,11 +837,6 @@
     }
 
 
-    .product_info .data .buy
-    {
-        margin-left: -20px;
-    }
-
     .product_info .data .buy_btn,
     .product_info .data .credit_btn
     {
@@ -838,9 +846,16 @@
         height: 50px;
     }
 
-    .product_info .data .buy > *
+
+    .product_info .data .credit_btn
     {
         margin-left: 20px;
+    }
+
+
+    .product_info .data .favorite_btn
+    {
+        margin-left: 10px;
     }
 
 
