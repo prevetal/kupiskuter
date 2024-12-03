@@ -390,6 +390,20 @@ $(() => {
 	})
 
 
+	// Товар в избранное
+	$('.product .favorite_btn, .product_info .data .favorite_btn').click(function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			// добавление
+			$(this).toggleClass('active')
+		} else {
+			// удаление
+			$(this).toggleClass('active')
+		}
+	})
+
+
 	// Товар в корзину
 	$('.product .buy_btn, .product_info .data .buy_btn').click(function (e) {
 		e.preventDefault()

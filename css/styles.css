@@ -5714,9 +5714,11 @@ aside .banner img
     height: 35px;
     margin-left: 14px;
 
-    color: #fff;
+    transition: .2s linear;
+
+    color: #757575;
+    border: 1px solid transparent;
     border-radius: 50%;
-    background: #ff0200;
 }
 
 
@@ -5745,6 +5747,29 @@ aside .banner img
     width: 18px;
     height: 18px;
 }
+
+
+.products .row .product .compare_btn:hover,
+.products .row .product .favorite_btn:hover,
+.products .slider .product .compare_btn:hover,
+.products .slider .product .favorite_btn:hover
+{
+    color: #ff0200;
+    border-color: #dedede;
+    background: #eaeaea;
+}
+
+
+.products .row .product .compare_btn.active,
+.products .row .product .favorite_btn.active,
+.products .slider .product .compare_btn.active,
+.products .slider .product .favorite_btn.active
+{
+    color: #fff;
+    border-color: #ff0200;
+    background: #ff0200;
+}
+
 
 
 .products .list .product .compare_btn
@@ -9300,49 +9325,6 @@ aside .banner img
 .product_info .data .alternative .product:hover
 {
     border-color: #171717;
-}
-
-
-.product_info .data .alternative .btns
-{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    padding: 4px;
-
-    border-top: 1px solid #ddd;
-    border-radius: 0 0 29px 29px;
-    background: #fff;
-}
-
-
-.product_info .data .alternative .compare_btn,
-.product_info .data .alternative .favorite_btn
-{
-    margin: 0;
-
-    border-color: transparent;
-    background: none;
-}
-
-
-.product_info .data .alternative .compare_btn:hover,
-.product_info .data .alternative .favorite_btn:hover
-{
-    color: #ff0200;
-    border-color: #dedede;
-    background: #eaeaea;
-}
-
-
-.product_info .data .alternative .compare_btn.active,
-.product_info .data .alternative .favorite_btn.active
-{
-    color: #fff;
-    background: #ff0200;
 }
 
 
