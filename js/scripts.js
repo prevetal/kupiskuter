@@ -703,6 +703,40 @@ $(() => {
 			}
 		}
 	})
+
+
+	// Поиск
+	$('.search_categories .sub .btn').click(function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.section')
+
+		$(this).toggleClass('active')
+
+		parent.find('.sub .btn.active').length
+			? parent.find('.name').addClass('inactive')
+			: parent.find('.name').removeClass('inactive')
+	})
+
+	$('.search_categories .sub .delete_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).prev().toggleClass('active')
+
+		let parent = $(this).closest('.section')
+
+		parent.find('.sub .btn.active').length
+			? parent.find('.name').addClass('inactive')
+			: parent.find('.name').removeClass('inactive')
+	})
+
+	$('.search_categories .name').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('inactive')) {
+			$(this).toggleClass('active').next().slideToggle(300)
+		}
+	})
 })
 
 

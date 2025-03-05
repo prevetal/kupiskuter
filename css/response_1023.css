@@ -1399,6 +1399,29 @@
 
 
 
+    /*-----------------------
+        Search categories
+    -----------------------*/
+    .search_categories .title
+    {
+        font-size: 20px;
+    }
+
+
+    .search_categories .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .search_categories .col
+    {
+        width: calc(33.333% - 24px);
+        max-width: calc(33.333% - 24px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

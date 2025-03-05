@@ -1111,6 +1111,93 @@
 
 
 
+    /*-----------------------
+        Search categories
+    -----------------------*/
+    .search_categories .title
+    {
+        font-size: 18px;
+    }
+
+
+    .search_categories .data
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+
+
+    .search_categories .sub_title
+    {
+        display: none;
+    }
+
+
+    .search_categories .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .search_categories .col
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+
+        gap: 20px;
+    }
+
+
+    .search_categories .name
+    {
+        margin-bottom: 0;
+        padding-left: 24px;
+
+        pointer-events: auto;
+    }
+
+
+    .search_categories .name > *
+    {
+        pointer-events: none;
+    }
+
+
+    .search_categories .name svg
+    {
+        display: block;
+    }
+
+
+    .search_categories .sub
+    {
+        display: none;
+
+        padding-top: 24px;
+        padding-bottom: 12px;
+
+        gap: 0;
+    }
+
+
+    .search_categories .sub > *
+    {
+        padding-left: 24px;
+    }
+
+
+    .search_categories .sub > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -11372,6 +11372,210 @@ aside .banner img
 
 
 
+/*-----------------------
+    Search categories
+-----------------------*/
+.search_categories
+{
+    margin-bottom: 40px;
+}
+
+
+.search_categories .title
+{
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #171717;
+}
+
+
+.search_categories .data
+{
+    padding: 32px;
+
+    background: #f2f5f8;
+}
+
+
+.search_categories .sub_title
+{
+    font-size: 26px;
+
+    margin-bottom: 24px;
+
+    color: #171717;
+}
+
+
+.search_categories .row
+{
+    gap: 48px;
+}
+
+
+.search_categories .col
+{
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 248px;
+
+    color: #171717;
+
+    gap: 32px;
+}
+
+
+.search_categories .name
+{
+    font-weight: 700;
+
+    position: relative;
+
+    margin-bottom: 16px;
+    padding-left: 19px;
+
+    pointer-events: none;
+}
+
+
+.search_categories .name svg
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    display: none;
+
+    width: 13px;
+    height: 8px;
+
+    transition: .2s linear;
+}
+
+
+.search_categories .name.active svg
+{
+    transform: rotate(180deg);
+}
+
+
+.search_categories .name.inactive svg
+{
+    color: #b4b4b4;
+}
+
+
+.search_categories .name sup
+{
+    font-size: 13px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    margin-left: 4px;
+
+    vertical-align: top;
+}
+
+
+.search_categories .sub
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.search_categories .sub > *
+{
+    position: relative;
+
+    padding-left: 19px;
+}
+
+
+.search_categories .sub .btn
+{
+    transition: color .2s linear;
+    text-align: left;
+}
+
+
+.search_categories .sub sup
+{
+    font-size: 13px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    margin-left: 4px;
+
+    vertical-align: top;
+}
+
+
+.search_categories .sub .btn:hover,
+.search_categories .sub .btn.active
+{
+    color: #ff0200;
+}
+
+
+.search_categories .delete_btn
+{
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+    display: none;
+
+    width: 12px;
+    height: 12px;
+
+    color: #ff0200;
+}
+
+
+.search_categories .delete_btn:before,
+.search_categories .delete_btn:after
+{
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
+
+    background: currentColor;
+
+    inset: 0;
+}
+
+
+.search_categories .delete_btn:after
+{
+    transform: rotate(-45deg);
+}
+
+
+.search_categories .btn.active + .delete_btn
+{
+    display: block;
+}
+
+
+
 /*------------
     Footer
 ------------*/

@@ -1138,6 +1138,57 @@
 
 
 
+    /*-----------------------
+        Search categories
+    -----------------------*/
+    .search_categories .title
+    {
+        font-size: 28px;
+    }
+
+
+    .search_categories .data
+    {
+        padding: 24px;
+    }
+
+
+    .search_categories .sub_title
+    {
+        font-size: 20px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .search_categories .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+
+        gap: 0;
+    }
+
+
+    .search_categories .col
+    {
+        font-size: 15px;
+
+        width: calc(25% - 24px);
+        max-width: calc(25% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .search_categories .name sup,
+    .search_categories .sub sup
+    {
+        font-size: 11px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
