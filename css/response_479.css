@@ -46,10 +46,10 @@
 
     .mob_header .compare_link .count
     {
-        font-size: 12px;
-
         width: 16px;
         height: 16px;
+
+        font-size: 12px;
     }
 
 
@@ -66,10 +66,10 @@
 
     .mob_header .cart_link .count
     {
-        font-size: 12px;
-
         width: 16px;
         height: 16px;
+
+        font-size: 12px;
     }
 
 
@@ -93,11 +93,11 @@
 
     .mob_header .phone .callback_btn
     {
-        font-size: 9px;
-
         height: 27px;
         margin-left: 20px;
         padding: 0 19px;
+
+        font-size: 9px;
     }
 
 
@@ -172,10 +172,10 @@
     .text_block blockquote,
     .text_block q
     {
+        padding-left: 40px;
+
         font-size: 19px;
         line-height: 25px;
-
-        padding-left: 40px;
     }
 
     .text_block blockquote:before,
@@ -296,14 +296,14 @@
 
     .popular_cats .cat .name
     {
-        font-size: 15px;
-        line-height: 19px;
-
         bottom: 20px;
         left: 20px;
 
         max-width: calc(100% - 40px);
         min-height: 55px;
+
+        font-size: 15px;
+        line-height: 19px;
     }
 
     .popular_cats .cat:hover .name
@@ -446,10 +446,10 @@
 
     .products .list .product .price .val
     {
+        margin-top: 4px;
+
         font-size: 25px;
         line-height: 31px;
-
-        margin-top: 4px;
     }
 
     .products .list .product .price .old
@@ -461,19 +461,19 @@
 
     .products .list .product .desc
     {
+        margin-top: 16px;
+
         font-size: 14px;
         line-height: 22px;
-
-        margin-top: 16px;
     }
 
 
     .products .list .product .buy_btn
     {
-        font-size: 17px;
-
         width: calc(100% - 164px);
         height: 48px;
+
+        font-size: 17px;
     }
 
     .products .list .product .compare_btn
@@ -550,6 +550,34 @@
     }
 
 
+    .product_info .data .delivery
+    {
+        margin: 30px -20px -20px;
+    }
+
+
+    .product_info .data .delivery .city
+    {
+        padding-inline: 20px;
+
+        font-size: 14px;
+    }
+
+
+    .product_info .data .delivery .item
+    {
+        padding: 9px 11px;
+
+        font-size: 12px;
+    }
+
+
+    .product_info .data .delivery .icon + *
+    {
+        width: calc(100% - 67px);
+    }
+
+
 
     /*-----------------
         About seria
@@ -592,10 +620,10 @@
 
     .main_slider .slide .desc
     {
+        padding: 0 15px;
+
         font-size: 15px;
         line-height: 21px;
-
-        padding: 0 15px;
     }
 
 
@@ -804,5 +832,43 @@
     #cart_success_modal .btns .btn + .btn
     {
         margin-top: 12px;
+    }
+
+
+
+    #city_modal .search
+    {
+        padding: 20px;
+    }
+
+
+    #city_modal .data
+    {
+        padding: 20px;
+    }
+
+
+    #city_modal .quike
+    {
+        gap: 8px;
+    }
+
+
+    #city_modal .quike .btn
+    {
+        font-size: 13px;
+    }
+
+
+    #city_modal .alphabet a
+    {
+        width: 39px;
+        height: 39px;
+    }
+
+
+    #city_modal .list
+    {
+        margin-top: 20px;
     }
 }

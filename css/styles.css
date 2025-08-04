@@ -233,12 +233,12 @@ html.custom_scroll ::-webkit-scrollbar-thumb
 
 body
 {
-    font: var(--font_size) var(--font_family);
-
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    font: var(--font_size) var(--font_family);
 
     color: var(--text_color);
 }
@@ -381,9 +381,9 @@ button
 
 .owl-carousel
 {
-    font-size: 0;
-
     display: block;
+
+    font-size: 0;
 
     white-space: nowrap;
 }
@@ -398,9 +398,9 @@ button
 .owl-carousel .owl-item,
 .owl-carousel .slide
 {
-    font-size: var(--font_size);
-
     display: inline-block;
+
+    font-size: var(--font_size);
 
     vertical-align: top;
     white-space: normal;
@@ -507,10 +507,6 @@ button
 
 .supports_error
 {
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -525,6 +521,10 @@ button
     width: 100%;
     height: 100%;
     padding: 20px;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
 
     text-align: center;
 
@@ -700,11 +700,11 @@ header .menu .item + .item
 
 header .menu .item > a
 {
+    display: block;
+
     font-size: 15px;
     font-weight: 500;
     line-height: 19px;
-
-    display: block;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -771,15 +771,15 @@ header .socials .btn:hover
 
 header .socials .mini_modal
 {
-    font-size: 12px;
-    line-height: 15px;
-
     left: 50%;
 
     display: flex;
     flex-direction: row;
 
     margin-top: 10px;
+
+    font-size: 12px;
+    line-height: 15px;
 
     transform: translateX(-50%);
     white-space: nowrap;
@@ -859,10 +859,6 @@ header .socials .mini_modal a:hover
 
 header .account
 {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -872,20 +868,24 @@ header .account
     width: 257px;
     max-width: 100%;
 
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+
     color: #fff;
 }
 
 header .account .btn
 {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 
     transition: color .2s linear;
 
@@ -932,11 +932,11 @@ header .logo img
 
 header .logo .desc
 {
+    margin-top: 8px;
+
     font-size: 11px;
     font-weight: bold;
     line-height: 14px;
-
-    margin-top: 8px;
 
     text-transform: uppercase;
 
@@ -1013,14 +1013,14 @@ header .phone a
 
 header .callback_btn
 {
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 14px;
-
     display: inline-block;
 
     margin-left: 19px;
     padding: 5px 17px;
+
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
 
     transition: .2s linear;
     vertical-align: top;
@@ -1042,9 +1042,6 @@ header .callback_btn:hover
 
 header .location
 {
-    font-size: 13px;
-    line-height: 16px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1052,6 +1049,9 @@ header .location
     justify-content: flex-start;
 
     margin-top: 8px;
+
+    font-size: 13px;
+    line-height: 16px;
 
     color: #fff;
 }
@@ -1071,11 +1071,11 @@ header .location .icon
 
 header .email
 {
+    margin-top: 8px;
+
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
-
-    margin-top: 8px;
 
     color: #bdbdbd;
 }
@@ -1113,11 +1113,11 @@ header .email a:hover
 
 header .time
 {
-    font-size: 12px;
-    line-height: 19px;
-
     margin-top: 14px;
     margin-left: 31px;
+
+    font-size: 12px;
+    line-height: 19px;
 
     color: #d0d0d0;
 }
@@ -1137,10 +1137,6 @@ header .time .val b
 
 header .compare_link
 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1149,6 +1145,10 @@ header .compare_link
 
     margin-top: 17px;
     margin-left: 32px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -1196,10 +1196,6 @@ header .compare_link:hover
 
 header .favorite_link
 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1208,6 +1204,10 @@ header .favorite_link
 
     margin-top: 17px;
     margin-left: 24px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -1255,10 +1255,6 @@ header .favorite_link:hover
 
 header .cart_link
 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1267,6 +1263,10 @@ header .cart_link
 
     margin-top: 17px;
     margin-left: 24px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -1342,9 +1342,6 @@ header .cats
 
 header .cats .item > a
 {
-    font-weight: 700;
-    line-height: 20px;
-
     position: relative;
 
     display: flex;
@@ -1354,6 +1351,9 @@ header .cats .item > a
     justify-content: flex-start;
 
     min-height: 40px;
+
+    font-weight: 700;
+    line-height: 20px;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -1493,10 +1493,10 @@ header .cats .dropdown .phone .icon > *
 
 header .cats .dropdown .phone a
 {
+    display: inline-block;
+
     font-size: 18px;
     line-height: 21px;
-
-    display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
@@ -1519,10 +1519,6 @@ header .cats .dropdown .mob_brands .link + .link
 
 header .cats .dropdown .mob_brands .link a
 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-
     position: relative;
 
     display: flex;
@@ -1530,6 +1526,10 @@ header .cats .dropdown .mob_brands .link a
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
 
     text-decoration: none;
 
@@ -1574,11 +1574,11 @@ header .cats .dropdown .mob_brands .all_link
 
 header .cats .dropdown .mob_brands .all_link a
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 13px;
     line-height: 17px;
-
-    display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
@@ -1629,16 +1629,16 @@ header .cats .dropdown .tabs_container.level1 > .tabs
 
 header .cats .dropdown .tabs_container.level1 > .tabs button
 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-
     position: relative;
 
     display: block;
 
     width: 100%;
     padding: 19px 43px 19px 0;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
 
     transition: color .2s linear;
     text-align: left;
@@ -1700,16 +1700,16 @@ header .cats .dropdown .tabs_container.level1 > .tabs button.active:after
 
 header .cats .dropdown .tabs_container.level1 .mob_tab_btn
 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-
     position: relative;
 
     display: none;
 
     width: 100%;
     padding: 15px 39px 15px 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
 
     transition: color .2s linear;
     text-align: left;
@@ -1818,13 +1818,13 @@ header .cats .dropdown .sub_cats_list > * + *
 
 header .cats .dropdown .sub_cats_list a
 {
-    font-size: 14px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
+
+    font-size: 14px;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -1868,15 +1868,15 @@ header .cats .dropdown .sub_cats .row > *
 
 header .cats .dropdown .sub_cats a
 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -1962,17 +1962,17 @@ header .cats .dropdown .brands .tabs
 
 header .cats .dropdown .brands .tabs button
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-
     position: relative;
 
     display: block;
 
     width: 100%;
     padding-right: 24px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
 
     transition: color .2s linear;
     text-align: left;
@@ -2050,12 +2050,12 @@ header .cats .dropdown .brands .all_brands_link
 
 header .cats .dropdown .brands .all_brands_link a
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-
-    display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
@@ -2103,11 +2103,11 @@ header .cats .dropdown .brands .links > * + *
 
 header .cats .dropdown .brands .links a
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 20px;
-
-    display: inline-block;
 
     transition: .2s linear;
     vertical-align: top;
@@ -2132,11 +2132,11 @@ header .cats .dropdown .brands .all_link
 
 header .cats .dropdown .brands .all_link a
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 20px;
-
-    display: inline-block;
 
     transition: .2s linear;
     vertical-align: top;
@@ -2213,14 +2213,14 @@ header .search :-ms-input-placeholder
 
 header .search .input
 {
-    font-family: var(--font_family);
-    font-size: 14px;
-
     display: block;
 
     width: 100%;
     height: 40px;
     padding: 0 50px 0 15px;
+
+    font-family: var(--font_family);
+    font-size: 14px;
 
     color: #fff;
     border: none;
@@ -2265,13 +2265,13 @@ header .search .submit_btn:hover .icon
 
 header .title
 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-
     margin-top: 23px;
     margin-right: auto;
     margin-left: 70px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
 
     color: #fff;
 }
@@ -2280,9 +2280,6 @@ header .title
 
 header .logout_link
 {
-    font-size: 14px;
-    line-height: 21px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -2290,6 +2287,9 @@ header .logout_link
     justify-content: flex-start;
 
     margin-top: 23px;
+
+    font-size: 14px;
+    line-height: 21px;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -2366,11 +2366,11 @@ header .logout_link:hover
 
 .mob_header .phone .number
 {
+    display: inline-block;
+
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
-
-    display: inline-block;
 
     vertical-align: top;
     white-space: nowrap;
@@ -2382,14 +2382,14 @@ header .logout_link:hover
 
 .mob_header .phone .callback_btn
 {
-    font-size: 9px;
-    font-weight: 500;
-
     display: inline-block;
 
     height: 27px;
     margin-left: 15px;
     padding: 1px 9px 0;
+
+    font-size: 9px;
+    font-weight: 500;
 
     transition: .2s linear;
     vertical-align: top;
@@ -2411,14 +2411,14 @@ header .logout_link:hover
 
 .mob_header .compare_link
 {
-    font-size: 14px;
-    line-height: 21px;
-
     position: relative;
 
     display: block;
 
     margin-left: 24px;
+
+    font-size: 14px;
+    line-height: 21px;
 
     white-space: nowrap;
     text-decoration: none;
@@ -2436,9 +2436,6 @@ header .logout_link:hover
 
 .mob_header .compare_link .count
 {
-    font-weight: 700;
-    line-height: 16px;
-
     position: absolute;
     top: -5px;
     right: -5px;
@@ -2447,6 +2444,9 @@ header .logout_link:hover
 
     width: 18px;
     height: 18px;
+
+    font-weight: 700;
+    line-height: 16px;
 
     text-align: center;
 
@@ -2463,14 +2463,14 @@ header .logout_link:hover
 
 .mob_header .favorite_link
 {
-    font-size: 14px;
-    line-height: 21px;
-
     position: relative;
 
     display: block;
 
     margin-left: 20px;
+
+    font-size: 14px;
+    line-height: 21px;
 
     white-space: nowrap;
     text-decoration: none;
@@ -2488,9 +2488,6 @@ header .logout_link:hover
 
 .mob_header .favorite_link .count
 {
-    font-weight: 700;
-    line-height: 16px;
-
     position: absolute;
     top: -5px;
     right: -5px;
@@ -2499,6 +2496,9 @@ header .logout_link:hover
 
     width: 18px;
     height: 18px;
+
+    font-weight: 700;
+    line-height: 16px;
 
     text-align: center;
 
@@ -2515,14 +2515,14 @@ header .logout_link:hover
 
 .mob_header .cart_link
 {
-    font-size: 14px;
-    line-height: 21px;
-
     position: relative;
 
     display: block;
 
     margin-left: 20px;
+
+    font-size: 14px;
+    line-height: 21px;
 
     white-space: nowrap;
     text-decoration: none;
@@ -2546,9 +2546,6 @@ header .logout_link:hover
 
 .mob_header .cart_link .count
 {
-    font-weight: 700;
-    line-height: 16px;
-
     position: absolute;
     top: -5px;
     right: -5px;
@@ -2557,6 +2554,9 @@ header .logout_link:hover
 
     width: 18px;
     height: 18px;
+
+    font-weight: 700;
+    line-height: 16px;
 
     text-align: center;
 
@@ -2651,14 +2651,14 @@ header .logout_link:hover
 
 .mob_header .search .input
 {
-    font-family: var(--font_family);
-    font-size: 14px;
-
     display: block;
 
     width: 100%;
     height: 40px;
     padding: 0 50px 0 15px;
+
+    font-family: var(--font_family);
+    font-size: 14px;
 
     color: #fff;
     border: none;
@@ -2721,13 +2721,13 @@ aside > * + *
 
 aside .mob_filter_btn
 {
-    font-size: 15px;
-    font-weight: 800;
-
     display: none;
 
     width: 100%;
     height: 40px;
+
+    font-size: 15px;
+    font-weight: 800;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -2775,11 +2775,11 @@ aside .filter .item .field + .field
 
 aside .filter .item .name
 {
+    margin-bottom: 10px;
+
     font-size: 13px;
     font-weight: 700;
     line-height: 21px;
-
-    margin-bottom: 10px;
 
     color: #171717;
 }
@@ -2881,9 +2881,6 @@ aside .banner img
 
 .breadcrumbs
 {
-    font-size: 11px;
-    line-height: 19px;
-
     position: relative;
     z-index: 9;
 
@@ -2892,6 +2889,9 @@ aside .banner img
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 11px;
+    line-height: 19px;
 
     text-transform: uppercase;
 
@@ -2990,12 +2990,12 @@ aside .banner img
 
 .breadcrumbs .current .dropdown a
 {
-    font-size: 13px;
-    line-height: 17px;
-
     display: block;
 
     padding: 8px 14px;
+
+    font-size: 13px;
+    line-height: 17px;
 
     transition: .2s linear;
     white-space: normal;
@@ -3018,11 +3018,11 @@ aside .banner img
 
 .page_title
 {
+    display: block;
+
     font-size: var(--font_size_title);
     font-weight: 700;
     line-height: calc(var(--font_size_title) + 10px);
-
-    display: block;
 }
 
 
@@ -3098,11 +3098,11 @@ aside .banner img
 
 .block_head .all_link
 {
-    font-size: 15px;
-    line-height: 22px;
-
     position: relative;
     top: 2px;
+
+    font-size: 15px;
+    line-height: 22px;
 
     color: #087aca;
 }
@@ -3266,10 +3266,10 @@ aside .banner img
 
 .form .label
 {
+    margin-bottom: 10px;
+
     font-size: 13px;
     font-weight: 700;
-
-    margin-bottom: 10px;
 
     color: #171717;
 }
@@ -3287,13 +3287,13 @@ aside .banner img
 
 .form .input
 {
-    font: 14px var(--font_family);
-
     display: block;
 
     width: 100%;
     height: 40px;
     padding: 0 15px;
+
+    font: 14px var(--font_family);
 
     transition: border-color .2s linear;
 
@@ -3305,13 +3305,13 @@ aside .banner img
 
 .form textarea
 {
-    font: 14px var(--font_family);
-
     display: block;
 
     width: 100%;
     height: 80px;
     padding: 10px 15px;
+
+    font: 14px var(--font_family);
 
     resize: none;
     transition: border-color .2s linear;
@@ -3346,9 +3346,6 @@ aside .banner img
 
 .form .error_text
 {
-    font-size: 12px;
-    line-height: 14px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -3358,6 +3355,9 @@ aside .banner img
     min-height: 20px;
     margin-top: 10px;
     padding-left: 29px;
+
+    font-size: 12px;
+    line-height: 14px;
 
     color: #f00;
     background: url(../images/ic_notice.svg) 0 0/20px 20px no-repeat;
@@ -3394,9 +3394,6 @@ aside .banner img
 
 .form input[type=checkbox] + label
 {
-    font-size: 14px;
-    line-height: 18px;
-
     position: relative;
 
     display: flex;
@@ -3407,6 +3404,9 @@ aside .banner img
 
     height: 18px;
     padding-left: 27px;
+
+    font-size: 14px;
+    line-height: 18px;
 
     cursor: pointer;
 
@@ -3465,9 +3465,6 @@ aside .banner img
 
 .form input[type=radio] + label
 {
-    font-size: 14px;
-    line-height: 18px;
-
     position: relative;
 
     display: flex;
@@ -3478,6 +3475,9 @@ aside .banner img
 
     height: 18px;
     padding-left: 27px;
+
+    font-size: 14px;
+    line-height: 18px;
 
     cursor: pointer;
 
@@ -3646,9 +3646,6 @@ aside .banner img
 
 .select2-results__option
 {
-    font-size: 14px;
-    line-height: 18px;
-
     position: relative;
 
     display: flex;
@@ -3659,6 +3656,9 @@ aside .banner img
 
     min-height: 38px;
     padding: 10px 13px 10px 41px;
+
+    font-size: 14px;
+    line-height: 18px;
 
     cursor: pointer;
     transition: background .2s linear;
@@ -3728,9 +3728,6 @@ aside .banner img
 
 .form .nice-select .current
 {
-    font-size: 14px;
-    line-height: 14px;
-
     position: relative;
 
     display: flex;
@@ -3741,6 +3738,9 @@ aside .banner img
 
     height: 40px;
     padding: 0 40px 0 13px;
+
+    font-size: 14px;
+    line-height: 14px;
 
     cursor: pointer;
     transition: .2s linear;
@@ -3831,10 +3831,10 @@ aside .banner img
 
 .form .nice-select .list .list_item
 {
+    padding: 10px 13px;
+
     font-size: 14px;
     line-height: 14px;
-
-    padding: 10px 13px;
 
     cursor: pointer;
     transition: background .2s linear;
@@ -3844,9 +3844,9 @@ aside .banner img
 
 .form .nice-select .list .list_item small
 {
-    font-size: 11px;
-
     display: block;
+
+    font-size: 11px;
 }
 
 .form .nice-select .list .list_item:empty
@@ -3875,13 +3875,13 @@ aside .banner img
 
 .form .submit_btn
 {
-    font-size: 15px;
-    font-weight: 800;
-
     display: inline-block;
 
     height: 40px;
     padding: 0 20px;
+
+    font-size: 15px;
+    font-weight: 800;
 
     transition: .2s linear;
     vertical-align: top;
@@ -3901,10 +3901,10 @@ aside .banner img
 
 .form .reset_btn
 {
+    display: inline-block;
+
     font-size: 15px;
     line-height: 22px;
-
-    display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -4065,30 +4065,30 @@ aside .banner img
 .text_block blockquote,
 .text_block q
 {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 40px;
-
     position: relative;
 
     display: block;
 
     margin: 30px;
     padding-left: 48px;
+
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
 }
 
 .text_block blockquote:before,
 .text_block q:before
 {
-    font-size: 63px;
-    font-weight: 500;
-    line-height: 65px;
-
     position: absolute;
     top: 0;
     left: 0;
 
     display: block;
+
+    font-size: 63px;
+    font-weight: 500;
+    line-height: 65px;
 
     content: '“';
 
@@ -4133,12 +4133,12 @@ aside .banner img
 
 .text_block .text_slider .title
 {
+    width: 100%;
+    padding-left: 28px;
+
     font-size: 25px;
     font-weight: 500;
     line-height: 32px;
-
-    width: 100%;
-    padding-left: 28px;
 
     color: #fff;
     border-left: 2px solid #f00;
@@ -4169,8 +4169,6 @@ aside .banner img
 
 .text_block ul li
 {
-    font-weight: 500;
-
     position: relative;
 
     display: block;
@@ -4179,6 +4177,8 @@ aside .banner img
     padding-left: 25px;
 
     list-style-type: none;
+
+    font-weight: 500;
 }
 
 .text_block ul li + li
@@ -4214,8 +4214,6 @@ aside .banner img
 
 .text_block ol li
 {
-    font-weight: 500;
-
     position: relative;
 
     display: block;
@@ -4224,6 +4222,8 @@ aside .banner img
     padding-left: 25px;
 
     list-style-type: none;
+
+    font-weight: 500;
 }
 
 .text_block ol li + li
@@ -4233,11 +4233,11 @@ aside .banner img
 
 .text_block ol li:before
 {
-    font-weight: 700;
-
     position: absolute;
     top: 0;
     left: 0;
+
+    font-weight: 700;
 
     content: counters(li, '.') '.';
     counter-increment: li;
@@ -4372,11 +4372,11 @@ aside .banner img
 
 .main_slider .slide .desc
 {
+    margin-top: 15px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
-
-    margin-top: 15px;
 }
 
 .main_slider .slide .img
@@ -4452,10 +4452,10 @@ aside .banner img
 
 .action_form .desc
 {
+    margin-top: 12px;
+
     font-size: 18px;
     line-height: 26px;
-
-    margin-top: 12px;
 
     text-align: center;
 
@@ -4476,9 +4476,9 @@ aside .banner img
 -------------------*/
 .message_block .data
 {
-    font-weight: 700;
-
     padding: 45px 60px;
+
+    font-weight: 700;
 
     color: #fff;
     background: #f00 url(../images/bg_message_block.png) 100% 100% no-repeat;
@@ -4649,10 +4649,10 @@ aside .banner img
 
 .advantages .item
 {
+    order: 100;
+
     font-size: 13px;
     line-height: 20px;
-
-    order: 100;
 
     text-align: center;
 
@@ -4786,10 +4786,6 @@ aside .banner img
 
 .partners .title
 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4799,6 +4795,10 @@ aside .banner img
     width: 160px;
     height: 150px;
     padding: 18px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
 
     color: #171717;
     background: #f5f5f5;
@@ -4842,13 +4842,13 @@ aside .banner img
 ------------------*/
 .popular_cats .block_title
 {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 35px;
-
     display: block;
 
     margin-bottom: 20px;
+
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
 
     color: #171717;
 }
@@ -4863,12 +4863,12 @@ aside .banner img
 
 .popular_cats .carousel .item
 {
-    font-size: 13px;
-    line-height: 32px;
-
     display: block;
 
     padding: 0 15px;
+
+    font-size: 13px;
+    line-height: 32px;
 
     transition: .2s linear;
     white-space: nowrap;
@@ -4949,10 +4949,6 @@ aside .banner img
 
 .popular_cats .cat .name
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22px;
-
     position: absolute;
     z-index: 3;
     bottom: 25px;
@@ -4968,6 +4964,10 @@ aside .banner img
     max-width: calc(100% - 50px);
     min-height: 65px;
     padding: 11px 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
 
     transition: .2s linear;
 
@@ -5047,13 +5047,13 @@ aside .banner img
 
 .cats_wall .block_title .title
 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 46px;
-
     position: relative;
 
     width: 100%;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
 
     text-transform: uppercase;
 
@@ -5181,11 +5181,11 @@ aside .banner img
 
 .cats_wall .cat .name
 {
+    padding: 0 10px;
+
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
-
-    padding: 0 10px;
 }
 
 
@@ -5213,10 +5213,10 @@ aside .banner img
 --------------*/
 .products .head
 {
+    margin-bottom: 20px;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-bottom: 20px;
 
     color: #171717;
 }
@@ -5241,14 +5241,14 @@ aside .banner img
 
 .products .head .nice-select .current
 {
-    font-weight: 500;
-
     position: relative;
 
     display: block;
     overflow: hidden;
 
     padding: 0 18px 0 0;
+
+    font-weight: 500;
 
     cursor: pointer;
     transition: .2s linear;
@@ -5326,12 +5326,12 @@ aside .banner img
 
 .products .head .nice-select .list .list_item
 {
-    font-size: 13px;
-    line-height: 17px;
-
     display: block;
 
     padding: 8px 14px;
+
+    font-size: 13px;
+    line-height: 17px;
 
     cursor: pointer;
     transition: background .2s linear;
@@ -5395,14 +5395,14 @@ aside .banner img
 
 .products .tabs button
 {
-    font-size: 14px;
-    font-weight: 700;
-
     display: block;
 
     height: 45px;
     margin: -2px;
     padding: 10px 25px 12px;
+
+    font-size: 14px;
+    font-weight: 700;
 
     transition: .2s linear;
 
@@ -5472,15 +5472,15 @@ aside .banner img
 
 .products .product .stickers .sticker
 {
-    font-size: 9px;
-    font-weight: 700;
-    line-height: 11px;
-
     position: relative;
 
     display: inline-block;
 
     padding: 6px 10px;
+
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 11px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -5584,10 +5584,10 @@ aside .banner img
 
 .products .product .name
 {
+    flex: 1 0 auto;
+
     font-size: 15px;
     line-height: 22px;
-
-    flex: 1 0 auto;
 
     color: #087aca;
 }
@@ -5612,10 +5612,10 @@ aside .banner img
 
 .products .product .price
 {
+    margin-top: 15px;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: 15px;
 
     white-space: nowrap;
 
@@ -5629,10 +5629,10 @@ aside .banner img
 
 .products .product .price .old
 {
+    margin-left: 9px;
+
     font-size: 14px;
     font-weight: 500;
-
-    margin-left: 9px;
 
     text-decoration: line-through;
 
@@ -5654,11 +5654,11 @@ aside .banner img
 
 .products .product .buy_btn
 {
-    font-size: 15px;
-    font-weight: 800;
-
     width: 100px;
     height: 40px;
+
+    font-size: 15px;
+    font-weight: 800;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -5774,9 +5774,6 @@ aside .banner img
 
 .products .list .product .compare_btn
 {
-    font-size: 12px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -5784,6 +5781,9 @@ aside .banner img
     justify-content: center;
 
     width: calc(100% - 100px);
+
+    font-size: 12px;
+    font-weight: 500;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -5836,9 +5836,6 @@ aside .banner img
 
 .products .product .details
 {
-    font-size: 12px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -5848,6 +5845,9 @@ aside .banner img
     width: calc(100% - 41px);
     height: 40px;
     padding: 0 14px;
+
+    font-size: 12px;
+    font-weight: 500;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -6121,10 +6121,10 @@ aside .banner img
 
 .products .list .product .articul
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 15px;
-
-    margin-top: 10px;
 
     color: #fff;
 }
@@ -6137,39 +6137,39 @@ aside .banner img
 
 .products .list .product .price
 {
+    margin-top: 25px;
+
     font-size: 14px;
     line-height: 18px;
-
-    margin-top: 25px;
 
     color: #fff;
 }
 
 .products .list .product .price .val
 {
+    margin-top: 3px;
+
     font-size: 27px;
     font-weight: 700;
     line-height: 34px;
-
-    margin-top: 3px;
 }
 
 .products .list .product .price .old
 {
+    margin-left: 16px;
+
     font-size: 22px;
     font-weight: 500;
     line-height: 28px;
-
-    margin-left: 16px;
 }
 
 
 .products .list .product .desc
 {
+    margin-top: 18px;
+
     font-size: 15px;
     line-height: 23px;
-
-    margin-top: 18px;
 
     color: #fff;
 }
@@ -6189,11 +6189,11 @@ aside .banner img
 
 .products .list .product .buy_btn
 {
-    font-size: 18px;
-    font-weight: 900;
-
     width: 156px;
     height: 52px;
+
+    font-size: 18px;
+    font-weight: 900;
 
     text-transform: uppercase;
 
@@ -6205,9 +6205,6 @@ aside .banner img
 
 .products .list .product .compare_btn
 {
-    font-size: 14px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6216,6 +6213,9 @@ aside .banner img
 
     width: 180px;
     height: 52px;
+
+    font-size: 14px;
+    font-weight: 500;
 
     color: #fff;
     background: #383838;
@@ -6257,14 +6257,14 @@ aside .banner img
 
 .popular_compare .tabs button
 {
-    font-size: 14px;
-    font-weight: 700;
-
     display: block;
 
     height: 45px;
     margin: -2px;
     padding: 10px 25px 12px;
+
+    font-size: 14px;
+    font-weight: 700;
 
     transition: .2s linear;
 
@@ -6356,12 +6356,12 @@ aside .banner img
 
 .popular_compare .compare .product .name
 {
-    font-size: 15px;
-    line-height: 22px;
-
     flex: 1 0 auto;
 
     padding-right: 10px;
+
+    font-size: 15px;
+    line-height: 22px;
 
     color: #087aca;
 }
@@ -6385,11 +6385,11 @@ aside .banner img
 
 .popular_compare .compare .product .price
 {
+    margin-top: 12px;
+
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-
-    margin-top: 12px;
 
     white-space: nowrap;
 
@@ -6399,9 +6399,6 @@ aside .banner img
 
 .popular_compare .compare .link
 {
-    font-size: 12px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6411,6 +6408,9 @@ aside .banner img
     width: 100%;
     height: 40px;
     margin-top: 15px;
+
+    font-size: 12px;
+    font-weight: 500;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -6559,11 +6559,11 @@ aside .banner img
 
 .overviews .overview .name
 {
+    margin-top: 15px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
-
-    margin-top: 15px;
 
     color: #087aca;
 }
@@ -6588,10 +6588,10 @@ aside .banner img
 
 .overviews .overview .desc
 {
+    margin-top: 12px;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: 12px;
 
     color: #171717;
 }
@@ -6659,14 +6659,14 @@ aside .banner img
 
 .reviews .review
 {
-    font-size: 13px;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 13px;
+    line-height: 20px;
 
     color: #171717;
 }
@@ -7163,10 +7163,6 @@ aside .banner img
 
 .category_info .head .name
 {
-    font-size: var(--font_size_title);
-    font-weight: 700;
-    line-height: calc(var(--font_size_title) + 10px);
-
     position: absolute;
     z-index: 2;
     top: 0;
@@ -7176,6 +7172,10 @@ aside .banner img
 
     max-width: 100%;
     padding: 0 35px 25px 0;
+
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: calc(var(--font_size_title) + 10px);
 
     color: currentColor;
     background: #fff;
@@ -7228,10 +7228,6 @@ aside .banner img
 
 .category_info .models .title
 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-
     position: absolute;
     top: -2px;
     left: -2px;
@@ -7244,6 +7240,10 @@ aside .banner img
 
     width: 152px;
     height: 45px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
 
     color: #171717;
     border-radius: 25px;
@@ -7264,11 +7264,6 @@ aside .banner img
 
 .category_info .models .item
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -7277,6 +7272,11 @@ aside .banner img
 
     height: 45px;
     padding: 10px 20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
 
     transition: border-color .2s linear;
     text-align: center;
@@ -7383,12 +7383,12 @@ aside .banner img
 
 .cats_cloud .cat
 {
-    font-size: 13px;
-    line-height: 32px;
-
     display: block;
 
     padding: 0 14px;
+
+    font-size: 13px;
+    line-height: 32px;
 
     transition: .2s linear;
     white-space: nowrap;
@@ -7435,16 +7435,16 @@ aside .banner img
 
 .cart_info .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 27px;
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -7486,11 +7486,11 @@ aside .banner img
 
 .cart_info table th
 {
+    padding-bottom: 10px;
+
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
-
-    padding-bottom: 10px;
 
     text-align: left;
     vertical-align: middle;
@@ -7546,10 +7546,10 @@ aside .banner img
 
 .cart_info table td.name
 {
+    width: 100%;
+
     font-size: 15px;
     line-height: 22px;
-
-    width: 100%;
 
     color: #087aca;
 }
@@ -7574,14 +7574,14 @@ aside .banner img
 
 .cart_info table td.price
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22px;
-
     width: 140px;
     min-width: 140px;
 
     table-layout: fixed;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
 
     white-space: nowrap;
 
@@ -7672,15 +7672,15 @@ aside .banner img
 
 .cart_info table td.amount .input
 {
-    font-family: var(--font_family);
-    font-size: 14px;
-
     display: block;
 
     width: 60px;
     height: 40px;
     margin: 0 -1px;
     padding: 0 10px;
+
+    font-family: var(--font_family);
+    font-size: 14px;
 
     text-align: center;
 
@@ -7779,9 +7779,6 @@ aside .banner img
 
 .cart_info .cart_bottom .total_price
 {
-    font-size: 14px;
-    line-height: 21px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -7791,16 +7788,19 @@ aside .banner img
     width: 100%;
     height: 60px;
 
+    font-size: 14px;
+    line-height: 21px;
+
     color: #171717;
 }
 
 .cart_info .cart_bottom .total_price .val
 {
+    width: 100%;
+
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
-
-    width: 100%;
 
     white-space: nowrap;
     text-transform: uppercase;
@@ -7809,13 +7809,13 @@ aside .banner img
 
 .cart_info .cart_bottom .back_link
 {
-    font-size: 15px;
-    line-height: 60px;
-
     display: block;
 
     height: 60px;
     margin-top: 30px;
+
+    font-size: 15px;
+    line-height: 60px;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -7831,13 +7831,13 @@ aside .banner img
 
 .cart_info .cart_bottom .checkout_btn
 {
-    font-size: 20px;
-    font-weight: 800;
-
     display: block;
 
     width: 100%;
     height: 60px;
+
+    font-size: 20px;
+    font-weight: 800;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -7856,9 +7856,6 @@ aside .banner img
 
 .cart_info .cart_bottom .credit_btn
 {
-    font-size: 20px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -7868,6 +7865,9 @@ aside .banner img
     width: 100%;
     height: 60px;
     margin-top: 30px;
+
+    font-size: 20px;
+    font-weight: 500;
 
     transition: .2s linear;
     text-decoration: none;
@@ -7917,10 +7917,6 @@ aside .banner img
 
 .checkout_info .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -7929,6 +7925,10 @@ aside .banner img
 
     margin-bottom: 27px;
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -7960,13 +7960,13 @@ aside .banner img
 
 .checkout_info .auth
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 23px;
-
     width: 700px;
     max-width: 100%;
     margin: 0 auto;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
 
     text-align: center;
 
@@ -7975,15 +7975,15 @@ aside .banner img
 
 .checkout_info .auth .btn
 {
-    font-size: 15px;
-    font-weight: 800;
-    line-height: 40px;
-
     display: inline-block;
 
     height: 40px;
     margin-top: 20px;
     padding: 0 18px;
+
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 40px;
 
     transition: .2s linear;
     vertical-align: top;
@@ -8031,10 +8031,6 @@ aside .banner img
 
 .checkout_info .form .col .name
 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -8042,6 +8038,10 @@ aside .banner img
     justify-content: flex-start;
 
     margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
 
     color: #171717;
 }
@@ -8168,16 +8168,16 @@ aside .banner img
 
 .lk_personal .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 27px;
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -8209,8 +8209,6 @@ aside .banner img
 
 .lk_personal .info
 {
-    line-height: 30px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -8219,6 +8217,8 @@ aside .banner img
 
     margin-bottom: -20px;
     margin-left: -50px;
+
+    line-height: 30px;
 
     color: #171717;
 }
@@ -8262,12 +8262,12 @@ aside .banner img
 
 .lk_personal .form .cancel_btn
 {
-    font-size: 15px;
-    line-height: 22px;
-
     display: inline-block;
 
     margin-left: 28px;
+
+    font-size: 15px;
+    line-height: 22px;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -8313,15 +8313,15 @@ aside .banner img
 
 .lk_personal .btns button
 {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
 
     transition: color .2s linear;
     text-align: left;
@@ -8370,16 +8370,16 @@ aside .banner img
 ----------------*/
 .lk_history .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 27px;
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -8419,9 +8419,6 @@ aside .banner img
 
 .lk_history .item .head
 {
-    font-size: 14px;
-    line-height: 20px;
-
     position: relative;
 
     display: flex;
@@ -8432,6 +8429,9 @@ aside .banner img
 
     min-height: 72px;
     padding: 20px 20px 20px 54px;
+
+    font-size: 14px;
+    line-height: 20px;
 
     cursor: pointer;
 
@@ -8475,10 +8475,10 @@ aside .banner img
 
 .lk_history .head .col_price
 {
-    font-weight: 700;
-
     width: 270px;
     margin-left: auto;
+
+    font-weight: 700;
 
     transition: opacity .2s linear;
     text-transform: uppercase;
@@ -8573,12 +8573,12 @@ aside .banner img
 
 .lk_history .cart_info table td.amount span
 {
-    font-size: 15px;
-    line-height: 22px;
-
     display: block;
 
     width: 93px;
+
+    font-size: 15px;
+    line-height: 22px;
 
     text-align: center;
 
@@ -8794,9 +8794,6 @@ aside .banner img
 
 .product_info .data .head
 {
-    font-size: 14px;
-    line-height: 21px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -8806,6 +8803,9 @@ aside .banner img
     width: calc(100% - 90px);
     height: 50px;
     margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 21px;
 
     color: #171717;
     border-bottom: 1px solid #dae4eb;
@@ -8863,10 +8863,10 @@ aside .banner img
 
 .product_info .data .brand
 {
+    position: relative;
+
     font-size: 15px;
     line-height: 50px;
-
-    position: relative;
 
     color: #087aca;
 }
@@ -8933,11 +8933,11 @@ aside .banner img
 
 .product_info .data .price .old
 {
+    margin-left: 9px;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-
-    margin-left: 9px;
 
     text-decoration: line-through;
 
@@ -8947,23 +8947,23 @@ aside .banner img
 
 .product_info .data .desc
 {
+    margin-top: 35px;
+
     font-size: 14px;
     line-height: 21px;
-
-    margin-top: 35px;
 }
 
 
 .product_info .data .consult_btn
 {
-    font-size: 15px;
-    font-weight: 800;
-
     display: inline-block;
 
     height: 40px;
     margin-top: 25px;
     padding: 0 18px;
+
+    font-size: 15px;
+    font-weight: 800;
 
     transition: .2s linear;
     vertical-align: top;
@@ -8995,13 +8995,13 @@ aside .banner img
 
 .product_info .data .buy_btn
 {
-    font-size: 20px;
-    font-weight: 800;
-
     display: block;
 
     width: 150px;
     height: 60px;
+
+    font-size: 20px;
+    font-weight: 800;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -9045,9 +9045,6 @@ aside .banner img
 
 .product_info .data .credit_btn
 {
-    font-size: 20px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -9057,6 +9054,9 @@ aside .banner img
     width: 150px;
     height: 60px;
     margin-left: 30px;
+
+    font-size: 20px;
+    font-weight: 500;
 
     transition: .2s linear;
     text-decoration: none;
@@ -9153,10 +9153,10 @@ aside .banner img
 
 .product_info .data .color .label
 {
+    margin-bottom: 10px;
+
     font-size: 13px;
     font-weight: 700;
-
-    margin-bottom: 10px;
 }
 
 
@@ -9181,9 +9181,9 @@ aside .banner img
 
 .product_info .data .color a
 {
-    font-size: 12px;
-
     display: block;
+
+    font-size: 12px;
 
     text-align: center;
     text-decoration: none;
@@ -9302,9 +9302,9 @@ aside .banner img
 
 .product_info .data .alternative .product .info
 {
-    font-size: 13px;
-
     padding: 16px 13px;
+
+    font-size: 13px;
 }
 
 
@@ -9316,9 +9316,9 @@ aside .banner img
 
 .product_info .data .alternative .product .label
 {
-    font-weight: 700;
-
     margin-bottom: 4px;
+
+    font-weight: 700;
 }
 
 
@@ -9337,24 +9337,24 @@ aside .banner img
 
 .product_info .data .features .title
 {
+    margin-bottom: 5px;
+
     font-size: 13px;
     font-weight: 700;
-
-    margin-bottom: 5px;
 
     color: #171717;
 }
 
 .product_info .data .features .item
 {
-    font-size: 14px;
-    line-height: 21px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 21px;
 
     color: #171717;
 }
@@ -9399,20 +9399,20 @@ aside .banner img
 
 .product_info .data .features .val
 {
-    font-weight: 500;
-
     width: 150px;
     padding-left: 2px;
+
+    font-weight: 500;
 }
 
 .product_info .data .features .all_btn
 {
-    font-size: 15px;
-    line-height: 22px;
-
     display: inline-block;
 
     margin-top: 10px;
+
+    font-size: 15px;
+    line-height: 22px;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -9424,6 +9424,85 @@ aside .banner img
 .product_info .data .features .all_btn:hover
 {
     color: #f00;
+}
+
+
+.product_info .data .delivery
+{
+    margin: 40px -50px -40px;
+    padding-top: 16px;
+
+    background: #fff;
+}
+
+
+.product_info .data .delivery .city
+{
+    padding-bottom: 9px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 152.491%;
+}
+
+
+.product_info .data .delivery .city .btn
+{
+    font-size: inherit;
+    font-weight: inherit;
+
+    color: #ff0200;
+    border-bottom: 1px dotted;
+}
+
+
+.product_info .data .delivery .item
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 9px 17px;
+
+    font-size: 14px;
+    line-height: 152.491%;
+
+    border: 1px solid #ccc;
+}
+
+
+.product_info .data .delivery .item + .item
+{
+    margin-top: -1px;
+}
+
+
+.product_info .data .delivery .icon
+{
+    width: 52px;
+    max-width: 100%;
+}
+
+
+.product_info .data .delivery .icon img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+
+.product_info .data .delivery .icon + *
+{
+    width: calc(100% - 79px);
+}
+
+
+.product_info .data .delivery .name
+{
+    font-weight: 700;
 }
 
 
@@ -9442,15 +9521,15 @@ aside .banner img
 
 .product_info .stickers .sticker
 {
-    font-size: 9px;
-    font-weight: 700;
-    line-height: 11px;
-
     position: relative;
 
     display: inline-block;
 
     padding: 6px 10px;
+
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 11px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -9588,15 +9667,15 @@ aside .banner img
 
 .product_tabs .tabs button
 {
-    font-size: 14px;
-    font-weight: 700;
-
     display: block;
 
     width: 174px;
     height: 45px;
     margin: -2px;
     padding: 10px 25px 12px;
+
+    font-size: 14px;
+    font-weight: 700;
 
     transition: .2s linear;
 
@@ -9633,10 +9712,6 @@ aside .banner img
 
 .about_seria .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: absolute;
     z-index: 9;
     top: 0;
@@ -9646,6 +9721,10 @@ aside .banner img
 
     width: var(--sidebar_width);
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     text-align: center;
     vertical-align: top;
@@ -9691,11 +9770,11 @@ aside .banner img
 
 .about_seria .features .title
 {
+    margin-bottom: 10px;
+
     font-size: 16px;
     font-weight: 700;
     line-height: 23px;
-
-    margin-bottom: 10px;
 
     color: #171717;
 }
@@ -9717,14 +9796,14 @@ aside .banner img
 
 .about_seria .features .item
 {
-    font-size: 14px;
-    line-height: 21px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 21px;
 
     color: #171717;
 }
@@ -9769,10 +9848,10 @@ aside .banner img
 
 .about_seria .features .val
 {
-    font-weight: 500;
-
     width: 175px;
     padding-left: 2px;
+
+    font-weight: 500;
 }
 
 
@@ -9822,21 +9901,17 @@ aside .banner img
 
 .compare_features .title
 {
+    margin-bottom: 15px;
+
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
-
-    margin-bottom: 15px;
 
     color: #171717;
 }
 
 .compare_features .item
 {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 17px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -9845,6 +9920,10 @@ aside .banner img
 
     min-height: 40px;
     padding: 5px 0;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
 
     color: #171717;
     border-top: 1px solid #d8d8d8;
@@ -9863,10 +9942,6 @@ aside .banner img
 
 .compare_info .product_features .item
 {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 17px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -9875,6 +9950,10 @@ aside .banner img
 
     min-height: 40px;
     padding: 5px 0 5px 20px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
 
     color: #171717;
     border-top: 1px solid #d8d8d8;
@@ -9951,16 +10030,16 @@ aside .banner img
 
 .manager_page .cats .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 27px;
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -10037,14 +10116,14 @@ aside .banner img
 
 .manager_page .cats .tabs .link button
 {
-    font-size: 16px;
-    font-weight: 700;
-
     position: relative;
 
     width: 100%;
     min-height: 53px;
     padding: 10px 20px;
+
+    font-size: 16px;
+    font-weight: 700;
 
     transition: color .2s linear;
     text-align: left;
@@ -10123,13 +10202,13 @@ aside .banner img
 
 .manager_page .cats .tabs .sub button
 {
-    font-family: var(--font_family2);
-    font-size: 13px;
-    line-height: 19px;
-
     display: block;
 
     width: 100%;
+
+    font-family: var(--font_family2);
+    font-size: 13px;
+    line-height: 19px;
 
     transition: color .2s linear;
     text-align: left;
@@ -10165,16 +10244,16 @@ aside .banner img
 
 .manager_page .cats .tree .level > * > .link
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-    font-weight: 700;
-
     position: relative;
 
     display: inline-block;
 
     width: 100%;
     padding-left: 20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
 
     transition: color .2s linear;
     text-align: left;
@@ -10264,9 +10343,6 @@ aside .banner img
 
 .manager_page .cats .tree .product
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -10275,6 +10351,9 @@ aside .banner img
 
     margin-bottom: -5px;
     margin-left: -20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
 
     color: #171717;
 }
@@ -10293,10 +10372,10 @@ aside .banner img
 
 .manager_page .cats .tree .product .edit_btn
 {
+    display: block;
+
     font-family: var(--font_family2);
     font-size: 14px;
-
-    display: block;
 
     transition: color .2s linear;
     text-align: left;
@@ -10325,16 +10404,16 @@ aside .banner img
 
 .manager_page .product_edit .block_title
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 32px;
-
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 27px;
     padding: 0 15px 0 19px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32px;
 
     vertical-align: top;
     text-transform: uppercase;
@@ -10377,9 +10456,6 @@ aside .banner img
 
 .manager_page .product_edit .upload_file label
 {
-    font-size: 12px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -10387,6 +10463,9 @@ aside .banner img
     justify-content: center;
 
     height: 40px;
+
+    font-size: 12px;
+    font-weight: 500;
 
     cursor: pointer;
     transition: border-color .2s linear;
@@ -10495,13 +10574,13 @@ aside .banner img
 
 .manager_page .product_edit .images input[type=file] + label
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-
     display: block;
 
     margin-bottom: 20px;
     margin-left: 40px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
 
     cursor: pointer;
 
@@ -10565,11 +10644,11 @@ aside .banner img
 
 .manager_page .product_edit .add_video_btn
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 40px;
-
-    display: inline-block;
 
     vertical-align: top;
 
@@ -10679,10 +10758,10 @@ aside .banner img
 
 .manager_page .product_edit .add_document_btn
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
-
-    display: inline-block;
 
     vertical-align: top;
 
@@ -10711,9 +10790,6 @@ aside .banner img
 
 .manager_page .product_edit .keys .checks .field > *
 {
-    font-size: 14px;
-    line-height: 18px;
-
     position: relative;
 
     display: none;
@@ -10727,6 +10803,9 @@ aside .banner img
     margin-bottom: 10px;
     margin-left: 40px;
     padding-left: 27px;
+
+    font-size: 14px;
+    line-height: 18px;
 
     cursor: pointer;
 
@@ -10823,11 +10902,11 @@ aside .banner img
 
 .manager_page .product_edit .model_choose_btn
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
     line-height: 40px;
-
-    display: inline-block;
 
     vertical-align: top;
 
@@ -10842,10 +10921,10 @@ aside .banner img
 
 .manager_page .product_edit .add_models_btn
 {
+    display: inline-block;
+
     font-family: var(--font_family2);
     font-size: 14px;
-
-    display: inline-block;
 
     vertical-align: top;
 
@@ -10922,12 +11001,12 @@ aside .banner img
 
 .accordion .item .head .title
 {
-    font-size: 20px;
-    line-height: 27px;
-
     align-self: center;
 
     width: calc(100% - 47px);
+
+    font-size: 20px;
+    line-height: 27px;
 
     transition: color .2s linear;
 
@@ -10974,8 +11053,6 @@ aside .banner img
 ----------------*/
 .pagination
 {
-    line-height: 32px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -10983,6 +11060,8 @@ aside .banner img
     justify-content: flex-start;
 
     margin-top: 50px;
+
+    line-height: 32px;
 }
 
 .pagination.center
@@ -11014,13 +11093,13 @@ aside .banner img
 .pagination a,
 .pagination .sep
 {
-    font-size: 13px;
-    line-height: 30px;
-
     display: inline-block;
 
     width: 32px;
     height: 32px;
+
+    font-size: 13px;
+    line-height: 30px;
 
     transition: .2s linear;
     text-align: center;
@@ -11107,13 +11186,13 @@ aside .banner img
 
 .pagination .load_more
 {
-    font-size: 15px;
-    line-height: 32px;
-
     position: absolute;
     left: calc(100% + 30px);
 
     display: inline-block;
+
+    font-size: 15px;
+    line-height: 32px;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -11180,14 +11259,14 @@ aside .banner img
 
 .tuning .points .item .number
 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 28px;
-
     width: 30px;
     min-width: 30px;
     height: 30px;
     margin: 0 auto 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
 
     text-align: center;
 
@@ -11209,14 +11288,14 @@ aside .banner img
 
 .tuning .points .item .buy_btn
 {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
-
     display: inline-block;
 
     margin-top: 17px;
     padding: 7px 16px 8px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
 
     transition: .2s linear;
     vertical-align: top;
@@ -11323,10 +11402,10 @@ aside .banner img
 
 .premium_info .data .text_block
 {
-    font-size: 15px;
-
     width: calc(100% - 440px);
     margin-left: auto;
+
+    font-size: 15px;
 
     color: #fff;
 }
@@ -11340,8 +11419,6 @@ aside .banner img
 
 .premium_info .data .text_block ol li
 {
-    font-weight: 400;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -11350,17 +11427,19 @@ aside .banner img
 
     min-height: 43px;
     padding-left: 49px;
+
+    font-weight: 400;
 }
 
 .premium_info .data .text_block ol li:before
 {
-    font-weight: 800;
-    line-height: 35px;
-
     top: 4px;
 
     width: 35px;
     height: 35px;
+
+    font-weight: 800;
+    line-height: 35px;
 
     content: counters(li, '');
     text-align: center;
@@ -11383,10 +11462,10 @@ aside .banner img
 
 .search_categories .title
 {
+    margin-bottom: 20px;
+
     font-size: 36px;
     font-weight: 700;
-
-    margin-bottom: 20px;
 
     color: #171717;
 }
@@ -11402,9 +11481,9 @@ aside .banner img
 
 .search_categories .sub_title
 {
-    font-size: 26px;
-
     margin-bottom: 24px;
+
+    font-size: 26px;
 
     color: #171717;
 }
@@ -11418,12 +11497,12 @@ aside .banner img
 
 .search_categories .col
 {
-    font-size: 16px;
-
     display: flex;
     flex-direction: column;
 
     max-width: 248px;
+
+    font-size: 16px;
 
     color: #171717;
 
@@ -11433,12 +11512,12 @@ aside .banner img
 
 .search_categories .name
 {
-    font-weight: 700;
-
     position: relative;
 
     margin-bottom: 16px;
     padding-left: 19px;
+
+    font-weight: 700;
 
     pointer-events: none;
 }
@@ -11473,12 +11552,12 @@ aside .banner img
 
 .search_categories .name sup
 {
-    font-size: 13px;
-    font-weight: 400;
-
     display: inline-block;
 
     margin-left: 4px;
+
+    font-size: 13px;
+    font-weight: 400;
 
     vertical-align: top;
 }
@@ -11510,12 +11589,12 @@ aside .banner img
 
 .search_categories .sub sup
 {
-    font-size: 13px;
-    font-weight: 400;
-
     display: inline-block;
 
     margin-left: 4px;
+
+    font-size: 13px;
+    font-weight: 400;
 
     vertical-align: top;
 }
@@ -11612,10 +11691,10 @@ footer .info .cont > .img
 
 footer .bottom
 {
+    padding: 20px 0;
+
     font-size: 12px;
     line-height: 19px;
-
-    padding: 20px 0;
 
     color: #9b9b9b;
     border-top: 1px solid #373737;
@@ -11639,11 +11718,11 @@ footer .col_left
 
 footer .title
 {
+    margin-bottom: 20px;
+
     font-size: 13px;
     font-weight: 800;
     line-height: 20px;
-
-    margin-bottom: 20px;
 
     text-transform: uppercase;
 
@@ -11718,10 +11797,10 @@ footer .links .items > * + *
 
 footer .links .items a
 {
+    display: inline-block;
+
     font-size: 14px;
     line-height: 21px;
-
-    display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -11916,10 +11995,10 @@ footer .creator a:hover
 
 .modal_desc
 {
+    margin-top: 5px;
+
     font-size: 14px;
     line-height: 21px;
-
-    margin-top: 5px;
 
     text-align: center;
 
@@ -11987,16 +12066,16 @@ footer .creator a:hover
 
 #model_choose_modal .tree .level > * > .link
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-    font-weight: 700;
-
     position: relative;
 
     display: inline-block;
 
     width: 100%;
     padding-left: 20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
 
     transition: color .2s linear;
     text-align: left;
@@ -12086,9 +12165,6 @@ footer .creator a:hover
 
 #model_choose_modal .tree .product
 {
-    font-family: var(--font_family2);
-    font-size: 14px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -12097,6 +12173,9 @@ footer .creator a:hover
 
     margin-bottom: -5px;
     margin-left: -20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
 
     color: #171717;
 }
@@ -12115,10 +12194,10 @@ footer .creator a:hover
 
 #model_choose_modal .tree .product .select_btn
 {
+    display: block;
+
     font-family: var(--font_family2);
     font-size: 14px;
-
-    display: block;
 
     transition: color .2s linear;
     text-align: left;
@@ -12146,11 +12225,11 @@ footer .creator a:hover
 
 #cart_success_modal .modal_title
 {
+    margin-bottom: 17px;
+
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
-
-    margin-bottom: 17px;
 
     text-align: center;
 
@@ -12206,10 +12285,10 @@ footer .creator a:hover
 
 #cart_success_modal .product .amount
 {
+    margin-top: 2px;
+
     font-size: 13px;
     line-height: 16px;
-
-    margin-top: 2px;
 
     color: #000;
 }
@@ -12228,14 +12307,14 @@ footer .creator a:hover
 
 #cart_success_modal .btns .btn
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-
     display: block;
 
     width: calc(50% - 7px);
     padding: 14px 24px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
 
     transition: .2s linear;
     text-align: center;
@@ -12251,4 +12330,337 @@ footer .creator a:hover
 {
     color: #fff;
     background: #f91628;
+}
+
+
+
+#city_modal
+{
+    width: 890px;
+    margin-top: 60px;
+    padding: 0;
+}
+
+
+#city_modal .search
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 34px 42px 28px;
+
+    gap: 44px;
+}
+
+
+#city_modal .search .label
+{
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #fff;
+}
+
+
+#city_modal .search form
+{
+    position: relative;
+
+    width: 383px;
+    max-width: 100%;
+}
+
+
+#city_modal .search form ::-webkit-input-placeholder
+{
+    color: #333;
+}
+
+#city_modal .search form :-moz-placeholder
+{
+    color: #333;
+}
+
+#city_modal .search form :-ms-input-placeholder
+{
+    color: #333;
+}
+
+
+#city_modal .search form .input
+{
+    position: relative;
+    z-index: 2;
+
+    display: block;
+
+    width: 100%;
+    height: 44px;
+    padding: 0 51px 0 17px;
+
+    font-family: var(--font_family);
+    font-size: 14px;
+
+    color: #000;
+    border: 1px solid #171717;
+    border-radius: 5px;
+    background: #fff;
+}
+
+
+#city_modal .search form .submit_btn
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+}
+
+
+#city_modal .search form .submit_btn .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    fill: currentColor;
+}
+
+
+#city_modal .search .tips
+{
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    margin-top: -8px;
+    padding: 28px 20px 20px;
+
+    background: #fff;
+    box-shadow: 0 3px 40px 0 rgba(173, 191, 201, .40);
+}
+
+
+#city_modal .search .empty
+{
+    padding-block: 12px;
+
+    font-size: 15px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #f00;
+}
+
+
+#city_modal .data
+{
+    padding: 19px 42px 36px;
+
+    background: #fff;
+}
+
+
+#city_modal .quike
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: 32px;
+}
+
+
+#city_modal .quike .btn
+{
+    min-width: 178px;
+    padding: 0 15px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 151.393%;
+
+    transition: .2s linear;
+
+    color: #171717;
+    border: 1px solid #cdcdcd;
+    border-radius: 49px;
+}
+
+
+#city_modal .quike .btn:hover,
+#city_modal .quike .btn.active
+{
+    color: #fff;
+    border-color: #f00;
+    background: #f00;
+}
+
+
+#city_modal .alphabet
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 24px;
+}
+
+
+#city_modal .alphabet a
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 151.393%;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    color: #000;
+    border: 1px solid #fff;
+    background: #eaeaea;
+}
+
+
+#city_modal .alphabet a:hover,
+#city_modal .alphabet a.active
+{
+    color: #fff;
+    background: #f00;
+}
+
+
+#city_modal .list
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 33px;
+    margin-left: -20px;
+}
+
+
+#city_modal .list .col
+{
+    width: calc(25% - 20px);
+    margin-left: 20px;
+}
+
+
+#city_modal .list .item
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#city_modal .list .item + .item
+{
+    margin-top: 8px;
+    padding-top: 8px;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+
+#city_modal .list .letter
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: #171717;
+}
+
+
+#city_modal .list .items
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 34px);
+
+    gap: 4px;
+}
+
+
+#city_modal .list .btn
+{
+    margin-inline: -12px;
+    padding-inline: 12px;
+
+    font-size: 15px;
+    line-height: 24px;
+
+    transition: .2s linear;
+
+    color: #171717;
+    border-radius: 59px;
+}
+
+
+#city_modal .list .btn:hover,
+#city_modal .list .btn.active
+{
+    font-weight: 700;
+
+    color: #fff;
+    background: #f00;
+}
+
+
+#city_modal ~ .fancybox-close-small
+{
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin-inline: auto;
+    padding: 0;
+
+    color: #4f4f4f;
+}
+
+
+#city_modal ~ .fancybox-close-small:hover
+{
+    color: #f00;
 }

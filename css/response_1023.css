@@ -441,10 +441,10 @@
     .text_block blockquote,
     .text_block q
     {
+        margin: 30px 0;
+
         font-size: 24px;
         line-height: 30px;
-
-        margin: 30px 0;
     }
 
 
@@ -595,10 +595,10 @@
     ---------------*/
     .cart_info .block_title
     {
+        margin-bottom: 25px;
+
         font-size: 14px;
         line-height: 30px;
-
-        margin-bottom: 25px;
     }
 
     .cart_info .block_title:after
@@ -663,10 +663,10 @@
 
     .checkout_info .block_title
     {
+        margin-bottom: 25px;
+
         font-size: 14px;
         line-height: 30px;
-
-        margin-bottom: 25px;
     }
 
     .checkout_info .block_title:after
@@ -686,10 +686,10 @@
 
     .checkout_info .auth .btn
     {
-        font-size: 14px;
-
         margin-top: 15px;
         padding: 0 20px;
+
+        font-size: 14px;
     }
 
 
@@ -717,10 +717,10 @@
 
     .lk_personal .block_title
     {
+        margin-bottom: 25px;
+
         font-size: 14px;
         line-height: 30px;
-
-        margin-bottom: 25px;
     }
 
     .lk_personal .block_title:after
@@ -751,10 +751,10 @@
     ----------------*/
     .lk_history .block_title
     {
+        margin-bottom: 25px;
+
         font-size: 14px;
         line-height: 30px;
-
-        margin-bottom: 25px;
     }
 
     .lk_history .block_title:after
@@ -921,8 +921,6 @@
     ------------------*/
     .product_tabs .tabs
     {
-        font-size: 0;
-
         display: block;
         overflow: auto;
 
@@ -931,6 +929,8 @@
         margin-right: -20px;
         margin-left: -20px;
         padding: 0 20px;
+
+        font-size: 0;
 
         white-space: nowrap;
 
@@ -1032,10 +1032,6 @@
 
     .compare_info .product_features .item:before
     {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 18px;
-
         position: absolute;
         top: 5px;
         left: 20px;
@@ -1044,6 +1040,10 @@
 
         width: 100%;
         height: 20px;
+
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 18px;
 
         content: attr(data-column);
         text-align: left;
@@ -1097,10 +1097,10 @@
 
     .main_slider .slide .desc
     {
+        margin-top: 12px;
+
         font-size: 17px;
         line-height: 23px;
-
-        margin-top: 12px;
     }
 
 
@@ -1245,10 +1245,10 @@
 
     header .title
     {
-        font-size: 22px;
-
         margin-top: 18px;
         margin-left: 60px;
+
+        font-size: 22px;
     }
 
 
@@ -1359,11 +1359,11 @@
 
     .tuning .points .item .name
     {
-        font-size: 16px;
-        line-height: 20px;
-
         width: 100%;
         margin: 0;
+
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .tuning .points .item .name br
@@ -1445,5 +1445,95 @@
     #model_choose_modal
     {
         padding: 30px 25px 30px 30px;
+    }
+
+
+
+    #city_modal
+    {
+        margin-top: 50px;
+    }
+
+
+    #city_modal .search
+    {
+        padding: 30px;
+
+        gap: 30px;
+    }
+
+
+    #city_modal .search .label
+    {
+        font-size: 18px;
+    }
+
+
+    #city_modal .search form
+    {
+        width: 340px;
+    }
+
+
+    #city_modal .search .empty
+    {
+        padding-block: 8px;
+
+        font-size: 14px;
+    }
+
+
+    #city_modal .data
+    {
+        padding: 30px;
+    }
+
+
+    #city_modal .quike
+    {
+        gap: 20px;
+    }
+
+
+    #city_modal .quike .btn
+    {
+        min-width: 148px;
+
+        font-size: 15px;
+    }
+
+
+    #city_modal .alphabet a
+    {
+        width: 45px;
+        height: 45px;
+
+        font-size: 15px;
+    }
+
+
+    #city_modal .list
+    {
+        margin-top: 28px;
+    }
+
+
+    #city_modal .list .letter
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    #city_modal .list .items
+    {
+        width: calc(100% - 30px);
+    }
+
+
+    #city_modal .list .btn
+    {
+        font-size: 14px;
+        line-height: 22px;
     }
 }

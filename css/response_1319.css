@@ -100,10 +100,10 @@
 
     header .cats .dropdown .tabs_container.level1 > .tabs button
     {
+        padding: 17px 43px 17px 0;
+
         font-size: 15px;
         line-height: 19px;
-
-        padding: 17px 43px 17px 0;
     }
 
 
@@ -240,10 +240,10 @@
 
     .text_block .text_slider .title
     {
+        padding-left: 23px;
+
         font-size: 22px;
         line-height: 28px;
-
-        padding-left: 23px;
     }
 
 
@@ -306,13 +306,13 @@
 
     .action_form .title
     {
-        font-size: 28px;
-        line-height: 36px;
-
         width: 760px;
         max-width: 100%;
         margin-right: auto;
         margin-left: auto;
+
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .action_form .desc
@@ -431,14 +431,14 @@
 
     .popular_cats .cat .name
     {
-        font-size: 14px;
-        line-height: 18px;
-
         bottom: 20px;
         left: 20px;
 
         max-width: calc(100% - 40px);
         min-height: 55px;
+
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .popular_cats .cat:hover .name
@@ -490,9 +490,9 @@
     .cart_info .cart_bottom .checkout_btn,
     .cart_info .cart_bottom .credit_btn
     {
-        font-size: 18px;
-
         height: 50px;
+
+        font-size: 18px;
     }
 
     .cart_info .cart_bottom .credit_btn
@@ -513,10 +513,10 @@
 
     .cart_info .cart_bottom .back_link
     {
-        line-height: 50px;
-
         height: 50px;
         margin-top: 25px;
+
+        line-height: 50px;
     }
 
 
@@ -826,9 +826,9 @@
 
     .product_info .data .brand
     {
-        line-height: normal;
-
         margin-left: auto;
+
+        line-height: normal;
     }
 
     .product_info .data .brand .logo
@@ -840,10 +840,10 @@
     .product_info .data .buy_btn,
     .product_info .data .credit_btn
     {
-        font-size: 18px;
-
         width: 140px;
         height: 50px;
+
+        font-size: 18px;
     }
 
 
@@ -880,6 +880,12 @@
     .product_info .data .alternative .owl-nav button.owl-next
     {
         right: -16px;
+    }
+
+
+    .product_info .data .delivery
+    {
+        margin: 30px -25px -30px;
     }
 
 
@@ -1023,10 +1029,10 @@
 
     .cats_wall .cat .name
     {
+        padding: 0;
+
         font-size: 16px;
         line-height: 20px;
-
-        padding: 0;
     }
 
 
@@ -1155,9 +1161,9 @@
 
     .search_categories .sub_title
     {
-        font-size: 20px;
-
         margin-bottom: 20px;
+
+        font-size: 20px;
     }
 
 
@@ -1172,12 +1178,12 @@
 
     .search_categories .col
     {
-        font-size: 15px;
-
         width: calc(25% - 24px);
         max-width: calc(25% - 24px);
         margin-bottom: 40px;
         margin-left: 24px;
+
+        font-size: 15px;
     }
 
 
@@ -1320,10 +1326,10 @@
 
     header .cats .dropdown .tabs_container.level1 > .tabs button
     {
+        padding: 15px 43px 15px 0;
+
         font-size: 14px;
         line-height: 19px;
-
-        padding: 15px 43px 15px 0;
     }
 
 
