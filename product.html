@@ -50,6 +50,26 @@
 					<div class="mob_scroll">
 						<div class="top">
 							<div class="cont row">
+								<div class="city">
+									<button class="current_btn modal_link" data-content="#city_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										<span>Москва</span>
+									</button>
+
+									<div class="info">
+										<div class="current">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_send"></use></svg>
+											<span>Ваш город <b>Москва?</b></span>
+										</div>
+
+										<div class="btns">
+											<button class="btn yes_btn">Всё верно</button>
+
+											<button class="btn modal_link" data-content="#city_modal">Выбрать город</button>
+										</div>
+									</div>
+								</div>
+
 								<nav class="menu">
 									<div class="item">
 										<a href="/">О компании</a>
@@ -60,19 +80,19 @@
 									</div>
 
 									<div class="item">
-										<a href="/">Скидки и акции</a>
-									</div>
-
-									<div class="item">
 										<a href="/">Доставка и оплата</a>
 									</div>
 
 									<div class="item">
-										<a href="/">Аренда</a>
+										<a href="/">Кредит</a>
 									</div>
 
 									<div class="item">
 										<a href="/">Контакты</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Наши дилеры</a>
 									</div>
 								</nav>
 
@@ -1042,6 +1062,32 @@
 
 								<button class="all_btn scroll_link" data-anchor="#product_tab2">Подробнее</button>
 							</div>
+
+							<div class="delivery">
+								<div class="city">Доставка в <button class="btn modal_link" data-content="#city_modal">г. Москва</button></div>
+
+								<div class="item">
+									<div class="icon">
+										<img src="images/ic_product_delivery1.svg" alt="" loading="lazy">
+									</div>
+
+									<div>
+										<div class="name">Самовывоз из магазина</div>
+										<div class="val">Москва, ул. Краснобогатырская, д. 42, стр. 3</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="icon">
+										<img src="images/ic_product_delivery2.svg" alt="" loading="lazy">
+									</div>
+
+									<div>
+										<div class="name">Самовывоз из <u>3 пунктов выдачи ПЭК</u></div>
+										<div class="val">послезавтра 23 июня, 265 5</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -1879,6 +1925,42 @@
 			<div class="modal_title">Спасибо!</div>
 
 			<div class="text_block">Ваше сообщение успешно отправлено. Наш менеджер свяжется с Вами.</div>
+		</section>
+
+
+		<section class="modal" id="city_modal">
+			<div class="search">
+				<div class="label">Выберите город</div>
+
+				<form action="">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+					<input type="text" name="" value="" class="input" placeholder="Поиск города">
+
+					<button type="button" class="clear_btn"></button>
+				</form>
+			</div>
+
+			<div class="data">
+				<div class="list">
+					<div><button class="btn"><b>Мос</b>ква</button></div>
+					<div><button class="btn">Екатеринбург</button></div>
+					<div><button class="btn">Нижний Новгород</button></div>
+					<div><button class="btn">Ростов-на-Дону</button></div>
+					<div><button class="btn">Санкт-Петербург</button></div>
+					<div><button class="btn">Казань</button></div>
+					<div><button class="btn">Новосибирск</button></div>
+					<div><button class="btn">Самара</button></div>
+					<div><button class="btn">Волгоград</button></div>
+					<div><button class="btn">Краснодар</button></div>
+					<div><button class="btn">Омск</button></div>
+					<div><button class="btn">Уфа</button></div>
+					<div><button class="btn">Воронеж</button></div>
+					<div><button class="btn">Красноярск</button></div>
+					<div><button class="btn">Персь</button></div>
+					<div><button class="btn">Челябинск</button></div>
+				</div>
+			</div>
 		</section>
 
 

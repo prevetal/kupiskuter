@@ -32,11 +32,11 @@
 
     .mob_header .phone .callback_btn
     {
-        font-size: 10px;
-
         height: 30px;
         margin-left: 25px;
         padding: 1px 21px 0;
+
+        font-size: 10px;
     }
 
 
@@ -150,10 +150,10 @@
 
     .text_block .text_slider .title
     {
+        padding-left: 18px;
+
         font-size: 18px;
         line-height: 26px;
-
-        padding-left: 18px;
     }
 
 
@@ -258,14 +258,14 @@
 
     .popular_cats .cat .name
     {
-        font-size: 14px;
-        line-height: 18px;
-
         bottom: 10px;
         left: 10px;
 
         max-width: calc(100% - 20px);
         min-height: 45px;
+
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .popular_cats .cat:hover .name
@@ -280,10 +280,10 @@
     ---------------*/
     .cart_info .block_title
     {
+        margin-bottom: 20px;
+
         font-size: 13px;
         line-height: 28px;
-
-        margin-bottom: 20px;
     }
 
     .cart_info .block_title:after
@@ -358,10 +358,6 @@
     .cart_info table td.price:before,
     .cart_info table td.amount:before
     {
-        font-size: 11px;
-        font-weight: normal;
-        line-height: 15px;
-
         position: absolute;
         top: 0;
         left: 0;
@@ -370,6 +366,10 @@
 
         width: 100%;
         height: 20px;
+
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 15px;
 
         content: attr(data-column);
         text-align: left;
@@ -416,10 +416,10 @@
 
     .cart_info .cart_bottom .back_link
     {
-        line-height: normal;
-
         height: auto;
         margin-top: 15px;
+
+        line-height: normal;
     }
 
 
@@ -434,10 +434,10 @@
 
     .checkout_info .block_title
     {
+        margin-bottom: 20px;
+
         font-size: 13px;
         line-height: 28px;
-
-        margin-bottom: 20px;
     }
 
     .checkout_info .block_title:after
@@ -461,10 +461,10 @@
     -----------------*/
     .lk_personal .block_title
     {
+        margin-bottom: 20px;
+
         font-size: 13px;
         line-height: 28px;
-
-        margin-bottom: 20px;
     }
 
     .lk_personal .block_title:after
@@ -478,9 +478,9 @@
 
     .lk_personal .info
     {
-        line-height: 26px;
-
         margin-left: -30px;
+
+        line-height: 26px;
     }
 
     .lk_personal .info > *
@@ -515,10 +515,10 @@
     ----------------*/
     .lk_history .block_title
     {
+        margin-bottom: 20px;
+
         font-size: 13px;
         line-height: 28px;
-
-        margin-bottom: 20px;
     }
 
     .lk_history .block_title:after
@@ -603,8 +603,6 @@
     --------------*/
     .products .tabs
     {
-        font-size: 0;
-
         display: block;
         overflow: auto;
 
@@ -614,6 +612,8 @@
         margin-right: -20px;
         margin-left: -20px;
         padding: 0 20px;
+
+        font-size: 0;
 
         white-space: nowrap;
 
@@ -838,8 +838,6 @@
     ---------------------*/
     .popular_compare .tabs
     {
-        font-size: 0;
-
         display: block;
         overflow: auto;
 
@@ -849,6 +847,8 @@
         margin-right: -20px;
         margin-left: -20px;
         padding: 0 20px;
+
+        font-size: 0;
 
         white-space: nowrap;
 
@@ -1252,10 +1252,10 @@
 
     #cart_success_modal .modal_title
     {
+        margin-bottom: 16px;
+
         font-size: 21px;
         line-height: 25px;
-
-        margin-bottom: 16px;
     }
 
 
@@ -1266,10 +1266,50 @@
 
     #cart_success_modal .btns .btn
     {
-        font-size: 14px;
-        line-height: 18px;
-
         width: calc(50% - 6px);
         padding: 10px 12px 11px;
+
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+
+    #city_modal ~ .fancybox-close-small
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    #city_modal .search
+    {
+        padding: 24px;
+    }
+
+
+    #city_modal .search .label
+    {
+        width: 100%;
+
+        font-size: 16px;
+    }
+
+
+    #city_modal .search form
+    {
+        width: 100%;
+    }
+
+
+    #city_modal .data
+    {
+        padding: 24px;
+    }
+
+
+    #city_modal .list > *
+    {
+        width: calc(50% - 24px);
     }
 }

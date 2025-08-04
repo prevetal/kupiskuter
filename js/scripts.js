@@ -737,6 +737,35 @@ $(() => {
 			$(this).toggleClass('active').next().slideToggle(300)
 		}
 	})
+
+
+	// City
+	$('header .city .info .yes_btn').click(function(e) {
+		e.preventDefault()
+
+		$('header .city .info').fadeOut(200)
+	})
+
+
+	$('#city_modal .search form .input').keyup(function(e) {
+		e.preventDefault()
+
+		let _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				? $('#city_modal .search form .clear_btn').addClass('show')
+				: $('#city_modal .search form .clear_btn').removeClass('show')
+		})
+	})
+
+
+	$('#city_modal .search form .clear_btn').click(function(e) {
+		e.preventDefault()
+
+		$('#city_modal .search form .input').val('')
+		$('#city_modal .search form .clear_btn').removeClass('show')
+	})
 })
 
 
