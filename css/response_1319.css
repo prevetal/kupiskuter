@@ -52,11 +52,15 @@
     /*------------
         Header
     ------------*/
-    header .socials,
+    header .menu .item + .item
+    {
+        margin-left: 24px;
+    }
+
+
     header .account
     {
-        width: auto;
-        margin-left: 32px;
+        margin-left: 24px;
     }
 
 
@@ -1282,10 +1286,31 @@
 @media print,
 (max-width: 1279px)
 {
-    header .menu .item + .item
+    header .city .current_btn span
     {
-        margin-left: 24px;
+        max-width: 80px;
     }
+
+
+    header .city .info
+    {
+        width: 304px;
+        margin-top: 4px;
+    }
+
+
+    header .city .info .btns
+    {
+        gap: 24px;
+    }
+
+
+    header .city .info .btns .yes_btn,
+    header .city .info .btns .yes_btn:hover
+    {
+        padding: 8px 24px;
+    }
+
 
     header .menu .item > a
     {
@@ -1294,7 +1319,6 @@
     }
 
 
-    header .socials,
     header .account
     {
         margin-left: 24px;

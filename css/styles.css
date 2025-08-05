@@ -682,6 +682,143 @@ header .bottom .cont.row
 
 
 
+header .city
+{
+    position: relative;
+
+    margin-right: auto;
+}
+
+
+header .city .current_btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #f00;
+
+    gap: 8px;
+}
+
+
+header .city .current_btn .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 16px;
+
+    fill: currentColor;
+}
+
+
+header .city .current_btn span
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border-bottom: 1px dashed;
+}
+
+
+header .city .info
+{
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+
+    width: 316px;
+    margin-top: 5px;
+    padding: 16px;
+
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    box-shadow: 0 4px 93.5px -33px rgba(0, 0, 0, .25);
+}
+
+
+header .city .info .current
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: 16px;
+
+    color: #171717;
+}
+
+
+header .city .info .current .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 20px;
+}
+
+
+header .city .info .current span
+{
+    width: calc(100% - 27px);
+}
+
+
+header .city .info .btns
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 16px;
+
+    gap: 29px;
+}
+
+
+header .city .info .btns .btn
+{
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: color .2s linear;
+
+    color: #171717;
+}
+
+
+header .city .info .btns .btn:hover
+{
+    color: #f00;
+}
+
+
+header .city .info .btns .yes_btn,
+header .city .info .btns .yes_btn:hover
+{
+    padding: 8px 28px;
+
+    color: #fff;
+    border: 1px solid #f00;
+    border-radius: 40px;
+    background: #f00;
+}
+
+
+
 header .menu
 {
     display: flex;
@@ -690,12 +827,12 @@ header .menu
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin-right: auto;
+    margin-right: 24px;
 }
 
 header .menu .item + .item
 {
-    margin-left: 48px;
+    margin-left: 40px;
 }
 
 header .menu .item > a
@@ -865,8 +1002,7 @@ header .account
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 257px;
-    max-width: 100%;
+    margin-left: 40px;
 
     font-size: 14px;
     font-weight: 500;

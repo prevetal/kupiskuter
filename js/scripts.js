@@ -737,6 +737,14 @@ $(() => {
 			$(this).toggleClass('active').next().slideToggle(300)
 		}
 	})
+
+
+	// City
+	$('header .city .info .yes_btn').click(function(e) {
+		e.preventDefault()
+
+		$('header .city .info').fadeOut(200)
+	})
 })
 
 

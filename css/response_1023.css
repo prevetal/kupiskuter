@@ -107,6 +107,13 @@
     }
 
 
+    header .city
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
     header .menu .item
     {
         width: 100%;
