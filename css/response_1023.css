@@ -1466,7 +1466,7 @@
     {
         padding: 30px;
 
-        gap: 30px;
+        gap: 12px;
     }
 
 
@@ -1476,71 +1476,8 @@
     }
 
 
-    #city_modal .search form
-    {
-        width: 340px;
-    }
-
-
-    #city_modal .search .empty
-    {
-        padding-block: 8px;
-
-        font-size: 14px;
-    }
-
-
     #city_modal .data
     {
         padding: 30px;
-    }
-
-
-    #city_modal .quike
-    {
-        gap: 20px;
-    }
-
-
-    #city_modal .quike .btn
-    {
-        min-width: 148px;
-
-        font-size: 15px;
-    }
-
-
-    #city_modal .alphabet a
-    {
-        width: 45px;
-        height: 45px;
-
-        font-size: 15px;
-    }
-
-
-    #city_modal .list
-    {
-        margin-top: 28px;
-    }
-
-
-    #city_modal .list .letter
-    {
-        font-size: 14px;
-        line-height: 22px;
-    }
-
-
-    #city_modal .list .items
-    {
-        width: calc(100% - 30px);
-    }
-
-
-    #city_modal .list .btn
-    {
-        font-size: 14px;
-        line-height: 22px;
     }
 }
