@@ -76,12 +76,13 @@
     .mob_header .mob_menu_btn
     {
         position: absolute;
-        z-index: 9;
         top: 2px;
         left: 10px;
 
         width: 46px;
         margin: 0;
+
+        z-index: 9;
     }
 
 
@@ -852,5 +853,64 @@
     #city_modal .list .btn
     {
         line-height: 140%;
+    }
+
+
+
+    /*---------------------
+        PopUp - Product
+    ---------------------*/
+    .modal.product .product_name
+    {
+        font-size: 16px;
+    }
+
+
+    .modal.product .product_info .data
+    {
+        width: calc(100% + 40px);
+        padding: 20px;
+    }
+
+
+    .modal.product .product_info .data .favorite_btn
+    {
+        margin-left: 20px;
+    }
+
+
+    .modal.product .product_info .data .buy_btn,
+    .modal.product .product_info .data .credit_btn
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .modal.product .product_info .data .credit_btn
+    {
+        margin-top: 10px;
+    }
+
+
+    .modal.product .product_info .data .features
+    {
+        width: calc(100% + 40px);
+        margin: 20px -20px 0;
+        padding: 20px;
+
+        border-width: 10px;
+    }
+
+
+    .modal.product .product_info .data .delivery
+    {
+        margin: 0 -20px;
+    }
+
+
+    .modal.product .product_info .data .full_link
+    {
+        margin: 0 -20px -20px;
+        padding-top: 20px;
     }
 }

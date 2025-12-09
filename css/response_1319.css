@@ -1405,4 +1405,62 @@
     {
         width: calc(100% - 330px);
     }
+
+
+
+    /*-------------------
+        PopUp - Video
+    -------------------*/
+    .modal.video_info
+    {
+        width: 640px;
+        margin-top: 48px;
+        padding: 24px;
+    }
+
+
+    .video_info .btn .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .video_info .btn .icon:before
+    {
+        left: 2px;
+
+        width: 16px;
+        height: 18px;
+
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-left: 16px solid;
+    }
+
+
+    .video_info .name
+    {
+        margin-top: 20px;
+
+        font-size: 16px;
+    }
+
+
+
+    /*---------------------
+        PopUp - Product
+    ---------------------*/
+    .modal.product
+    {
+        margin-top: 48px;
+        padding: 24px;
+    }
+
+
+    .modal.product .product_info .data .buy_btn,
+    .modal.product .product_info .data .credit_btn
+    {
+        width: 150px;
+    }
 }

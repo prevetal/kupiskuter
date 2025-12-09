@@ -39,7 +39,6 @@
     header
     {
         position: fixed;
-        z-index: 101;
         top: 0;
         left: 0;
 
@@ -51,6 +50,7 @@
         margin: 0;
         padding: 0;
 
+        z-index: 101;
         transition: transform .3s linear;
         transform: translateX(-100%);
 
@@ -1479,5 +1479,51 @@
     #city_modal .data
     {
         padding: 30px;
+    }
+
+
+
+    /*---------------------
+        PopUp - Product
+    ---------------------*/
+    .modal.product .product_name
+    {
+        margin-bottom: 24px;
+
+        font-size: 22px;
+    }
+
+
+    .modal.product .product_info .images
+    {
+        width: 100%;
+    }
+
+
+    .modal.product .product_info .images .thumbs
+    {
+        margin-inline: auto;
+    }
+
+
+    .modal.product .product_info .data
+    {
+        width: 100%;
+    }
+
+
+    .modal.product .product_info .data .buy_btn,
+    .modal.product .product_info .data .credit_btn
+    {
+        width: 140px;
+
+        font-size: 14px;
+    }
+
+
+    .modal.product .product_info .data .credit_btn
+    {
+        margin-top: 0;
+        margin-left: auto;
     }
 }
